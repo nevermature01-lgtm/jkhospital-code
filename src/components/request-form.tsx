@@ -14,12 +14,8 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
 import { requestCallback } from "@/app/actions";
-import { toast } from "@/hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -67,49 +63,49 @@ export function RequestForm() {
   }
 
   return (
-    <Card className="w-full max-w-md bg-white/60 backdrop-blur-sm border-0 shadow-lg p-2 rounded-2xl">
-      <CardContent className="pt-6">
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      placeholder="Name"
-                      {...field}
-                      className="bg-white rounded-lg"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="phone"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      type="tel"
-                      placeholder="Phone"
-                      {...field}
-                      className="bg-white rounded-lg"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit" className="w-full rounded-lg" disabled={isPending}>
-              {isPending ? "Submitting..." : "Send Request"}
-            </Button>
-          </form>
-        </Form>
-      </CardContent>
-    </Card>
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <FormField
+          control={form.control}
+          name="name"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  placeholder="Name"
+                  {...field}
+                  className="bg-white rounded-lg border-none"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  type="tel"
+                  placeholder="Phone"
+                  {...field}
+                  className="bg-white rounded-lg border-none"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button
+          type="submit"
+          className="w-full rounded-lg bg-[#2fa693] hover:bg-[#2fa693]/90 text-white"
+          disabled={isPending}
+        >
+          {isPending ? "Submitting..." : "Send Request"}
+        </Button>
+      </form>
+    </Form>
   );
 }
