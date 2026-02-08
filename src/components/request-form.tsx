@@ -3,7 +3,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Phone, User } from "lucide-react";
 import React from "react";
 
 import { Button } from "@/components/ui/button";
@@ -12,16 +11,12 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { requestCallback } from "@/app/actions";
 import { toast } from "@/hooks/use-toast";
@@ -72,31 +67,21 @@ export function RequestForm() {
   }
 
   return (
-    <Card className="w-full max-w-md shadow-lg border-border/50">
-      <CardHeader>
-        <CardTitle className="font-headline text-2xl">
-          Request a Call Back
-        </CardTitle>
-        <CardDescription>A specialist will call you back shortly.</CardDescription>
-      </CardHeader>
-      <CardContent>
+    <Card className="w-full max-w-md bg-white/60 backdrop-blur-sm border-0 shadow-lg p-2 rounded-2xl">
+      <CardContent className="pt-6">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
                   <FormControl>
-                    <div className="relative">
-                      <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        placeholder="John Doe"
-                        {...field}
-                        className="pl-10"
-                      />
-                    </div>
+                    <Input
+                      placeholder="Name"
+                      {...field}
+                      className="bg-white rounded-lg"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -107,24 +92,20 @@ export function RequestForm() {
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Phone Number</FormLabel>
                   <FormControl>
-                    <div className="relative">
-                      <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        type="tel"
-                        placeholder="(123) 456-7890"
-                        {...field}
-                        className="pl-10"
-                      />
-                    </div>
+                    <Input
+                      type="tel"
+                      placeholder="Phone"
+                      {...field}
+                      className="bg-white rounded-lg"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full" disabled={isPending}>
-              {isPending ? "Submitting..." : "Request a Call"}
+            <Button type="submit" className="w-full rounded-lg" disabled={isPending}>
+              {isPending ? "Submitting..." : "Send Request"}
             </Button>
           </form>
         </Form>
