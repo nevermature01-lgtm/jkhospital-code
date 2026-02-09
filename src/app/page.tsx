@@ -65,9 +65,6 @@ export default function Home() {
           <div className="relative z-10 flex flex-col lg:flex-row items-center p-8 md:p-12 lg:p-20 lg:py-8 gap-12">
             {/* Left Column */}
             <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl font-semibold text-gray-800 leading-tight max-w-md mb-8">
-                The Best Medical and Treatment Center for You
-              </h1>
             </div>
 
             {/* Right Column */}
