@@ -70,8 +70,13 @@ export const Footer = () => (
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
                 <div>
-                  <a href="mailto:Care@jkhospital.in" className="hover:text-white">Care@jkhospital.in</a><br/>
-                  <a href="mailto:Nursing@jkhospital.in" className="hover:text-white">Nursing@jkhospital.in</a>
+                  <span className="text-gray-400">Reception: </span><a href="mailto:Care@jkhospital.in" className="hover:text-white">Care@jkhospital.in</a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <div>
+                  <span className="text-gray-400">Nursing: </span><a href="mailto:Nursing@jkhospital.in" className="hover:text-white">Nursing@jkhospital.in</a>
                 </div>
               </li>
             </ul>
