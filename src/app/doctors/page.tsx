@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
-const doctors = [
+const doctors: Array<{ id: string; name: string; title: string; description: string; imageHint: string; imageId?: string; }> = [
     {
         id: "doctor-1",
         name: "Dr. Manoj Yadav",
@@ -35,6 +35,30 @@ const doctors = [
         imageHint: "female doctor"
     },
     {
+        id: "doctor-5-1",
+        imageId: "doctor-5",
+        name: "Dr. Shahini Yadav",
+        title: "Dentistry and Oral Care",
+        description: "BDS, FMC. Committed to providing excellent dental care.",
+        imageHint: "female doctor"
+    },
+    {
+        id: "doctor-5-2",
+        imageId: "doctor-5",
+        name: "Dr. Shahini Yadav",
+        title: "Dentistry and Oral Care",
+        description: "BDS, FMC. Committed to providing excellent dental care.",
+        imageHint: "female doctor"
+    },
+    {
+        id: "doctor-5-3",
+        imageId: "doctor-5",
+        name: "Dr. Shahini Yadav",
+        title: "Dentistry and Oral Care",
+        description: "BDS, FMC. Committed to providing excellent dental care.",
+        imageHint: "female doctor"
+    },
+    {
         id: "doctor-7",
         name: "Dr. ADEEM KHAN",
         title: "General Physician",
@@ -52,9 +76,9 @@ const DoctorsPageContent = () => {
                 <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
                 <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Doctors</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {doctors.map((doctor) => {
-                    const image = doctorImages.find(img => img.id === doctor.id);
+                    const image = doctorImages.find(img => img.id === (doctor.imageId || doctor.id));
                     return (
                     <Card key={doctor.id} className="rounded-[25px] p-6 pt-10 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col items-center justify-center">
                         <div className="relative inline-block mb-5">
