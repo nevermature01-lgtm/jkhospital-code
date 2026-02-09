@@ -248,9 +248,34 @@ const WhatWeOffer = () => {
   return (
     <section className="bg-muted py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-start gap-16">
+        {/* Mobile View */}
+        <div className="lg:hidden">
+          <div className="text-center mb-12">
+            <div className="inline-block rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
+              <h2 className="text-4xl font-bold text-white">
+                What We Offer
+              </h2>
+            </div>
+          </div>
+          <div className="space-y-8">
+            {services.map((service, index) => (
+              <div key={index} className="flex items-start gap-6">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+                  {service.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
+                  <p className="text-[#555] leading-relaxed">{service.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Desktop View */}
+        <div className="hidden lg:flex flex-row items-start gap-16">
           <div className="lg:w-2/5 lg:sticky lg:top-20">
-            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-center lg:text-left">
+            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
               <h2 className="text-4xl font-bold text-white">
                 What We Offer
               </h2>
@@ -258,7 +283,7 @@ const WhatWeOffer = () => {
           </div>
           <div className="lg:w-3/5">
             <div className="relative space-y-8 pt-4">
-              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block"></div>
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
               {services.map((service, index) => (
                 <div key={index} className="flex items-start gap-6 relative">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center z-10">
@@ -410,9 +435,34 @@ const OurDepartments = () => {
   return (
     <section className="bg-muted py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row-reverse items-start gap-16">
+        {/* Mobile View */}
+        <div className="lg:hidden">
+          <div className="text-center mb-12">
+            <div className="inline-block rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
+              <h2 className="text-4xl font-bold text-white">
+                Our Departments
+              </h2>
+            </div>
+          </div>
+          <div className="space-y-8">
+            {services.map((service, index) => (
+              <div key={index} className="flex items-start gap-6">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+                  {service.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
+                  <p className="text-[#555] leading-relaxed">{service.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop View */}
+        <div className="hidden lg:flex flex-row-reverse items-start gap-16">
           <div className="lg:w-2/5 lg:sticky lg:top-20">
-            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-center lg:text-left">
+            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
               <h2 className="text-4xl font-bold text-white">
                 Our Departments
               </h2>
@@ -420,7 +470,7 @@ const OurDepartments = () => {
           </div>
           <div className="lg:w-3/5">
             <div className="relative space-y-8 pt-4">
-              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block"></div>
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
               {services.map((service, index) => (
                 <div key={index} className="flex items-start gap-6 relative">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center z-10">
