@@ -308,7 +308,7 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
                                 {department.specialists.map((specialist, index) => {
                                   const doctorImage = PlaceHolderImages.find(img => img.id === specialist.id);
                                   return (
-                                    <div key={index} className="p-4 rounded-lg bg-muted border flex items-center gap-4">
+                                    <div key={index} className="p-4 rounded-lg bg-secondary border flex items-center gap-4">
                                       {doctorImage && (
                                         <Image
                                             src={doctorImage.imageUrl}
