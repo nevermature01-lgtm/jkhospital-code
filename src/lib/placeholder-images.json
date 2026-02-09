@@ -80,9 +80,9 @@
     },
     {
       "id": "dept-gynaecology",
-      "description": "A compassionate doctor talking to a pregnant woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1584847688440-549d4d9eb7c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkb2N0b3IlMjBwcmVnbmFudHxlbnwwfHx8fDE3NzA2MzAwNzF8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "doctor pregnant"
+      "description": "Department of Gynaecology",
+      "imageUrl": "/IMG-20260208-WA0018.jpg",
+      "imageHint": "gynaecology"
     },
     {
       "id": "dept-urology",
