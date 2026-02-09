@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Card } from "@/components/ui/card";
 
 const TopBar = () => (
   <div className="bg-muted text-muted-foreground text-xs font-medium">
@@ -133,6 +134,58 @@ const Navbar = () => (
   </div>
 );
 
+const AboutUs = () => {
+  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-us-clinic');
+
+  return (
+    <section className="bg-[#F5F5F5] py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="lg:w-1/2">
+            {aboutImage && (
+              <Image
+                src={aboutImage.imageUrl}
+                alt={aboutImage.description}
+                width={550}
+                height={450}
+                className="rounded-[25px] shadow-lg object-cover"
+                data-ai-hint={aboutImage.imageHint}
+              />
+            )}
+          </div>
+          <div className="lg:w-1/2">
+            <h2 className="text-4xl font-bold text-[#1F3C3C] mb-4">
+              About Our Center <span className="text-[#2FAE9B]">MindCare</span>
+            </h2>
+            <div className="max-w-xl space-y-4 text-[#555] text-base leading-relaxed">
+              <p>
+                At MindCare, we are dedicated to providing compassionate and comprehensive mental health care. Our experienced team of certified specialists is committed to supporting you on your journey to wellness. We offer a safe, confidential, and nurturing environment where you can explore your challenges and develop effective strategies for a healthier, more fulfilling life.
+              </p>
+              <p>
+                Our approach is rooted in evidence-based practices, tailored to meet the unique needs of each individual. We believe in a holistic model of care that addresses the mind, body, and spirit. Whether you are dealing with anxiety, depression, trauma, or relationship issues, we are here to help you find balance and peace.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+              <Card className="rounded-[20px] p-8 text-center shadow-md bg-[#2FAE9B] text-white">
+                <p className="text-4xl font-bold">600</p>
+                <p className="text-sm mt-2">Years of experience of our medical staff</p>
+              </Card>
+              <Card className="rounded-[20px] p-8 text-center shadow-md bg-white">
+                <p className="text-4xl font-bold text-[#1F3C3C]">30</p>
+                <p className="text-sm mt-2 text-[#555]">Years our doctors have been caring for the health of the people</p>
+              </Card>
+              <Card className="rounded-[20px] p-8 text-center shadow-md bg-white">
+                <p className="text-4xl font-bold text-[#1F3C3C]">60</p>
+                <p className="text-sm mt-2 text-[#555]">Certified specialists in psychology and psychotherapy</p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function Home() {
   const plugin = React.useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true })
@@ -143,38 +196,40 @@ export default function Home() {
     <div className="bg-background min-h-screen text-foreground font-sans">
       <TopBar />
       <Navbar />
-      <main className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-[40px] overflow-hidden">
-          <Carousel
-            className="w-full"
-            plugins={[plugin.current]}
-            opts={{
-              loop: true,
-            }}
-          >
-            <CarouselContent>
-              {sliderImages.map((image) => (
-                <CarouselItem key={image.id}>
-                  <div className="relative h-[500px] w-full">
-                    <Image
-                      src={image.imageUrl}
-                      alt={image.description}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={image.imageHint}
-                    />
-                    <div className="absolute inset-0 bg-black/20" />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
-            <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
-          </Carousel>
+      <main>
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+          <div className="relative rounded-[40px] overflow-hidden">
+            <Carousel
+              className="w-full"
+              plugins={[plugin.current]}
+              opts={{
+                loop: true,
+              }}
+            >
+              <CarouselContent>
+                {sliderImages.map((image) => (
+                  <CarouselItem key={image.id}>
+                    <div className="relative h-[500px] w-full">
+                      <Image
+                        src={image.imageUrl}
+                        alt={image.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={image.imageHint}
+                      />
+                      <div className="absolute inset-0 bg-black/20" />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+              <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+            </Carousel>
+          </div>
         </div>
         
-        {/* Placeholder for other sections */}
-        <div className="h-48"></div>
+        <AboutUs />
+
       </main>
     </div>
   );
