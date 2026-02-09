@@ -141,7 +141,7 @@
     {
       "id": "dept-ent",
       "description": "An ENT specialist examining a patient's ear.",
-      "imageUrl": "https://images.unsplash.com/photo-1588776214038-a4a6c510b6ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbnQlMjBkb2N0b3J8ZW58MHx8fHwxNzcyMDM4NzYxfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629428469313-14b3d29483c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "ENT doctor"
     },
     {
