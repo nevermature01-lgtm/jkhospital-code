@@ -1,10 +1,28 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-image",
+      "id": "hero-image-1",
       "description": "A friendly female doctor with a clipboard, smiling.",
-      "imageUrl": "/IMG-20260208-WA0011.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcwNTQxMTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "female doctor"
+    },
+    {
+      "id": "hero-image-2",
+      "description": "A modern and clean hospital hallway.",
+      "imageUrl": "https://images.unsplash.com/photo-1519494140681-8b17d830a3e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob3NwaXRhbCUyMGhhbGx3YXl8ZW58MHx8fHwxNzcwNjEyNTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hospital hallway"
+    },
+    {
+      "id": "hero-image-3",
+      "description": "A surgeon in an operating room.",
+      "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXJnZW9uJTIwb3BlcmF0aW5nfGVufDB8fHx8MTc3MDUyOTI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "surgeon operating"
+    },
+    {
+      "id": "hero-image-4",
+      "description": "Close-up of a stethoscope on a desk.",
+      "imageUrl": "https://images.unsplash.com/photo-1758691461888-b74515208d7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdGV0aG9zY29wZSUyMGRlc2t8ZW58MHx8fHwxNzcwNTcxOTcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stethoscope desk"
     }
   ]
 }

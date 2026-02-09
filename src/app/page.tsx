@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   ArrowRight,
@@ -5,8 +7,18 @@ import {
   MessageCircle,
 } from "lucide-react";
 import Link from "next/link";
+import Autoplay from "embla-carousel-autoplay";
+import * as React from "react";
 
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const Navbar = () => (
   <div className="w-full py-4">
@@ -49,25 +61,42 @@ const Navbar = () => (
 );
 
 export default function Home() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  );
+  const sliderImages = PlaceHolderImages.filter(img => img.id.startsWith('hero-image-'));
+
   return (
     <div className="bg-background min-h-screen text-foreground font-sans">
       <Navbar />
       <main className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-gradient-to-br from-[#5cc8b4] to-[#4bb6a3] rounded-[40px] overflow-hidden">
-          {/* Decorative shapes */}
-          <div className="absolute -top-20 -left-20 w-80 h-80 bg-white/10 rounded-full blur-2xl -z-0"></div>
-          <div className="absolute -bottom-20 -right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl -z-0"></div>
-          <div className="absolute top-1/2 left-1/3 w-60 h-60 bg-white/10 rounded-full blur-2xl -z-0"></div>
-
-          <div className="relative z-10 flex flex-col lg:flex-row items-center p-8 md:p-12 lg:p-20 lg:py-8 gap-12">
-            {/* Left Column */}
-            <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left">
-            </div>
-
-            {/* Right Column */}
-            <div className="lg:w-1/2 w-full flex justify-center lg:justify-end relative mt-8 lg:mt-0">
-            </div>
-          </div>
+        <div className="relative rounded-[40px] overflow-hidden">
+          <Carousel
+            className="w-full"
+            plugins={[plugin.current]}
+            opts={{
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {sliderImages.map((image) => (
+                <CarouselItem key={image.id}>
+                  <div className="relative h-[500px] w-full">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={image.imageHint}
+                    />
+                    <div className="absolute inset-0 bg-black/20" />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+            <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+          </Carousel>
         </div>
         
         {/* Placeholder for other sections */}
