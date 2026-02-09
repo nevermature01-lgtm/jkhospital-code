@@ -65,6 +65,19 @@ const AboutUsContent = () => {
                   Attention And The Highest Quality Of Care.
                 </p>
               </div>
+              <div className="bg-accent text-accent-foreground p-8 rounded-2xl shadow-lg">
+                <h3 className="text-3xl font-bold mb-4 text-center">
+                    Manipal Values
+                </h3>
+                <ul className="space-y-2 text-center leading-relaxed">
+                    <li>* Integrity</li>
+                    <li>* Transparency</li>
+                    <li>* Quality</li>
+                    <li>* Team Work</li>
+                    <li>* Execution with Passion</li>
+                    <li>* Humane Touch</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
