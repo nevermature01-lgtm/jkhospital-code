@@ -173,12 +173,6 @@ const OurSpecialists = () => {
       description: "Leader in Psychological Health, Renowned Expert in Psychiatry.",
     },
     {
-      id: "specialist-2",
-      name: "Dr. Robert Wilson",
-      title: "Deputy Chief Doctor",
-      description: "Advocate for Mental Wellness, Acclaimed Specialist in Clinical Psychology.",
-    },
-    {
       id: "specialist-3",
       name: "Dr. Emily Davis",
       title: "Clinical Psychologist",
@@ -200,7 +194,7 @@ const OurSpecialists = () => {
         <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
         <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Specialists</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {specialists.map((specialist) => {
             const image = specialistImages.find(img => img.id === specialist.id);
             return (
