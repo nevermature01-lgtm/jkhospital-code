@@ -42,22 +42,6 @@ const doctors: Array<{ id: string; name: string; title: string; description: str
         imageHint: "male doctor"
     },
     {
-        id: "doctor-5-2",
-        imageId: "doctor-5",
-        name: "Dr. Shahini Yadav",
-        title: "Dentistry and Oral Care",
-        description: "BDS, FMC. Committed to providing excellent dental care.",
-        imageHint: "female doctor"
-    },
-    {
-        id: "doctor-5-3",
-        imageId: "doctor-5",
-        name: "Dr. Shahini Yadav",
-        title: "Dentistry and Oral Care",
-        description: "BDS, FMC. Committed to providing excellent dental care.",
-        imageHint: "female doctor"
-    },
-    {
         id: "doctor-7",
         name: "Dr. ADEEM KHAN",
         title: "General Physician",
@@ -81,9 +65,8 @@ const DoctorsPageContent = () => {
                     return (
                     <Card key={doctor.id} className="rounded-[25px] p-6 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
                         <div className="relative mb-5 w-[170px] h-[120px] flex-shrink-0">
-                        {image && (
-                            <>
-                                <div className="absolute inset-0 bg-[#2FAE9B] rounded-[999px] shadow-lg"></div>
+                            <div className="absolute inset-0 bg-[#2FAE9B] rounded-[999px] shadow-lg"></div>
+                            {image ? (
                                 <Image
                                     src={image.imageUrl}
                                     alt={`Portrait of ${doctor.name}`}
@@ -92,8 +75,9 @@ const DoctorsPageContent = () => {
                                     className="relative z-10 w-full h-full object-cover rounded-[999px] border-4 border-white"
                                     data-ai-hint={doctor.imageHint}
                                 />
-                            </>
-                        )}
+                            ) : (
+                                <div className="relative z-10 w-full h-full rounded-[999px] border-4 border-white" />
+                            )}
                         </div>
                         <div className="flex flex-col flex-grow justify-center">
                             <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">{doctor.name}</h3>

@@ -3,19 +3,19 @@
     {
       "id": "hero-image-1",
       "description": "A clean, modern hospital corridor.",
-      "imageUrl": "https://images.unsplash.com/photo-1586773860417-e4525c4e3f9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxob3NwaXRhbCUyMGNvcnJpZG9yfGVufDB8fHx8MTc3MTY3ODU0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1586773860417-e4525c4e3f9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxob3NwaXRhbCUyMGNvcnJpZG9yfGVufDB8fHx8MTc3MTY3ODU0OXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "hospital corridor"
     },
     {
       "id": "hero-image-2",
       "description": "A doctor consulting with a patient.",
-      "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc3MTY3ODU5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc3MTY3ODU5NHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "doctor patient"
     },
     {
       "id": "hero-image-3",
       "description": "Close-up of modern medical equipment in a clinic.",
-      "imageUrl": "https://images.unsplash.com/photo-1538688273824-79b335a45429?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc3MTY3ODYyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1538688273824-79b335a45429?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc3MTY3ODYyOHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "medical equipment"
     },
     {
@@ -173,12 +173,6 @@
       "description": "Portrait of Dr. Neha Singh",
       "imageUrl": "https://images.unsplash.com/photo-1579684385127-6c1d7348e658?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcxODExMTU3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "female doctor"
-    },
-    {
-      "id": "doctor-4",
-      "description": "Portrait of Dr. Madhukar Gupta",
-      "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "male doctor"
     },
     {
       "id": "doctor-5",
