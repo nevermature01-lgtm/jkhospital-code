@@ -186,6 +186,72 @@ const AboutUs = () => {
   );
 };
 
+const MethodsWeUse = () => {
+  const methods = [
+    {
+      num: "01",
+      title: "Cognitive Behavioral Therapy",
+      description:
+        "This method helps individuals identify and change negative thought patterns and behaviors, replacing them with more positive and realistic ones. It is effective for treating depression, anxiety disorders, and other psychological issues.",
+    },
+    {
+      num: "02",
+      title: "Gestalt Therapy",
+      description:
+        "Focuses on awareness of present emotions and needs, helping individuals understand their true desires and feelings. This therapy promotes personal growth and improves interpersonal relationships.",
+    },
+    {
+      num: "03",
+      title: "Psychoanalytic Therapy",
+      description:
+        "Explores internal conflicts and past traumas through interpretation of behavior, dreams, and free associations. This method helps understand the deep-rooted causes of psychological problems and find ways to resolve them.",
+    },
+  ];
+
+  return (
+    <section className="bg-[#F4F4F4] py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="lg:w-5/12 w-full">
+            <div className="h-[450px] rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] shadow-lg flex flex-col justify-end p-8">
+              <h2 className="text-4xl font-bold text-white max-w-[200px]">
+                Methods We Use
+              </h2>
+            </div>
+          </div>
+          <div className="lg:w-7/12 w-full mt-12 lg:mt-0">
+            <div className="relative">
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block" />
+              <div className="space-y-12">
+                {methods.map((method, index) => (
+                  <div key={index} className="relative flex items-start gap-6 sm:gap-8">
+                    <div className="relative z-10 flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+                        <span className="text-lg font-bold text-[#2FAE9B]">
+                          {method.num}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="pt-1">
+                      <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">
+                        {method.title}
+                      </h3>
+                      <p className="text-[#666] text-base leading-relaxed">
+                        {method.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
 export default function Home() {
   const plugin = React.useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true })
@@ -229,6 +295,8 @@ export default function Home() {
         </div>
         
         <AboutUs />
+
+        <MethodsWeUse />
 
       </main>
     </div>
