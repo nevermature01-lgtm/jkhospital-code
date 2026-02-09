@@ -67,7 +67,7 @@ const Navbar = () => (
           href="/"
           className="flex items-center"
         >
-          <Image src="/logo.png" alt="MindCare Logo" width={140} height={32} />
+          <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
         </Link>
         
         {/* Desktop Navigation */}
@@ -115,7 +115,7 @@ const Navbar = () => (
             <SheetContent side="right">
               <div className="flex h-full flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center mb-4">
-                  <Image src="/logo.png" alt="MindCare Logo" width={140} height={32} />
+                  <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
                 </Link>
                 <nav className="flex flex-col gap-4 text-lg font-medium">
                   <Link href="/" className="hover:text-[#2fa693] py-2">
@@ -538,10 +538,10 @@ const Footer = () => (
         {/* Column 1: About */}
         <div className="space-y-4">
           <Link href="/" className="flex items-center mb-4">
-            <Image src="/logo.png" alt="MindCare Logo" width={160} height={36} />
+            <Image src="/logo.png" alt="JK Hospital Logo" width={160} height={36} />
           </Link>
           <p className="text-gray-300 text-sm leading-relaxed">
-            MindCare is your trusted partner in mental wellness, offering expert care in a compassionate and supportive environment.
+            J.K. Hospital and College of Nursing, providing excellent education and multispecialty healthcare.
           </p>
           <div className="flex items-center gap-4 pt-2">
             <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
@@ -598,7 +598,7 @@ const Footer = () => (
       </div>
       
       <div className="mt-16 py-6 border-t border-white/10 text-center text-sm text-gray-400">
-        <p>&copy; {new Date().getFullYear()} MindCare. All Rights Reserved. </p>
+        <p>&copy; {new Date().getFullYear()} JK Hospital. All Rights Reserved. </p>
       </div>
     </div>
   </footer>

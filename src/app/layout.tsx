@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MindCare",
+  title: "JK Hospital",
   description: "The Best Medical and Treatment Center for You",
 };
 

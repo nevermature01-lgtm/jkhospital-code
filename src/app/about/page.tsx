@@ -10,15 +10,11 @@ import {
   Menu,
   Mail,
   Phone,
-  Goal,
-  Eye,
-  Gem,
 } from "lucide-react";
 import Link from "next/link";
 import * as React from "react";
 
 import { Button } from "@/components/ui/button";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { RequestForm } from "@/components/request-form";
 
@@ -49,7 +45,7 @@ const Navbar = () => (
             href="/"
             className="flex items-center"
           >
-            <Image src="/logo.png" alt="MindCare Logo" width={140} height={32} />
+            <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
           </Link>
           
           <nav className="hidden md:flex items-center gap-4 text-sm font-medium text-white">
@@ -95,7 +91,7 @@ const Navbar = () => (
               <SheetContent side="right">
                 <div className="flex h-full flex-col gap-6 p-6">
                   <Link href="/" className="flex items-center mb-4">
-                    <Image src="/logo.png" alt="MindCare Logo" width={140} height={32} />
+                    <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
                   </Link>
                   <nav className="flex flex-col gap-4 text-lg font-medium">
                     <Link href="/" className="hover:text-[#2fa693] py-2">
@@ -142,10 +138,10 @@ const Footer = () => (
           {/* Column 1: About */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center mb-4">
-              <Image src="/logo.png" alt="MindCare Logo" width={160} height={36} />
+              <Image src="/logo.png" alt="JK Hospital Logo" width={160} height={36} />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
-              MindCare is your trusted partner in mental wellness, offering expert care in a compassionate and supportive environment.
+              J.K. Hospital and College of Nursing, providing excellent education and multispecialty healthcare, run by the Jabar Singh Kaushalya Devi Charitable Trust.
             </p>
             <div className="flex items-center gap-4 pt-2">
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
@@ -202,86 +198,74 @@ const Footer = () => (
         </div>
         
         <div className="mt-16 py-6 border-t border-white/10 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} MindCare. All Rights Reserved. </p>
+          <p>&copy; {new Date().getFullYear()} JK Hospital. All Rights Reserved. </p>
         </div>
       </div>
     </footer>
   );
 
-const AboutUsContent = () => {
-    const aboutImage = PlaceHolderImages.find(
-      (img) => img.id === "about-us-clinic"
-    );
-  
-    const coreValues = [
-      {
-        icon: <Goal className="h-6 w-6 text-white" />,
-        title: "Our Mission",
-        description:
-          "To provide accessible, high-quality mental health care that empowers individuals to achieve emotional well-being and live fulfilling lives.",
-      },
-      {
-        icon: <Eye className="h-6 w-6 text-white" />,
-        title: "Our Vision",
-        description:
-          "A community where mental health is a priority, and everyone has the support they need to thrive in a compassionate and understanding society.",
-      },
-      {
-        icon: <Gem className="h-6 w-6 text-white" />,
-        title: "Our Value",
-        description:
-          "We are committed to integrity, empathy, and respect in all our interactions, ensuring a safe and confidential space for healing and growth.",
-      },
-    ];
-  
+  const AboutUsContent = () => {
     return (
       <section className="bg-background py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-            <div className="lg:w-1/2">
-              <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">
-                Who We Are
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div className="space-y-6">
+              <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider">
+                About
               </p>
-              <h2 className="text-4xl font-bold text-[#1F3C3C] mb-4">
-                About Our Center <span className="text-[#2FAE9B]">MindCare</span>
+              <h2 className="text-4xl font-bold text-[#1F3C3C]">
+                JK Hospital
               </h2>
-              <div className="space-y-4 text-[#555] text-base leading-relaxed mb-8">
+              <div className="space-y-4 text-[#555] text-base leading-relaxed">
                 <p>
-                  At MindCare, we are dedicated to providing compassionate and
-                  comprehensive mental health care. Our experienced team of
-                  certified specialists is committed to supporting you on your
-                  journey to wellness.
+                  The J.K. College of Nursing has a highly appreciated teaching
+                  facility, who believes that good education is the root of a
+                  highly successful professional career. The college conducts
+                  regular examinations; so that the students have a feedback and
+                  can work harder to get better. The teaching methods adopted
+                  promote multi disciplinary inquiry and practical applications of
+                  problems. Interactive methods of teaching are employed so that
+                  there is a high degree of interaction between the students and
+                  the teacher in the classroom.
+                </p>
+                <p>
+                  The parent 150 bedded J.K. Hospital has well equipped
+                  multispecialty hospital with advanced clinical facilities so
+                  that the nursing students can learn latest trends and
+                  technology in health care thus enrich their excellence in
+                  nursing profession.
+                </p>
+                <p>
+                  The college is run by the Jabar Singh Kaushalya Devi Charitable
+                  Trust. The entire trust structure consists of people who are
+                  having experience in diverse professional fields such as
+                  medicine, health care, etc; it is this professional excellence
+                  that has made the college and students realize their excellence
+                  in various professional fields.
                 </p>
               </div>
-              <div className="space-y-6">
-                {coreValues.map((value, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#2FAE9B] flex items-center justify-center">
-                      {value.icon}
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">
-                        {value.title}
-                      </h3>
-                      <p className="text-[#555] leading-relaxed">
-                        {value.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
-            <div className="lg:w-1/2 mt-10 lg:mt-0">
-              {aboutImage && (
-                <Image
-                  src={aboutImage.imageUrl}
-                  alt={aboutImage.description}
-                  width={550}
-                  height={550}
-                  className="rounded-[25px] shadow-lg object-cover w-full h-auto"
-                  data-ai-hint={aboutImage.imageHint}
-                />
-              )}
+            <div className="space-y-8 mt-10 lg:mt-0">
+              <div className="bg-[#1F3C3C] text-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-3xl font-bold mb-4 text-center">
+                  Our Vision
+                </h3>
+                <p className="leading-relaxed text-center text-gray-200">
+                  To Be The Premier Healthcare Institution, Recognized For
+                  Clinical Excellence, Technological Innovation, And Unwavering
+                  Commitment To Improving Community Health.
+                </p>
+              </div>
+              <div className="bg-[#2FAE9B] text-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-3xl font-bold mb-4 text-center">
+                  Our Mission
+                </h3>
+                <p className="leading-relaxed text-center">
+                  To Deliver Exceptional Healthcare Services With Compassion And
+                  Expertise, Ensuring Every Patient Receives Personalized
+                  Attention And The Highest Quality Of Care.
+                </p>
+              </div>
             </div>
           </div>
         </div>
