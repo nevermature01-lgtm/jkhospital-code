@@ -1,13 +1,10 @@
 "use client";
 
 import { BookOpenCheck, Building, BedDouble, ClipboardCheck, GraduationCap } from "lucide-react";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Navbar } from "@/components/layout/Navbar";
 
 const NursingCollegePage = () => {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'nursing-college-hero');
 
   const content = [
     {
@@ -67,19 +64,6 @@ const NursingCollegePage = () => {
         </section>
 
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
-          {heroImage && (
-              <div className="mb-16">
-                  <Image
-                      src={heroImage.imageUrl}
-                      alt={heroImage.description}
-                      width={1200}
-                      height={500}
-                      className="rounded-2xl shadow-lg object-cover w-full aspect-[16/7]"
-                      data-ai-hint={heroImage.imageHint}
-                  />
-              </div>
-          )}
-
           <div className="grid md:grid-cols-2 gap-8">
               {content.map((section, index) => (
               <Card key={index} className="shadow-lg overflow-hidden">

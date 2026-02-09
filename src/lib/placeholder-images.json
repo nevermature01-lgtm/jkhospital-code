@@ -67,12 +67,6 @@
       "imageHint": "man portrait"
     },
     {
-      "id": "nursing-college-hero",
-      "description": "A group of nursing students in a classroom setting, learning.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b2fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxudXJzaW5nJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzcxNzYzOTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "nursing students"
-    },
-    {
       "id": "blood-bank-hero",
       "description": "A blood bag in a hospital setting.",
       "imageUrl": "https://images.unsplash.com/photo-1615461066159-fea0914266a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9vZCUyMGJhbmt8ZW58MHx8fHwxNzcxNzcwMjc5fDA&ixlib.rb-4.1.0&q=80&w=1080",
@@ -137,6 +131,18 @@
       "description": "Portrait of Dr. ASHWINI KUMAR YADAV",
       "imageUrl": "https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MDU3ODgyM3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "male doctor"
+    },
+    {
+      "id": "dept-gynaecology",
+      "description": "Department of Gynaecology",
+      "imageUrl": "/IMG-20260208-WA0018.jpg",
+      "imageHint": "gynaecology exam"
+    },
+    {
+      "id": "dept-ent",
+      "description": "ENT department hero image",
+      "imageUrl": "https://images.unsplash.com/photo-1599045118108-bf2e0a297925?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbnQlMjBkb2N0b3J8ZW58MHx8fHwxNzcyMDM2MjUwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "ent doctor"
     }
   ]
 }
