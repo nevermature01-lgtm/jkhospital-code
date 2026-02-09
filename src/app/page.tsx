@@ -366,6 +366,13 @@ const Testimonials = () => {
       quote:
         "The service of hospital is very good .they provide treatment in very affordable prices and the hospital staff is also very humble if you want any treatment pls go here .",
     },
+    {
+      id: "testimonial-5",
+      name: "Aman Singh",
+      city: "Etawah",
+      quote:
+        "Quick response and proper treatment. The doctor showed genuine concern for my health.",
+    },
   ];
 
   return (
