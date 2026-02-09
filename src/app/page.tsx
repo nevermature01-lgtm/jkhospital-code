@@ -18,6 +18,8 @@ import {
   Pill,
   Ear,
   Microscope,
+  Quote,
+  Star,
 } from "lucide-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
@@ -357,6 +359,81 @@ const OurDepartments = () => {
   );
 };
 
+const Testimonials = () => {
+  const testimonials = [
+    {
+      id: "testimonial-1",
+      name: "Sarah L.",
+      city: "New York",
+      quote:
+        "Finding MindCare was a turning point for me. The therapists are incredibly compassionate and insightful. I finally feel understood and have the tools to manage my anxiety.",
+    },
+    {
+      id: "testimonial-2",
+      name: "John D.",
+      city: "Chicago",
+      quote:
+        "The professionalism and genuine care I received were outstanding. My sessions have helped me navigate a difficult period in my life with confidence. I can't thank them enough.",
+    },
+    {
+      id: "testimonial-3",
+      name: "Emily R.",
+      city: "San Francisco",
+      quote:
+        "A truly safe and supportive environment. The holistic approach at MindCare has not only helped my mental health but my overall well-being. Highly recommended.",
+    },
+  ];
+
+  const testimonialImages = PlaceHolderImages.filter(img => img.id.startsWith('testimonial-'));
+
+  return (
+    <section className="bg-muted py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">
+          Testimonials
+        </p>
+        <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">
+          What Our Patients Say
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial) => {
+            const image = testimonialImages.find(img => img.id === testimonial.id);
+            return (
+              <Card key={testimonial.id} className="rounded-[25px] p-8 text-left shadow-lg bg-white flex flex-col">
+                <Quote className="h-8 w-8 text-[#9ADBCF] mb-4" />
+                <p className="text-[#555] leading-relaxed mb-6 flex-grow">
+                  {testimonial.quote}
+                </p>
+                <div className="flex items-center">
+                  {image && (
+                    <Image
+                      src={image.imageUrl}
+                      alt={`Portrait of ${testimonial.name}`}
+                      width={50}
+                      height={50}
+                      className="rounded-full object-cover"
+                      data-ai-hint={image.imageHint}
+                    />
+                  )}
+                  <div className="ml-4">
+                    <p className="font-bold text-[#1F3C3C]">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500">{testimonial.city}</p>
+                  </div>
+                  <div className="ml-auto flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default function Home() {
   const plugin = React.useRef(
@@ -405,6 +482,8 @@ export default function Home() {
         <OurSpecialists />
         
         <OurDepartments />
+
+        <Testimonials />
 
       </main>
     </div>
