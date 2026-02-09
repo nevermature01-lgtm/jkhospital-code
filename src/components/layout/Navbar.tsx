@@ -19,8 +19,7 @@ export const Navbar = () => {
     )}>
       <div className="container max-w-7xl mx-auto">
         <div className={cn(
-            "bg-[#2FAE9B] rounded-full flex justify-between items-center p-3 px-6 shadow-md",
-            isHomePage && "bg-transparent sm:bg-[#2FAE9B] shadow-none sm:shadow-md"
+            "bg-[#2FAE9B] rounded-full flex justify-between items-center p-3 px-6 shadow-md"
         )}>
           <Link
             href="/"
