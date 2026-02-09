@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -339,10 +340,10 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: "testimonial-1",
-      name: "Sarah L.",
-      city: "New York",
+      name: "Gudiya Kashyap",
+      city: "Etawah",
       quote:
-        "Finding MindCare was a turning point for me. The therapists are incredibly compassionate and insightful. I finally feel understood and have the tools to manage my anxiety.",
+        "The doctor was very polite and explained the condition clearly. The treatment was effective and the staff was supportive",
     },
     {
       id: "testimonial-2",
