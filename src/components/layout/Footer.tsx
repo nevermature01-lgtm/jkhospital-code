@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Siren } from "lucide-react";
 
 export const Footer = () => (
     <footer className="bg-[#1F3C3C] text-white pt-20">
@@ -55,10 +55,15 @@ export const Footer = () => (
                 <MapPin className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
                 <span>NH92, Vivek Vihar Colony, Datawali, Uttar Pradesh 206002</span>
               </li>
+               <li className="flex items-start gap-3">
+                <Siren className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <div>
+                  <span className="text-gray-400">Emergency: </span><a href="tel:+918006005061" className="hover:text-white">+91-8006005061</a>
+                </div>
+              </li>
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
                 <div>
-                  <span className="text-gray-400">Emergency: </span><a href="tel:+918006005061" className="hover:text-white">+91-8006005061</a><br/>
                   <span className="text-gray-400">Enquiry: </span><a href="tel:+918006005064" className="hover:text-white">+91-8006005064</a>
                 </div>
               </li>
