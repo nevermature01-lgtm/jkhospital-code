@@ -1,16 +1,14 @@
+
 "use client";
 
 import { Mail, Phone, MapPin } from "lucide-react";
-import Image from "next/image";
 import { RequestForm } from "@/components/request-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/layout/Navbar";
 
 const ContactPage = () => {
-    const contactMapImage = PlaceHolderImages.find(img => img.id === 'contact-map');
-
+    
   const contactDetails = [
     {
       icon: <Mail className="h-8 w-8 text-primary" />,
@@ -79,7 +77,7 @@ const ContactPage = () => {
           </div>
 
           <Card className="shadow-lg overflow-hidden">
-            <div className="grid md:grid-cols-2 items-center">
+            <div className="items-center">
               <div className="p-8 md:p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-2">
                   Send us a Message
@@ -88,18 +86,6 @@ const ContactPage = () => {
                   Fill out the form and our team will get back to you within 24 hours.
                 </p>
                 <RequestForm />
-              </div>
-              <div className="h-full">
-                {contactMapImage && (
-                  <Image
-                    src={contactMapImage.imageUrl}
-                    alt={contactMapImage.description}
-                    width={600}
-                    height={500}
-                    className="object-cover w-full h-full"
-                    data-ai-hint={contactMapImage.imageHint}
-                  />
-                )}
               </div>
             </div>
           </Card>

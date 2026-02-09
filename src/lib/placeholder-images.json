@@ -49,18 +49,6 @@
       "imageHint": "man portrait"
     },
     {
-      "id": "blood-donor-registration",
-      "description": "A person donating blood with a smile.",
-      "imageUrl": "https://images.unsplash.com/photo-1627843563939-a9b191b4d6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9vZCUyMGRvbmF0aW9ufGVufDB8fHx8MTc3MTc3MjE3Nnww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "blood donation"
-    },
-    {
-      "id": "contact-map",
-      "description": "A map showing the location of the hospital.",
-      "imageUrl": "https://images.unsplash.com/photo-1594398933229-862412a87009?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBwb2ludGVyfGVufDB8fHx8MTc3MTc4NzQ5OXww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "map pointer"
-    },
-    {
       "id": "doctor-1",
       "description": "Portrait of Dr. Manoj Yadav",
       "imageUrl": "/IMG-20260208-WA0018.jpg",
@@ -107,18 +95,6 @@
       "description": "Portrait of Dr. ASHWINI KUMAR YADAV",
       "imageUrl": "https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MDU3ODgyM3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "male doctor"
-    },
-    {
-      "id": "dept-gynaecology",
-      "description": "Department of Gynaecology",
-      "imageUrl": "/IMG-20260208-WA0018.jpg",
-      "imageHint": "gynaecology exam"
-    },
-    {
-      "id": "dept-ent",
-      "description": "ENT department hero image",
-      "imageUrl": "https://images.unsplash.com/photo-1629424115183-585a06113b3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlbnQlMjBkb2N0b3J8ZW58MHx8fHwxNzcyMDM2MjUwfDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "ent doctor"
     }
   ]
 }
