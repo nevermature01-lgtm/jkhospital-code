@@ -73,11 +73,11 @@ const DoctorsPageContent = () => {
                 <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
                 <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Doctors</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
                 {doctors.map((doctor) => {
                     const image = doctorImages.find(img => img.id === doctor.id);
                     return (
-                    <Card key={doctor.id} className="rounded-[25px] p-6 pt-10 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col items-center">
+                    <Card key={doctor.id} className="rounded-[25px] p-6 pt-10 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col items-center justify-center">
                         <div className="relative inline-block mb-5">
                         {image && (
                             <div className="absolute inset-0 bg-[#2FAE9B] rounded-full -m-1"></div>
