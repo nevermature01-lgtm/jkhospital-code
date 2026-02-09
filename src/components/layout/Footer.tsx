@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Facebook, Twitter, Linkedin, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 export const Footer = () => (
     <footer className="bg-[#1F3C3C] text-white pt-20">
@@ -16,20 +16,6 @@ export const Footer = () => (
             <p className="text-gray-300 text-sm leading-relaxed">
               J.K. Hospital and College of Nursing, providing excellent education and multispecialty healthcare, run by the Jabar Singh Kaushalya Devi Charitable Trust.
             </p>
-            <div className="flex items-center gap-4 pt-2">
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-                <Instagram className="h-5 w-5 text-white" />
-              </a>
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-                <Facebook className="h-5 w-5 text-white" />
-              </a>
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-                <Twitter className="h-5 w-5 text-white" />
-              </a>
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-                <Linkedin className="h-5 w-5 text-white" />
-              </a>
-            </div>
           </div>
   
           {/* Column 2: Departments */}
