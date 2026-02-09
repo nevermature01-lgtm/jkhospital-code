@@ -28,13 +28,6 @@ const doctors = [
         imageHint: "female doctor"
     },
     {
-        id: "doctor-4",
-        name: "Dr. Madhukar Gupta",
-        title: "Urology",
-        description: "MCH Urology. Expert in kidney and urinary tract diseases.",
-        imageHint: "male doctor"
-    },
-    {
         id: "doctor-5",
         name: "Dr. Shahini Yadav",
         title: "Dentistry and Oral Care",
