@@ -1,12 +1,14 @@
 "use client";
 
-import { Droplet, ShieldCheck, Siren } from "lucide-react";
+import { Droplet, ShieldCheck, Siren, ClipboardCheck, CalendarDays, Clock } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { BloodDonorForm } from "@/components/blood-donor-form";
 
 const BloodBankPage = () => {
     const heroImage = PlaceHolderImages.find(img => img.id === 'blood-bank-hero');
+    const donorImage = PlaceHolderImages.find(img => img.id === 'blood-donor-registration');
 
   const services = [
     {
@@ -25,6 +27,24 @@ const BloodBankPage = () => {
       description: "24/7 emergency blood supply for critical cases.",
     },
   ];
+
+  const howToDonateSteps = [
+    {
+        icon: <ClipboardCheck className="h-8 w-8 text-primary" />,
+        title: "Check Eligibility",
+        description: "Must be 18–65 years old, weight > 50kg, and in good health.",
+    },
+    {
+        icon: <CalendarDays className="h-8 w-8 text-primary" />,
+        title: "Schedule Appointment",
+        description: "Book your preferred date and time for donation.",
+    },
+    {
+        icon: <Clock className="h-8 w-8 text-primary" />,
+        title: "Donation Process",
+        description: "The actual donation takes about 10–15 minutes.",
+    }
+  ]
 
   return (
     <div className="bg-background">
@@ -60,7 +80,7 @@ const BloodBankPage = () => {
             <h2 className="text-4xl font-bold text-foreground">Our Blood Bank Services</h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <Card key={index} className="shadow-lg overflow-hidden text-center">
               <CardHeader className="bg-muted p-6 flex flex-col items-center">
@@ -75,11 +95,51 @@ const BloodBankPage = () => {
             </Card>
           ))}
         </div>
+
+        <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground">How to Donate</h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {howToDonateSteps.map((step, index) => (
+            <Card key={index} className="shadow-lg overflow-hidden text-center">
+              <CardHeader className="bg-muted p-6 flex flex-col items-center">
+                <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full mb-4">
+                    {step.icon}
+                </div>
+                <CardTitle className="text-2xl font-bold text-primary">{step.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="p-6">
+                <p className="text-foreground/80">{step.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <Card className="shadow-lg overflow-hidden">
+            <div className="grid md:grid-cols-2 items-center">
+                <div className="p-8 md:p-12 order-2 md:order-1">
+                    <h2 className="text-3xl font-bold text-foreground mb-6">Become a Blood Donor</h2>
+                    <BloodDonorForm />
+                </div>
+                <div className="order-1 md:order-2 h-full">
+                    {donorImage && (
+                         <Image
+                            src={donorImage.imageUrl}
+                            alt={donorImage.description}
+                            width={600}
+                            height={700}
+                            className="object-cover w-full h-full"
+                            data-ai-hint={donorImage.imageHint}
+                        />
+                    )}
+                </div>
+            </div>
+        </Card>
+
       </div>
     </div>
   );
 };
 
 export default BloodBankPage;
-
-    
