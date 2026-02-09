@@ -32,6 +32,7 @@ import {
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card } from "@/components/ui/card";
 import { Navbar } from "@/components/layout/Navbar";
+import { FAQs } from "@/components/faqs";
 
 const AboutUsSummary = () => {
     return (
@@ -489,6 +490,7 @@ export default function Home() {
       <OurSpecialists />
       <OurDepartments />
       <Testimonials />
+      <FAQs />
     </>
   );
 }
