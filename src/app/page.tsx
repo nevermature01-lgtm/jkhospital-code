@@ -8,7 +8,6 @@ import Link from "next/link";
 
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
-import { RequestForm } from "@/components/request-form";
 
 const Navbar = () => (
   <div className="w-full py-4">
@@ -69,16 +68,6 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl font-semibold text-gray-800 leading-tight max-w-md mb-8">
                 The Best Medical and Treatment Center for You
               </h1>
-
-              <div className="bg-white/25 backdrop-blur-md rounded-2xl p-6 w-full max-w-sm shadow-lg">
-                <h2 className="text-xl font-semibold text-white mb-2">
-                  Request a call
-                </h2>
-                <p className="text-white/80 text-sm mb-4">
-                  We'll call you back and help you choose a convenient time.
-                </p>
-                <RequestForm />
-              </div>
             </div>
 
             {/* Right Column */}
