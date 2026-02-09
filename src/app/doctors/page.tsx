@@ -77,7 +77,7 @@ const DoctorsPageContent = () => {
                 {doctors.map((doctor) => {
                     const image = doctorImages.find(img => img.id === doctor.id);
                     return (
-                    <Card key={doctor.id} className="rounded-[25px] p-6 pt-10 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
+                    <Card key={doctor.id} className="rounded-[25px] p-6 pt-10 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col items-center">
                         <div className="relative inline-block mb-5">
                         {image && (
                             <div className="absolute inset-0 bg-[#2FAE9B] rounded-full -m-1"></div>
