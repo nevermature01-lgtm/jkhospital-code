@@ -63,6 +63,14 @@ const doctors: Array<{ id: string; name: string; title: string; description: str
         title: "General Physician",
         description: "MBBS, MD (Medicine), ACMDC, CCMH. Focused on comprehensive patient care.",
         imageHint: "male doctor"
+    },
+    {
+        id: "doctor-5-4",
+        imageId: "doctor-5",
+        name: "Dr. Shahini Yadav",
+        title: "Dentistry and Oral Care",
+        description: "BDS, FMC. Committed to providing excellent dental care.",
+        imageHint: "female doctor"
     }
 ];
 
