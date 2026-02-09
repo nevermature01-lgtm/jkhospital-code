@@ -35,24 +35,10 @@ const doctors = [
         imageHint: "female doctor"
     },
     {
-        id: "doctor-6",
-        name: "Dr. Pankaj",
-        title: "Orthopedics",
-        description: "M.B.B.S, D. ORTH, DNB. Specialist in bone and joint health.",
-        imageHint: "male doctor"
-    },
-    {
         id: "doctor-7",
         name: "Dr. ADEEM KHAN",
         title: "General Physician",
         description: "MBBS, MD (Medicine), ACMDC, CCMH. Focused on comprehensive patient care.",
-        imageHint: "male doctor"
-    },
-    {
-        id: "doctor-8",
-        name: "Dr. ASHWINI KUMAR YADAV",
-        title: "ENT",
-        description: "M.B.B.S, MS ENT. Specializing in ear, nose, and throat conditions.",
         imageHint: "male doctor"
     }
 ];
