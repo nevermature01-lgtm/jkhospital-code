@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
 import { TopBar } from "@/components/layout/TopBar";
-import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
@@ -29,7 +28,6 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="bg-background min-h-screen text-foreground font-sans">
           <TopBar />
-          <Navbar />
           <main>{children}</main>
           <Footer />
         </div>

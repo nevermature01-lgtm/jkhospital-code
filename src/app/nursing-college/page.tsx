@@ -4,6 +4,7 @@ import { BookOpenCheck, Building, BedDouble, ClipboardCheck, GraduationCap } fro
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Navbar } from "@/components/layout/Navbar";
 
 const NursingCollegePage = () => {
   const heroImage = PlaceHolderImages.find(img => img.id === 'nursing-college-hero');
@@ -48,58 +49,61 @@ const NursingCollegePage = () => {
   ];
 
   return (
-    <div className="bg-background">
-      <section className="relative py-24 bg-primary/5">
-        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="flex justify-center mb-4">
-                <div className="p-4 bg-primary/10 rounded-full">
-                    <GraduationCap className="h-12 w-12 text-primary" />
-                </div>
-            </div>
-            <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">JK College of Nursing</h1>
-            <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
-                Fostering the next generation of compassionate and skilled nursing professionals.
-            </p>
-        </div>
-      </section>
+    <>
+      <Navbar />
+      <div className="bg-background">
+        <section className="relative py-24 bg-primary/5">
+          <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <div className="flex justify-center mb-4">
+                  <div className="p-4 bg-primary/10 rounded-full">
+                      <GraduationCap className="h-12 w-12 text-primary" />
+                  </div>
+              </div>
+              <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">JK College of Nursing</h1>
+              <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
+                  Fostering the next generation of compassionate and skilled nursing professionals.
+              </p>
+          </div>
+        </section>
 
-      <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
-        {heroImage && (
-            <div className="mb-16">
-                <Image
-                    src={heroImage.imageUrl}
-                    alt={heroImage.description}
-                    width={1200}
-                    height={500}
-                    className="rounded-2xl shadow-lg object-cover w-full aspect-[16/7]"
-                    data-ai-hint={heroImage.imageHint}
-                />
-            </div>
-        )}
+        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
+          {heroImage && (
+              <div className="mb-16">
+                  <Image
+                      src={heroImage.imageUrl}
+                      alt={heroImage.description}
+                      width={1200}
+                      height={500}
+                      className="rounded-2xl shadow-lg object-cover w-full aspect-[16/7]"
+                      data-ai-hint={heroImage.imageHint}
+                  />
+              </div>
+          )}
 
-        <div className="grid md:grid-cols-2 gap-8">
-            {content.map((section, index) => (
-            <Card key={index} className="shadow-lg overflow-hidden">
-              <CardHeader className="bg-muted p-6">
-                <div className="flex items-center gap-4">
-                    <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                        {section.icon}
-                    </div>
-                    <CardTitle className="text-2xl font-bold text-primary">{section.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <ul className="space-y-3 list-disc list-inside text-foreground/80">
-                  {section.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>{item}</li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-            ))}
+          <div className="grid md:grid-cols-2 gap-8">
+              {content.map((section, index) => (
+              <Card key={index} className="shadow-lg overflow-hidden">
+                <CardHeader className="bg-muted p-6">
+                  <div className="flex items-center gap-4">
+                      <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
+                          {section.icon}
+                      </div>
+                      <CardTitle className="text-2xl font-bold text-primary">{section.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <ul className="space-y-3 list-disc list-inside text-foreground/80">
+                    {section.items.map((item, itemIndex) => (
+                      <li key={itemIndex}>{item}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+              ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

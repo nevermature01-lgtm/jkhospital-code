@@ -5,11 +5,23 @@ import Link from "next/link";
 import { ArrowRight, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
-export const Navbar = () => (
-    <div className="w-full py-4 px-4 sm:px-6 lg:px-8">
+export const Navbar = () => {
+    const pathname = usePathname();
+    const isHomePage = pathname === '/';
+
+    return (
+    <div className={cn(
+        "w-full py-4 px-4 sm:px-6 lg:px-8",
+        isHomePage && "absolute sm:static top-0 left-0 right-0 z-10"
+    )}>
       <div className="container max-w-7xl mx-auto">
-        <div className="bg-[#2FAE9B] rounded-full flex justify-between items-center p-3 px-6 shadow-md">
+        <div className={cn(
+            "bg-[#2FAE9B] rounded-full flex justify-between items-center p-3 px-6 shadow-md",
+            isHomePage && "bg-transparent sm:bg-[#2FAE9B] shadow-none sm:shadow-md"
+        )}>
           <Link
             href="/"
             className="flex items-center"
@@ -103,7 +115,4 @@ export const Navbar = () => (
       </div>
     </div>
   );
-
-
-
-    
+};

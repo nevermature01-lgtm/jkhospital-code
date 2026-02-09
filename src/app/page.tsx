@@ -31,6 +31,7 @@ import {
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card } from "@/components/ui/card";
+import { Navbar } from "@/components/layout/Navbar";
 
 const AboutUsSummary = () => {
     const aboutImage = PlaceHolderImages.find(img => img.id === 'about-us-clinic');
@@ -454,46 +455,49 @@ export default function Home() {
 
   return (
     <>
-      <div className="container max-w-7xl mx-auto sm:px-6 lg:px-8 sm:my-8">
-        <div className="relative sm:rounded-[40px] overflow-hidden">
-          <Carousel
-            className="w-full"
-            plugins={[plugin.current]}
-            opts={{
-              loop: true,
-            }}
-          >
-            <CarouselContent>
-              {sliderImages.map((image) => (
-                <CarouselItem key={image.id}>
-                  <div className="relative h-[500px] w-full">
-                    <Image
-                      src={image.imageUrl}
-                      alt={image.description}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={image.imageHint}
-                    />
-                    <div className="absolute inset-0 bg-black/40" />
-                    <div className="absolute inset-0 flex flex-col justify-center items-start text-white p-6 sm:p-8 md:p-16 space-y-2 sm:space-y-4">
-                      <div className="bg-[#2FAE9B] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
-                        Your Health is Our Priority
+      <div className="relative">
+        <Navbar />
+        <div className="sm:container sm:max-w-7xl sm:mx-auto sm:px-6 lg:px-8 sm:my-8">
+          <div className="relative sm:rounded-[40px] overflow-hidden">
+            <Carousel
+              className="w-full"
+              plugins={[plugin.current]}
+              opts={{
+                loop: true,
+              }}
+            >
+              <CarouselContent>
+                {sliderImages.map((image) => (
+                  <CarouselItem key={image.id}>
+                    <div className="relative h-[500px] w-full">
+                      <Image
+                        src={image.imageUrl}
+                        alt={image.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={image.imageHint}
+                      />
+                      <div className="absolute inset-0 bg-black/40" />
+                      <div className="absolute inset-0 flex flex-col justify-center items-start text-white p-6 sm:p-8 md:p-16 space-y-2 sm:space-y-4">
+                        <div className="bg-[#2FAE9B] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
+                          Your Health is Our Priority
+                        </div>
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
+                          Promise of <br />
+                          Care and Trust
+                        </h2>
+                        <p className="text-base sm:text-lg max-w-lg">
+                          Providing exceptional healthcare with compassion and expertise. Our team of specialists are dedicated to your wellbeing.
+                        </p>
                       </div>
-                      <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                        Promise of <br />
-                        Care and Trust
-                      </h2>
-                      <p className="text-base sm:text-lg max-w-lg">
-                        Providing exceptional healthcare with compassion and expertise. Our team of specialists are dedicated to your wellbeing.
-                      </p>
                     </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
-            <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
-          </Carousel>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+              <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+            </Carousel>
+          </div>
         </div>
       </div>
       

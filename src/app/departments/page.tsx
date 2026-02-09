@@ -16,6 +16,7 @@ import * as React from "react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Navbar } from "@/components/layout/Navbar";
 
 const departmentsData = [
   {
@@ -317,20 +318,23 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
 
 export default function DepartmentsPage() {
   return (
-    <div className="bg-background">
-      <section className="py-16 bg-primary/5">
-        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Departments</h1>
-            <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
-                Explore our wide range of specialized departments, each dedicated to providing exceptional patient care with expertise and compassion.
-            </p>
+    <>
+      <Navbar />
+      <div className="bg-background">
+        <section className="py-16 bg-primary/5">
+          <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Departments</h1>
+              <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
+                  Explore our wide range of specialized departments, each dedicated to providing exceptional patient care with expertise and compassion.
+              </p>
+          </div>
+        </section>
+        <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-6xl">
+          {departmentsData.map((dept) => (
+            <DepartmentCard key={dept.title} department={dept} />
+          ))}
         </div>
-      </section>
-      <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-6xl">
-        {departmentsData.map((dept) => (
-          <DepartmentCard key={dept.title} department={dept} />
-        ))}
       </div>
-    </div>
+    </>
   );
 }

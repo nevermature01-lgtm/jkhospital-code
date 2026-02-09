@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Navbar } from "@/components/layout/Navbar";
 
 const AboutUsContent = () => {
     return (
@@ -74,6 +75,9 @@ const AboutUsContent = () => {
 
 export default function AboutPage() {
     return (
-        <AboutUsContent />
+        <>
+            <Navbar />
+            <AboutUsContent />
+        </>
     );
   }

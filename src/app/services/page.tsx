@@ -9,6 +9,7 @@ import {
   Stethoscope,
   Phone,
 } from "lucide-react";
+import { Navbar } from "@/components/layout/Navbar";
 
 const ServicesContent = () => {
     const services = [
@@ -74,6 +75,9 @@ const ServicesContent = () => {
 
 export default function ServicesPage() {
     return (
-      <ServicesContent />
+      <>
+        <Navbar />
+        <ServicesContent />
+      </>
     );
   }
