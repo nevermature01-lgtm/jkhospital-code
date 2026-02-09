@@ -7,55 +7,6 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const doctors = [
     {
-      id: "doctor-1",
-      name: "Dr. Manoj Yadav",
-      title: "General & Laparoscopic Surgery and Urology",
-      description: "MBBS, MS, FICS, FAIS, FIAGES, FILHS. A leading surgeon with extensive experience.",
-      imageHint: "male doctor"
-    },
-    {
-      id: "doctor-2",
-      name: "Dr. Kumar Katreya Yadav",
-      title: "General & Laparoscopic Surgery and Urology",
-      description: "MBBS, MS. Specialist in minimally invasive surgical techniques.",
-      imageHint: "male doctor"
-    },
-    {
-      id: "doctor-3",
-      name: "Dr. Neha Singh",
-      title: "Gynaecology Department",
-      description: "MBBS, MS (Obstetrics & Gynaecology). Dedicated to women's health and wellness.",
-      imageHint: "female doctor"
-    },
-    {
-        id: "doctor-4",
-        name: "Dr. Madhukar Gupta",
-        title: "Urology",
-        description: "MCH Urology. Expert in kidney and urinary tract diseases.",
-        imageHint: "male doctor"
-    },
-    {
-        id: "doctor-5",
-        name: "Dr. Shahini Yadav",
-        title: "Dentistry and Oral Care",
-        description: "BDS, FMC. Committed to providing excellent dental care.",
-        imageHint: "female doctor"
-    },
-    {
-        id: "doctor-6",
-        name: "Dr. Pankaj",
-        title: "Orthopedics",
-        description: "M.B.B.S, D. ORTH, DNB. Specialist in bone and joint health.",
-        imageHint: "male doctor"
-    },
-    {
-        id: "doctor-7",
-        name: "Dr. ADEEM KHAN",
-        title: "General Physician",
-        description: "MBBS, MD (Medicine), ACMDC, CCMH. Focused on comprehensive patient care.",
-        imageHint: "male doctor"
-    },
-    {
         id: "doctor-8",
         name: "Dr. ASHWINI KUMAR YADAV",
         title: "ENT",
