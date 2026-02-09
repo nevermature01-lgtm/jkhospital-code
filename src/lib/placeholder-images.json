@@ -2,27 +2,27 @@
   "placeholderImages": [
     {
       "id": "hero-image-1",
-      "description": "A compassionate counseling session in a bright, modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1549490103-b16951235182?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Vuc2VsaW5nJTIwc2Vzc2lvbnxlbnwwfHx8fDE3NzE0MDQwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "counseling session"
+      "description": "A clean, modern hospital corridor.",
+      "imageUrl": "https://images.unsplash.com/photo-1586773860417-e4525c4e3f9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxob3NwaXRhbCUyMGNvcnJpZG9yfGVufDB8fHx8MTc3MTY3ODU0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hospital corridor"
     },
     {
       "id": "hero-image-2",
-      "description": "A calm and inviting therapy room with comfortable seating.",
-      "imageUrl": "https://images.unsplash.com/photo-1556020685-ae41abfc9365?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGVyYXB5JTIwcm9vbXxlbnwwfHx8fDE3NzE0MDQxMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "therapy room"
+      "description": "A doctor consulting with a patient.",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc3MTY3ODU5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor patient"
     },
     {
       "id": "hero-image-3",
-      "description": "A person practicing mindfulness outdoors, finding peace.",
-      "imageUrl": "https://images.unsplash.com/photo-1506126613408-4e7e9b7da0f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW5kZnVsbmVzc3xlbnwwfHx8fDE3NzE0MDQxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mindfulness meditation"
+      "description": "Close-up of modern medical equipment in a clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1538688273824-79b335a45429?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc3MTY3ODYyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical equipment"
     },
     {
       "id": "hero-image-4",
-      "description": "Two people having a supportive conversation.",
-      "imageUrl": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXBwb3J0aXZlJTIwY29udmVyc2F0aW9ufGVufDB8fHx8MTc3MTQwNDI1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "support talk"
+      "description": "The exterior of a modern hospital building.",
+      "imageUrl": "https://images.unsplash.com/photo-1629904850789-5374a38a4114?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjBob3NwaXRhbHxlbnwwfHx8fDE3NzE2Nzg2Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern hospital"
     },
     {
       "id": "about-us-clinic",
