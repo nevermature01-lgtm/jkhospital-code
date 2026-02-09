@@ -38,6 +38,7 @@ export const Footer = () => (
               <li><Link href="/" className="text-gray-300 hover:text-white">Home</Link></li>
               <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
               <li><Link href="/services" className="text-gray-300 hover:text-white">Services</Link></li>
+              <li><Link href="/doctors" className="text-gray-300 hover:text-white">Our Doctors</Link></li>
               <li><Link href="/departments" className="text-gray-300 hover:text-white">Departments</Link></li>
               <li><Link href="/nursing-college" className="text-gray-300 hover:text-white">Nursing College</Link></li>
               <li><Link href="/blood-bank" className="text-gray-300 hover:text-white">Blood Bank</Link></li>
