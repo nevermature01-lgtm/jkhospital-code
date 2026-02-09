@@ -75,19 +75,19 @@
     {
       "id": "testimonial-4",
       "description": "Portrait of Mike T.",
-      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEwMDYyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEwMDYyNjJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "dept-surgery",
       "description": "A modern operating room with surgical equipment.",
-      "imageUrl": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc3MDYxMjU5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc3MDYxMjU5NHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "operating room"
     },
     {
       "id": "dept-gynaecology",
       "description": "A compassionate doctor talking to a pregnant woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1584847688440-549d4d9eb7c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkb2N0b3IlMjBwcmVnbmFudHxlbnwwfHx8fDE3NzA2MzAwNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1584847688440-549d4d9eb7c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkb2N0b3IlMjBwcmVnbmFudHxlbnwwfHx8fDE3NzA2MzAwNzF8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "doctor pregnant"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "dept-radiology",
       "description": "A radiologist examining an MRI scan.",
-      "imageUrl": "https://images.unsplash.com/photo-1616012481039-5de1dcb42934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtcmklMjBzY2FufGVufDB8fHx8MTc3MDU2MTg2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616012481039-5de1dcb42934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtcmklMjBzY2FufGVufDB8fHx8MTc3MDU2MTg2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mri scan"
     },
     {
@@ -153,8 +153,14 @@
     {
       "id": "blood-donor-registration",
       "description": "A person donating blood with a smile.",
-      "imageUrl": "https://images.unsplash.com/photo-1627843563939-a9b191b4d6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9vZCUyMGRvbmF0aW9ufGVufDB8fHx8MTc3MTc3MjE3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627843563939-a9b191b4d6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9vZCUyMGRvbmF0aW9ufGVufDB8fHx8MTc3MTc3MjE3Nnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "blood donation"
+    },
+    {
+      "id": "contact-map",
+      "description": "A map showing the location of the hospital.",
+      "imageUrl": "https://images.unsplash.com/photo-1594398933229-862412a87009?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBwb2ludGVyfGVufDB8fHx8MTc3MTc4NzQ5OXww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "map pointer"
     }
   ]
 }
