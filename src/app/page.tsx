@@ -198,6 +198,74 @@ const AboutUs = () => {
   );
 };
 
+const WhatWeOffer = () => {
+  const services = [
+    {
+      icon: <Siren className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Emergency Care",
+      description: "24/7 Emergency Services With Rapid Response Teams Ready To Provide Immediate Medical Attention.",
+    },
+    {
+      icon: <Microscope className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Laboratory Services",
+      description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
+    },
+    {
+      icon: <Pill className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Pharmaceutical Services",
+      description: "Fully Stocked Pharmacy Providing Prescribed Medications And Expert Pharmaceutical Advice.",
+    },
+    {
+      icon: <PersonStanding className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Rehabilitation",
+      description: "Comprehensive Rehabilitation Programs Designed To Help Patients Regain Independence And Functionality.",
+    },
+    {
+      icon: <Phone className="h-6 w-6 text-[#1E73BE]" />,
+      title: "24/7 Support",
+      description: "Round-The-Clock Medical Assistance And Support For All Your Healthcare Needs.",
+    },
+    {
+      icon: <Stethoscope className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Health Check-ups",
+      description: "Comprehensive Health Screenings And Preventive Care Services For Early Detection And Intervention.",
+    },
+  ];
+
+  return (
+    <section className="bg-muted py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-stretch gap-16">
+          <div className="lg:w-2/5">
+            <div className="rounded-[25px] h-full min-h-[450px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] flex items-end p-8 shadow-md">
+              <h2 className="text-4xl font-bold text-white">
+                What We Offer
+              </h2>
+            </div>
+          </div>
+          <div className="lg:w-3/5">
+            <div className="relative space-y-8 pt-4">
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block"></div>
+              {services.map((service, index) => (
+                <div key={index} className="flex items-start gap-6 relative">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center z-10">
+                    {service.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
+                    <p className="text-[#555] leading-relaxed">{service.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
 const OurSpecialists = () => {
   const specialists = [
     {
@@ -229,7 +297,7 @@ const OurSpecialists = () => {
   const specialistImages = PlaceHolderImages.filter(img => img.id.startsWith('specialist-'));
 
   return (
-    <section className="bg-muted py-20">
+    <section className="bg-background py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
         <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Specialists</h2>
@@ -327,7 +395,7 @@ const OurDepartments = () => {
   ];
 
   return (
-    <section className="bg-background py-20">
+    <section className="bg-muted py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row-reverse items-stretch gap-16">
           <div className="lg:w-2/5">
@@ -387,7 +455,7 @@ const Testimonials = () => {
   const testimonialImages = PlaceHolderImages.filter(img => img.id.startsWith('testimonial-'));
 
   return (
-    <section className="bg-muted py-20">
+    <section className="bg-background py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">
           Testimonials
@@ -478,6 +546,8 @@ export default function Home() {
         </div>
         
         <AboutUs />
+
+        <WhatWeOffer />
 
         <OurSpecialists />
         
