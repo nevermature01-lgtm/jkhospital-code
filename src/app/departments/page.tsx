@@ -8,14 +8,11 @@ import {
   PersonStanding,
   Microscope,
   Scan,
-  Siren,
   Pill,
   Ear,
 } from "lucide-react";
 import * as React from "react";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Navbar } from "@/components/layout/Navbar";
 
 const departmentsData = [
@@ -246,7 +243,6 @@ const departmentsData = [
 
 
 const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0] }) => {
-    const deptImage = PlaceHolderImages.find(img => img.id === department.image);
 
     return (
     <Card className="mb-12 overflow-hidden shadow-lg">
@@ -259,16 +255,6 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
         </div>
       </CardHeader>
       <CardContent className="p-6">
-        {deptImage && (
-            <Image
-                src={deptImage.imageUrl}
-                alt={deptImage.description}
-                width={800}
-                height={400}
-                className="rounded-lg shadow-md object-cover w-full aspect-video mb-8"
-                data-ai-hint={deptImage.imageHint}
-            />
-        )}
         <div className="grid md:grid-cols-12 gap-8">
             <div className="md:col-span-12">
                 <p className="text-foreground/80 leading-relaxed mb-8">{department.description}</p>
@@ -288,23 +274,11 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
                             <h4 className="font-bold text-xl text-foreground mb-4 border-b-2 border-primary pb-2">Our Specialists</h4>
                             <div className="space-y-4">
                                 {department.specialists.map((specialist, index) => {
-                                  const doctorImage = PlaceHolderImages.find(img => img.id === specialist.id);
                                   return (
                                     <div key={index} className="p-4 rounded-lg bg-primary/10 border border-primary/20 flex items-center gap-4">
-                                      {doctorImage ? (
-                                        <Image
-                                            src={doctorImage.imageUrl}
-                                            alt={`Portrait of ${specialist.name}`}
-                                            width={60}
-                                            height={60}
-                                            className="rounded-full object-cover w-16 h-16"
-                                            data-ai-hint={doctorImage.imageHint}
-                                        />
-                                      ) : (
-                                        <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center">
-                                            <PersonStanding className="w-8 h-8 text-primary" />
-                                        </div>
-                                      )}
+                                      <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center">
+                                          <PersonStanding className="w-8 h-8 text-primary" />
+                                      </div>
                                       <div>
                                         <p className="font-bold text-foreground">{specialist.name}</p>
                                         {specialist.qualifications && <p className="text-sm text-foreground/70">{specialist.qualifications}</p>}
