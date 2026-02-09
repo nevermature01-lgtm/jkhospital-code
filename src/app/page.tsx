@@ -155,6 +155,45 @@ const Navbar = () => (
   </div>
 );
 
+const AboutUsSummary = () => {
+    const aboutImage = PlaceHolderImages.find(img => img.id === 'about-us-clinic');
+    return (
+    <section className="bg-white py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="order-last lg:order-first">
+            {aboutImage && (
+                <Image
+                    src={aboutImage.imageUrl}
+                    alt={aboutImage.description}
+                    width={600}
+                    height={400}
+                    className="rounded-2xl shadow-lg object-cover w-full h-full aspect-[3/2]"
+                    data-ai-hint={aboutImage.imageHint}
+                />
+            )}
+          </div>
+          <div className="space-y-6">
+            <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider">
+              About JK Hospital
+            </p>
+            <h2 className="text-4xl font-bold text-[#1F3C3C]">
+              Your Trusted Healthcare Partner
+            </h2>
+            <p className="text-[#555] text-base leading-relaxed">
+              J.K. Hospital, run by the Jabar Singh Kaushalya Devi Charitable Trust, is a 150-bedded multispecialty hospital with advanced clinical facilities. We are committed to providing excellent healthcare and fostering the next generation of nursing professionals through our affiliated J.K. College of Nursing.
+            </p>
+            <Button asChild className="rounded-full bg-[#2FAE9B] hover:bg-[#2FAE9B]/90 shadow-md text-white px-8 py-6 text-base">
+                <Link href="/about">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  )};
+
 const OurSpecialists = () => {
   const specialists = [
     {
@@ -548,11 +587,11 @@ export default function Home() {
                         <div className="bg-[#2FAE9B] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
                           Your Health is Our Priority
                         </div>
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+                        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
                           Promise of <br />
                           Care and Trust
                         </h2>
-                        <p className="text-base sm:text-lg md:text-xl max-w-lg">
+                        <p className="text-base sm:text-lg max-w-lg">
                           Providing exceptional healthcare with compassion and expertise. Our team of specialists are dedicated to your wellbeing.
                         </p>
                       </div>
@@ -566,10 +605,9 @@ export default function Home() {
           </div>
         </div>
         
+        <AboutUsSummary />
         <OurSpecialists />
-        
         <OurDepartments />
-
         <Testimonials />
 
       </main>
