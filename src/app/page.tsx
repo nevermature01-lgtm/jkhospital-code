@@ -23,7 +23,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => (
-  <div className="w-full py-4">
+  <div className="w-full py-4 px-4 sm:px-6 lg:px-8">
     <div className="container max-w-7xl mx-auto">
       <div className="bg-white rounded-full flex justify-between items-center p-3 px-6 shadow-md">
         <Link
