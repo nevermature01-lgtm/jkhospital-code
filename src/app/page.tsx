@@ -162,7 +162,7 @@ const AboutUs = () => {
   return (
     <section className="bg-background py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             {aboutImage && (
               <Image
