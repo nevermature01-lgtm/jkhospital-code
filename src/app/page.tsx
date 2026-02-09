@@ -100,7 +100,7 @@ const Navbar = () => (
         </nav>
         <div className="hidden md:flex items-center gap-3">
           <Button className="hidden sm:flex rounded-full bg-white hover:bg-white/90 shadow-md text-[#1F3C3C]">
-            Book online <ArrowRight className="ml-2 h-4 w-4" />
+            Contact Us <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
 
@@ -145,7 +145,7 @@ const Navbar = () => (
                   </Link>
                 </nav>
                 <Button className="rounded-full bg-[#2fa693] hover:bg-[#2fa693]/90 shadow-md text-white mt-4">
-                  Book online <ArrowRight className="ml-2 h-4 w-4" />
+                  Contact Us <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </SheetContent>
