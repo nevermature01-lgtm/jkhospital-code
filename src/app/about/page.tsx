@@ -211,7 +211,7 @@ const Footer = () => (
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="space-y-6">
               <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider">
-                About
+                About Us
               </p>
               <h2 className="text-4xl font-bold text-[#1F3C3C]">
                 JK Hospital
@@ -286,3 +286,5 @@ export default function AboutPage() {
       </div>
     );
   }
+
+    
