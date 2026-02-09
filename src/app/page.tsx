@@ -3,10 +3,6 @@
 import Image from "next/image";
 import {
   ArrowRight,
-  Instagram,
-  Menu,
-  Mail,
-  Phone,
   Stethoscope,
   Baby,
   Droplet,
@@ -19,9 +15,7 @@ import {
   Microscope,
   Quote,
   Star,
-  Facebook,
-  Twitter,
-  Linkedin,
+  Phone,
 } from "lucide-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
@@ -36,124 +30,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Card } from "@/components/ui/card";
-import { RequestForm } from "@/components/request-form";
-
-const TopBar = () => (
-  <div className="bg-[#1F3C3C] text-gray-300 text-xs font-medium">
-    <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center items-center h-auto sm:h-10 py-2 sm:py-0 gap-x-8 gap-y-2">
-      <a href="mailto:info@mindcare.com" className="hidden sm:flex items-center gap-2 hover:text-white">
-        <Mail className="h-4 w-4" />
-        <span>info@mindcare.com</span>
-      </a>
-      <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-white">
-        <Phone className="h-4 w-4" />
-        <span>+1 234 567 890</span>
-      </a>
-      <a href="tel:+1098765432" className="flex items-center gap-2 hover:text-white">
-        <Phone className="h-4 w-4" />
-        <span>+1 098 765 432</span>
-      </a>
-    </div>
-  </div>
-);
-
-const Navbar = () => (
-  <div className="w-full py-4 px-4 sm:px-6 lg:px-8">
-    <div className="container max-w-7xl mx-auto">
-      <div className="bg-[#2FAE9B] rounded-full flex justify-between items-center p-3 px-6 shadow-md">
-        <Link
-          href="/"
-          className="flex items-center"
-        >
-          <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
-        </Link>
-        
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-4 text-sm font-medium text-white">
-          <Link href="/" className="hover:text-gray-200">
-            Home
-          </Link>
-          <Link href="/about" className="hover:text-gray-200">
-            About Us
-          </Link>
-          <Link href="/services" className="hover:text-gray-200">
-            Services
-          </Link>
-          <Link href="#" className="hover:text-gray-200">
-            Departments
-          </Link>
-          <Link href="#" className="hover:text-gray-200">
-            Nursing College
-          </Link>
-          <Link href="#" className="hover:text-gray-200">
-            Blood Bank
-          </Link>
-          <Link href="#" className="hover:text-gray-200">
-            Contact
-          </Link>
-          <Link href="#" className="hover:text-gray-200">
-            Gallery
-          </Link>
-        </nav>
-        <div className="hidden md:flex items-center gap-3">
-          <Button className="hidden sm:flex rounded-full bg-white hover:bg-white/90 shadow-md text-[#1F3C3C]">
-            Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:text-white">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex h-full flex-col gap-6 p-6">
-                <Link href="/" className="flex items-center mb-4">
-                  <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
-                </Link>
-                <nav className="flex flex-col gap-4 text-lg font-medium">
-                  <Link href="/" className="hover:text-[#2fa693] py-2">
-                    Home
-                  </Link>
-                  <Link href="/about" className="hover:text-[#2fa693] py-2">
-                    About Us
-                  </Link>
-                  <Link href="/services" className="hover:text-[#2fa693] py-2">
-                    Services
-                  </Link>
-                  <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Departments
-                  </Link>
-                  <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Nursing College
-                  </Link>
-                  <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Blood Bank
-                  </Link>
-                  <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Contact
-                  </Link>
-                  <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Gallery
-                  </Link>
-                </nav>
-                <Button className="rounded-full bg-[#2fa693] hover:bg-[#2fa693]/90 shadow-md text-white mt-4">
-                  Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
-      </div>
-    </div>
-  </div>
-);
 
 const AboutUsSummary = () => {
     const aboutImage = PlaceHolderImages.find(img => img.id === 'about-us-clinic');
@@ -389,8 +266,8 @@ const OurDepartments = () => {
         {/* Mobile View */}
         <div className="lg:hidden">
           <div className="text-center mb-12">
-            <div className="inline-block rounded-[20px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
-              <h2 className="text-4xl font-bold text-white">
+            <div className="inline-block rounded-lg bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
+              <h2 className="text-4xl font-bold text-white text-center">
                 Our Departments
               </h2>
             </div>
@@ -413,7 +290,7 @@ const OurDepartments = () => {
         {/* Desktop View */}
         <div className="hidden lg:flex flex-row-reverse items-start gap-16">
           <div className="lg:w-2/5 lg:sticky lg:top-20">
-            <div className="rounded-[20px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
+            <div className="rounded-lg bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
               <h2 className="text-4xl font-bold text-white">
                 Our Departments
               </h2>
@@ -538,80 +415,6 @@ const Testimonials = () => {
   );
 };
 
-const Footer = () => (
-  <footer className="bg-[#1F3C3C] text-white pt-20">
-    <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        {/* Column 1: About */}
-        <div className="space-y-4">
-          <Link href="/" className="flex items-center mb-4">
-            <Image src="/logo.png" alt="JK Hospital Logo" width={160} height={36} />
-          </Link>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            J.K. Hospital and College of Nursing, providing excellent education and multispecialty healthcare.
-          </p>
-          <div className="flex items-center gap-4 pt-2">
-            <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-              <Instagram className="h-5 w-5 text-white" />
-            </a>
-            <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-              <Facebook className="h-5 w-5 text-white" />
-            </a>
-            <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-              <Twitter className="h-5 w-5 text-white" />
-            </a>
-            <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-              <Linkedin className="h-5 w-5 text-white" />
-            </a>
-          </div>
-        </div>
-
-        {/* Column 2: Departments */}
-        <div className="space-y-4">
-          <h3 className="text-lg font-semibold text-white">Our Departments</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" className="text-gray-300 hover:text-white">General Surgery</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Gynaecology</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Urology & Kidney Care</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Dentistry & Oral Care</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Orthopedics</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Radiology & Imaging</a></li>
-          </ul>
-        </div>
-
-        {/* Column 3: Useful Links */}
-        <div className="space-y-4">
-          <h3 className="text-lg font-semibold text-white">Useful Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="text-gray-300 hover:text-white">Home</Link></li>
-            <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
-            <li><Link href="/services" className="text-gray-300 hover:text-white">Services</Link></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Departments</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Nursing College</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Blood Bank</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Gallery</a></li>
-          </ul>
-        </div>
-
-        {/* Column 4: Request a Callback */}
-        <div className="space-y-4 bg-[#2fa693]/20 p-6 rounded-2xl">
-          <h3 className="text-lg font-semibold text-white">Request a Callback</h3>
-          <p className="text-gray-300 text-sm">
-            Enter your details and we'll call you back to schedule an appointment.
-          </p>
-          <RequestForm />
-        </div>
-      </div>
-      
-      <div className="mt-16 py-6 border-t border-white/10 text-center text-sm text-gray-400">
-        <p>&copy; {new Date().getFullYear()} JK Hospital. All Rights Reserved. </p>
-      </div>
-    </div>
-  </footer>
-);
-
-
 export default function Home() {
   const plugin = React.useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true })
@@ -619,61 +422,55 @@ export default function Home() {
   const sliderImages = PlaceHolderImages.filter(img => img.id.startsWith('hero-image-'));
 
   return (
-    <div className="bg-background min-h-screen text-foreground font-sans">
-      <TopBar />
-      <Navbar />
-      <main>
-        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
-          <div className="relative rounded-[40px] overflow-hidden">
-            <Carousel
-              className="w-full"
-              plugins={[plugin.current]}
-              opts={{
-                loop: true,
-              }}
-            >
-              <CarouselContent>
-                {sliderImages.map((image) => (
-                  <CarouselItem key={image.id}>
-                    <div className="relative h-[500px] w-full">
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={image.imageHint}
-                      />
-                      <div className="absolute inset-0 bg-black/40" />
-                      <div className="absolute inset-0 flex flex-col justify-center items-start text-white p-6 sm:p-8 md:p-16 space-y-2 sm:space-y-4">
-                        <div className="bg-[#2FAE9B] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
-                          Your Health is Our Priority
-                        </div>
-                        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                          Promise of <br />
-                          Care and Trust
-                        </h2>
-                        <p className="text-base sm:text-lg max-w-lg">
-                          Providing exceptional healthcare with compassion and expertise. Our team of specialists are dedicated to your wellbeing.
-                        </p>
+    <>
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+        <div className="relative rounded-[40px] overflow-hidden">
+          <Carousel
+            className="w-full"
+            plugins={[plugin.current]}
+            opts={{
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {sliderImages.map((image) => (
+                <CarouselItem key={image.id}>
+                  <div className="relative h-[500px] w-full">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={image.imageHint}
+                    />
+                    <div className="absolute inset-0 bg-black/40" />
+                    <div className="absolute inset-0 flex flex-col justify-center items-start text-white p-6 sm:p-8 md:p-16 space-y-2 sm:space-y-4">
+                      <div className="bg-[#2FAE9B] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
+                        Your Health is Our Priority
                       </div>
+                      <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
+                        Promise of <br />
+                        Care and Trust
+                      </h2>
+                      <p className="text-base sm:text-lg max-w-lg">
+                        Providing exceptional healthcare with compassion and expertise. Our team of specialists are dedicated to your wellbeing.
+                      </p>
                     </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
-              <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
-            </Carousel>
-          </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+            <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden sm:flex" />
+          </Carousel>
         </div>
-        
-        <AboutUsSummary />
-        <WhatWeOffer />
-        <OurSpecialists />
-        <OurDepartments />
-        <Testimonials />
-
-      </main>
-      <Footer />
-    </div>
+      </div>
+      
+      <AboutUsSummary />
+      <WhatWeOffer />
+      <OurSpecialists />
+      <OurDepartments />
+      <Testimonials />
+    </>
   );
 }
