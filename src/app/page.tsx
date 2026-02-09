@@ -373,6 +373,13 @@ const Testimonials = () => {
       quote:
         "Quick response and proper treatment. The doctor showed genuine concern for my health.",
     },
+    {
+      id: "testimonial-6",
+      name: "Ghanshyam Savita",
+      city: "Etawah",
+      quote:
+        "Good experience at the hospital. The doctor maintained a friendly approach and cleared all my doubts.",
+    },
   ];
 
   return (
