@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Instagram,
   MessageCircle,
-  BrainCircuit,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -17,10 +16,9 @@ const Navbar = () => (
       <div className="bg-white rounded-full flex justify-between items-center p-3 px-6 shadow-md">
         <Link
           href="/"
-          className="flex items-center gap-2 text-2xl font-bold text-gray-800"
+          className="flex items-center"
         >
-          <BrainCircuit className="h-8 w-8 text-[#2fa693]" />
-          <span>MindCare</span>
+          <Image src="/logo.png" alt="MindCare Logo" width={140} height={32} />
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
           <Link href="#" className="hover:text-[#2fa693]">
