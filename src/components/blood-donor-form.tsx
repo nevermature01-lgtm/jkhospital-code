@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -96,7 +97,7 @@ export function BloodDonorForm() {
             <FormItem>
               <FormLabel>Full Name</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} />
+                <Input placeholder="John Doe" {...field} className="border-black" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -109,7 +110,7 @@ export function BloodDonorForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="john.doe@example.com" {...field} />
+                <Input type="email" placeholder="john.doe@example.com" {...field} className="border-black" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -122,7 +123,7 @@ export function BloodDonorForm() {
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
-                <Input type="tel" placeholder="+1 234 567 890" {...field} />
+                <Input type="tel" placeholder="+1 234 567 890" {...field} className="border-black" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -136,7 +137,7 @@ export function BloodDonorForm() {
               <FormLabel>Blood Group</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger>
+                  <SelectTrigger className="border-black">
                     <SelectValue placeholder="Select Blood Group" />
                   </SelectTrigger>
                 </FormControl>
@@ -167,7 +168,7 @@ export function BloodDonorForm() {
                     <Button
                       variant={"outline"}
                       className={cn(
-                        "w-full pl-3 text-left font-normal",
+                        "w-full pl-3 text-left font-normal border-black",
                         !field.value && "text-muted-foreground"
                       )}
                     >

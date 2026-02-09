@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Droplet, ShieldCheck, Siren, ClipboardCheck, CalendarDays, Clock } from "lucide-react";
@@ -8,7 +9,6 @@ import { BloodDonorForm } from "@/components/blood-donor-form";
 import { Navbar } from "@/components/layout/Navbar";
 
 const BloodBankPage = () => {
-    const donorImage = PlaceHolderImages.find(img => img.id === 'blood-donor-registration');
 
   const services = [
     {
@@ -106,24 +106,12 @@ const BloodBankPage = () => {
           </div>
 
           <Card className="shadow-lg overflow-hidden">
-              <div className="grid md:grid-cols-2 items-center">
-                  <div className="p-8 md:p-12 order-2 md:order-1">
-                      <h2 className="text-3xl font-bold text-foreground mb-6">Become a Blood Donor</h2>
-                      <BloodDonorForm />
-                  </div>
-                  <div className="order-1 md:order-2 h-full">
-                      {donorImage && (
-                           <Image
-                              src={donorImage.imageUrl}
-                              alt={donorImage.description}
-                              width={600}
-                              height={700}
-                              className="object-cover w-full h-full"
-                              data-ai-hint={donorImage.imageHint}
-                          />
-                      )}
-                  </div>
-              </div>
+            <div className="p-8 md:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Become a Blood Donor</h2>
+                <div className="max-w-md mx-auto">
+                  <BloodDonorForm />
+                </div>
+            </div>
           </Card>
 
         </div>
