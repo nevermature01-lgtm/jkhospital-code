@@ -4,7 +4,6 @@ import Image from "next/image";
 import {
   ArrowRight,
   Instagram,
-  MessageCircle,
   Menu,
   Mail,
   Phone,
@@ -23,9 +22,6 @@ import {
   Facebook,
   Twitter,
   Linkedin,
-  Goal,
-  Eye,
-  Gem,
 } from "lucide-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
@@ -79,7 +75,7 @@ const Navbar = () => (
           <Link href="/" className="hover:text-gray-200">
             Home
           </Link>
-          <Link href="#about-us" className="hover:text-gray-200">
+          <Link href="/about" className="hover:text-gray-200">
             About Us
           </Link>
           <Link href="#" className="hover:text-gray-200">
@@ -125,7 +121,7 @@ const Navbar = () => (
                   <Link href="/" className="hover:text-[#2fa693] py-2">
                     Home
                   </Link>
-                  <Link href="#about-us" className="hover:text-[#2fa693] py-2">
+                  <Link href="/about" className="hover:text-[#2fa693] py-2">
                     About Us
                   </Link>
                   <Link href="#" className="hover:text-[#2fa693] py-2">
@@ -158,88 +154,6 @@ const Navbar = () => (
     </div>
   </div>
 );
-
-const AboutUs = () => {
-  const aboutImage = PlaceHolderImages.find(
-    (img) => img.id === "about-us-clinic"
-  );
-
-  const coreValues = [
-    {
-      icon: <Goal className="h-6 w-6 text-white" />,
-      title: "Our Mission",
-      description:
-        "To provide accessible, high-quality mental health care that empowers individuals to achieve emotional well-being and live fulfilling lives.",
-    },
-    {
-      icon: <Eye className="h-6 w-6 text-white" />,
-      title: "Our Vision",
-      description:
-        "A community where mental health is a priority, and everyone has the support they need to thrive in a compassionate and understanding society.",
-    },
-    {
-      icon: <Gem className="h-6 w-6 text-white" />,
-      title: "Our Value",
-      description:
-        "We are committed to integrity, empathy, and respect in all our interactions, ensuring a safe and confidential space for healing and growth.",
-    },
-  ];
-
-  return (
-    <section className="bg-background py-20" id="about-us">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="lg:w-1/2">
-            <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">
-              Who We Are
-            </p>
-            <h2 className="text-4xl font-bold text-[#1F3C3C] mb-4">
-              About Our Center <span className="text-[#2FAE9B]">MindCare</span>
-            </h2>
-            <div className="space-y-4 text-[#555] text-base leading-relaxed mb-8">
-              <p>
-                At MindCare, we are dedicated to providing compassionate and
-                comprehensive mental health care. Our experienced team of
-                certified specialists is committed to supporting you on your
-                journey to wellness.
-              </p>
-            </div>
-            <div className="space-y-6">
-              {coreValues.map((value, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#2FAE9B] flex items-center justify-center">
-                    {value.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">
-                      {value.title}
-                    </h3>
-                    <p className="text-[#555] leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="lg:w-1/2 mt-10 lg:mt-0">
-            {aboutImage && (
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                width={550}
-                height={550}
-                className="rounded-[25px] shadow-lg object-cover w-full h-auto"
-                data-ai-hint={aboutImage.imageHint}
-              />
-            )}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 
 const WhatWeOffer = () => {
   const services = [
@@ -662,8 +576,8 @@ const Footer = () => (
         <div className="space-y-4">
           <h3 className="text-lg font-semibold text-white">Useful Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="/" className="text-gray-300 hover:text-white">Home</a></li>
-            <li><a href="#about-us" className="text-gray-300 hover:text-white">About Us</a></li>
+            <li><Link href="/" className="text-gray-300 hover:text-white">Home</Link></li>
+            <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
             <li><a href="#" className="text-gray-300 hover:text-white">Services</a></li>
             <li><a href="#" className="text-gray-300 hover:text-white">Departments</a></li>
             <li><a href="#" className="text-gray-300 hover:text-white">Nursing College</a></li>
@@ -745,8 +659,6 @@ export default function Home() {
           </div>
         </div>
         
-        <AboutUs />
-
         <WhatWeOffer />
 
         <OurSpecialists />
