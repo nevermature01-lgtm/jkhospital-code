@@ -223,9 +223,11 @@ const OurSpecialists = () => {
         </div>
 
         <div className="mt-12">
-          <Button className="rounded-full bg-[#2FAE9B] hover:bg-[#2FAE9B]/90 shadow-md text-white px-8 py-6 text-base">
-            See All Doctors <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+            <Button asChild className="rounded-full bg-[#2FAE9B] hover:bg-[#2FAE9B]/90 shadow-md text-white px-8 py-6 text-base">
+                <Link href="/doctors">
+                    See All Doctors <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+            </Button>
         </div>
       </div>
     </section>

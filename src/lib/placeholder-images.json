@@ -21,7 +21,7 @@
     {
       "id": "hero-image-4",
       "description": "The exterior of a modern hospital building.",
-      "imageUrl": "https://images.unsplash.com/photo-1629904850789-5374a38a4114?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjBob3NwaXRhbHxlbnwwfHx8fDE3NzE2Nzg2Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629904850789-5374a38a4114?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjBob3NwaXRhbHxlbnwwfHx8fDE3NzE2Nzg2Nzd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "modern hospital"
     },
     {
@@ -33,31 +33,31 @@
     {
       "id": "specialist-1",
       "description": "A portrait of Dr. Michael Anderson, a friendly male doctor.",
-      "imageUrl": "https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MDU3ODgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MDU3ODgyM3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "male doctor"
     },
     {
       "id": "specialist-3",
       "description": "A portrait of Dr. Emily Davis, a smiling female doctor.",
-      "imageUrl": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcwNTQxMTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcwNTQxMTY0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "female doctor"
     },
     {
       "id": "specialist-4",
       "description": "A portrait of Dr. Sarah Parker, a professional female doctor.",
-      "imageUrl": "https://images.unsplash.com/photo-1680204437044-011a94496b4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcwNTQxMTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1680204437044-011a94496b4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcwNTQxMTY0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "female doctor"
     },
     {
       "id": "testimonial-1",
       "description": "Portrait of Sarah L.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MTAwNjIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MTAwNjIzNHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of John D.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEwMDYyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEwMDYyNjJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
@@ -129,13 +129,13 @@
     {
       "id": "nursing-college-hero",
       "description": "A group of nursing students in a classroom setting, learning.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b2fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxudXJzaW5nJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzcxNzYzOTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b2fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxudXJzaW5nJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzcxNzYzOTM4fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "nursing students"
     },
     {
       "id": "blood-bank-hero",
       "description": "A blood bag in a hospital setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1615461066159-fea0914266a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9vZCUyMGJhbmt8ZW58MHx8fHwxNzcxNzcwMjc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1615461066159-fea0914266a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9vZCUyMGJhbmt8ZW58MHx8fHwxNzcxNzcwMjc5fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "blood bank"
     },
     {
@@ -155,6 +155,54 @@
       "description": "A map showing the location of the hospital.",
       "imageUrl": "https://images.unsplash.com/photo-1594398933229-862412a87009?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBwb2ludGVyfGVufDB8fHx8MTc3MTc4NzQ5OXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "map pointer"
+    },
+    {
+      "id": "doctor-1",
+      "description": "Portrait of Dr. Manoj Yadav",
+      "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "male doctor"
+    },
+    {
+      "id": "doctor-2",
+      "description": "Portrait of Dr. Kumar Katreya Yadav",
+      "imageUrl": "https://images.unsplash.com/photo-1537368910025-7003507965b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "male doctor"
+    },
+    {
+      "id": "doctor-3",
+      "description": "Portrait of Dr. Neha Singh",
+      "imageUrl": "https://images.unsplash.com/photo-1579684385127-6c1d7348e658?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcxODExMTU3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "female doctor"
+    },
+    {
+      "id": "doctor-4",
+      "description": "Portrait of Dr. Madhukar Gupta",
+      "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "male doctor"
+    },
+    {
+      "id": "doctor-5",
+      "description": "Portrait of Dr. Shahini Yadav",
+      "imageUrl": "https://images.unsplash.com/photo-1622902046580-2b4b7a909616?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcxODExMTU3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "female doctor"
+    },
+    {
+      "id": "doctor-6",
+      "description": "Portrait of Dr. Pankaj",
+      "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "male doctor"
+    },
+    {
+      "id": "doctor-7",
+      "description": "Portrait of Dr. ADEEM KHAN",
+      "imageUrl": "https://images.unsplash.com/photo-1605333095316-63523f669e48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "male doctor"
+    },
+    {
+      "id": "doctor-8",
+      "description": "Portrait of Dr. ASHWINI KUMAR YADAV",
+      "imageUrl": "https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MDU3ODgyM3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "male doctor"
     }
   ]
 }
