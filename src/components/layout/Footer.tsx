@@ -52,29 +52,29 @@ export const Footer = () => (
             <h3 className="text-lg font-semibold text-white">Contact Us</h3>
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-white/80 flex-shrink-0" />
                 <span>NH92, Vivek Vihar Colony, Datawali, Uttar Pradesh 206002</span>
               </li>
                <li className="flex items-start gap-3">
-                <Siren className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <Siren className="h-5 w-5 text-white/80 flex-shrink-0" />
                 <div>
                   <span className="text-gray-400">Emergency: </span><a href="tel:+918006005061" className="hover:text-white">+91-8006005061</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <Phone className="h-5 w-5 text-white/80 flex-shrink-0" />
                 <div>
                   <span className="text-gray-400">Enquiry: </span><a href="tel:+918006005064" className="hover:text-white">+91-8006005064</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <Mail className="h-5 w-5 text-white/80 flex-shrink-0" />
                 <div>
                   <span className="text-gray-400">Reception: </span><a href="mailto:Care@jkhospital.in" className="hover:text-white">Care@jkhospital.in</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <Mail className="h-5 w-5 text-white/80 flex-shrink-0" />
                 <div>
                   <span className="text-gray-400">Nursing: </span><a href="mailto:Nursing@jkhospital.in" className="hover:text-white">Nursing@jkhospital.in</a>
                 </div>
