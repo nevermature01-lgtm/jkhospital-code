@@ -30,7 +30,7 @@ export const Navbar = () => (
             <Link href="/departments" className="hover:text-gray-200">
               Departments
             </Link>
-            <Link href="#" className="hover:text-gray-200">
+            <Link href="/nursing-college" className="hover:text-gray-200">
               Nursing College
             </Link>
             <Link href="#" className="hover:text-gray-200">
@@ -75,7 +75,7 @@ export const Navbar = () => (
                     <Link href="/departments" className="hover:text-[#2fa693] py-2">
                       Departments
                     </Link>
-                    <Link href="#" className="hover:text-[#2fa693] py-2">
+                    <Link href="/nursing-college" className="hover:text-[#2fa693] py-2">
                       Nursing College
                     </Link>
                     <Link href="#" className="hover:text-[#2fa693] py-2">
@@ -99,3 +99,4 @@ export const Navbar = () => (
       </div>
     </div>
   );
+

@@ -133,6 +133,12 @@
       "imageHint": "doctor stethoscope"
     },
     {
+      "id": "nursing-college-hero",
+      "description": "A group of nursing students in a classroom setting, learning.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b2fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxudXJzaW5nJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzcxNzYzOTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nursing students"
+    },
+    {
       "id": "dept-ent",
       "description": "A diagram showing the human ear, nose, and throat.",
       "imageUrl": "https://images.unsplash.com/photo-1541260894924-7ff059b93d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYXIlMjBub3NlfGVufDB8fHx8MTc3MDYzMDA3MXww&ixlib=rb-4.1.0&q=80&w=1080",
