@@ -65,7 +65,7 @@ export default function Home() {
           <div className="absolute -bottom-20 -right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl -z-0"></div>
           <div className="absolute top-1/2 left-1/3 w-60 h-60 bg-white/10 rounded-full blur-2xl -z-0"></div>
 
-          <div className="relative z-10 flex flex-col lg:flex-row items-center p-8 md:p-12 lg:p-20 lg:py-16 gap-12">
+          <div className="relative z-10 flex flex-col lg:flex-row items-center p-8 md:p-12 lg:p-20 lg:py-8 gap-12">
             {/* Left Column */}
             <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-semibold text-gray-800 leading-tight max-w-md mb-8">
