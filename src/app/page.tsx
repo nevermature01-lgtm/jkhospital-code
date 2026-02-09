@@ -248,9 +248,9 @@ const WhatWeOffer = () => {
   return (
     <section className="bg-muted py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-stretch gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-2/5">
-            <div className="rounded-[25px] h-full min-h-[450px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] flex items-end p-8 shadow-md">
+            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
               <h2 className="text-4xl font-bold text-white">
                 What We Offer
               </h2>
@@ -410,9 +410,9 @@ const OurDepartments = () => {
   return (
     <section className="bg-muted py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row-reverse items-stretch gap-16">
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
           <div className="lg:w-2/5">
-            <div className="rounded-[25px] h-full min-h-[450px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] flex items-end p-8 shadow-md">
+            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
               <h2 className="text-4xl font-bold text-white">
                 Our Departments
               </h2>
