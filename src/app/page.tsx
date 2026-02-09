@@ -195,57 +195,64 @@ const AboutUs = () => {
 const WhatWeOffer = () => {
   const services = [
     {
-      icon: <Hospital className="h-8 w-8 text-[#1E73BE]" />,
+      icon: <Hospital className="h-6 w-6 text-[#1E73BE]" />,
       title: "Emergency Care",
       description: "24/7 Emergency Services With Rapid Response Teams Ready To Provide Immediate Medical Attention.",
     },
     {
-      icon: <Microscope className="h-8 w-8 text-[#1E73BE]" />,
+      icon: <Microscope className="h-6 w-6 text-[#1E73BE]" />,
       title: "Laboratory Services",
       description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
     },
     {
-      icon: <Store className="h-8 w-8 text-[#1E73BE]" />,
+      icon: <Store className="h-6 w-6 text-[#1E73BE]" />,
       title: "Pharmaceutical Services",
       description: "Fully Stocked Pharmacy Providing Prescribed Medications And Expert Pharmaceutical Advice.",
     },
     {
-      icon: <Accessibility className="h-8 w-8 text-[#1E73BE]" />,
+      icon: <Accessibility className="h-6 w-6 text-[#1E73BE]" />,
       title: "Rehabilitation",
       description: "Comprehensive Rehabilitation Programs Designed To Help Patients Regain Independence And Functionality.",
     },
     {
-      icon: <Headset className="h-8 w-8 text-[#1E73BE]" />,
+      icon: <Headset className="h-6 w-6 text-[#1E73BE]" />,
       title: "24/7 Support",
       description: "Round-The-Clock Medical Assistance And Support For All Your Healthcare Needs.",
     },
     {
-      icon: <Stethoscope className="h-8 w-8 text-[#1E73BE]" />,
+      icon: <Stethoscope className="h-6 w-6 text-[#1E73BE]" />,
       title: "Health Check-ups",
       description: "Comprehensive Health Screenings And Preventive Care Services For Early Detection And Intervention.",
     },
   ];
 
   return (
-    <section className="bg-[#F5F5F5] py-20">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1F3C3C] mb-4">What We Offer</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border-transparent">
-              <div className="flex items-start gap-5">
-                <div className="flex-shrink-0 bg-[#1E73BE]/10 rounded-xl p-4">
-                  {service.icon}
+    <section className="bg-[#F4F4F4] py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-stretch gap-16">
+          <div className="lg:w-2/5">
+            <div className="rounded-[25px] h-full min-h-[450px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] flex items-end p-8 shadow-md">
+              <h2 className="text-4xl font-bold text-white">
+                What We Offer
+              </h2>
+            </div>
+          </div>
+          <div className="lg:w-3/5">
+            <div className="relative space-y-8 pt-4">
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block"></div>
+              {services.map((service, index) => (
+                <div key={index} className="flex items-start gap-6 relative">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center z-10">
+                    {service.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
+                    <p className="text-[#555] leading-relaxed">{service.description}</p>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-800 mb-2">{service.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
