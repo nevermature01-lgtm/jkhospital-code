@@ -503,8 +503,8 @@ export default function Home() {
       
       <AboutUsSummary />
       <WhatWeOffer />
-      <OurDepartments />
       <OurSpecialists />
+      <OurDepartments />
       <Testimonials />
     </>
   );
