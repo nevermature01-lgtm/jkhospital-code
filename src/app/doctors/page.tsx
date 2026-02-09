@@ -35,12 +35,11 @@ const doctors: Array<{ id: string; name: string; title: string; description: str
         imageHint: "female doctor"
     },
     {
-        id: "doctor-5-1",
-        imageId: "doctor-5",
-        name: "Dr. Shahini Yadav",
-        title: "Dentistry and Oral Care",
-        description: "BDS, FMC. Committed to providing excellent dental care.",
-        imageHint: "female doctor"
+        id: "doctor-4",
+        name: "Dr. Madhukar Gupta",
+        title: "Urology",
+        description: "MCH Urology. Expert in kidney and urinary tract diseases.",
+        imageHint: "male doctor"
     },
     {
         id: "doctor-5-2",
