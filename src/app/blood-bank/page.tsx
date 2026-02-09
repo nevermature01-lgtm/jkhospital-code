@@ -8,7 +8,6 @@ import { BloodDonorForm } from "@/components/blood-donor-form";
 import { Navbar } from "@/components/layout/Navbar";
 
 const BloodBankPage = () => {
-    const heroImage = PlaceHolderImages.find(img => img.id === 'blood-bank-hero');
     const donorImage = PlaceHolderImages.find(img => img.id === 'blood-donor-registration');
 
   const services = [
@@ -66,19 +65,6 @@ const BloodBankPage = () => {
         </section>
 
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
-          {heroImage && (
-              <div className="mb-16">
-                  <Image
-                      src={heroImage.imageUrl}
-                      alt={heroImage.description}
-                      width={1200}
-                      height={500}
-                      className="rounded-2xl shadow-lg object-cover w-full aspect-[16/7]"
-                      data-ai-hint={heroImage.imageHint}
-                  />
-              </div>
-          )}
-
           <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-foreground">Our Blood Bank Services</h2>
           </div>
