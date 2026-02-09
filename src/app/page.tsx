@@ -642,7 +642,19 @@ export default function Home() {
                         className="object-cover"
                         data-ai-hint={image.imageHint}
                       />
-                      <div className="absolute inset-0 bg-black/20" />
+                      <div className="absolute inset-0 bg-black/40" />
+                      <div className="absolute inset-0 flex flex-col justify-center items-start text-white p-8 md:p-16 space-y-4">
+                        <div className="bg-[#2FAE9B] text-white px-5 py-2 rounded-full text-sm font-semibold">
+                          Your Health is Our Priority
+                        </div>
+                        <h2 className="text-5xl md:text-6xl font-bold leading-tight">
+                          Promise of <br />
+                          Care and Trust
+                        </h2>
+                        <p className="text-lg md:text-xl max-w-lg">
+                          Providing exceptional healthcare with compassion and expertise. Our team of specialists are dedicated to your wellbeing.
+                        </p>
+                      </div>
                     </div>
                   </CarouselItem>
                 ))}
