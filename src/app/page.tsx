@@ -14,6 +14,14 @@ import {
   Accessibility,
   Headset,
   Stethoscope,
+  Baby,
+  Droplet,
+  Smile,
+  PersonStanding,
+  Scan,
+  Siren,
+  Pill,
+  Ear,
 } from "lucide-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
@@ -262,34 +270,54 @@ const WhatWeOffer = () => {
 const OurDepartments = () => {
   const services = [
     {
-      icon: <Hospital className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Emergency Care",
-      description: "24/7 Emergency Services With Rapid Response Teams Ready To Provide Immediate Medical Attention.",
+      icon: <Stethoscope className="h-6 w-6 text-[#1E73BE]" />,
+      title: "General & Laparoscopic Surgery",
+      description: "Advanced Minimally Invasive Surgeries With Faster Recovery.",
+    },
+    {
+      icon: <Baby className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Department of Gynaecology",
+      description: "Specialized Care For Women’s Reproductive Health And Wellness.",
+    },
+    {
+      icon: <Droplet className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Urology & Kidney Care",
+      description: "Expert Care For Urinary Tract And Kidney Health.",
+    },
+    {
+      icon: <Smile className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Dentistry & Oral Care",
+      description: "Comprehensive Dental Care Services, From Preventive Treatments To Advanced Procedures.",
+    },
+    {
+      icon: <PersonStanding className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Orthopedics & Joint Care",
+      description: "Comprehensive Care For Bones, Joints, And Mobility.",
     },
     {
       icon: <Microscope className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Laboratory Services",
-      description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
+      title: "Pathology",
+      description: "Accurate Lab Testing For Diagnosis And Health Monitoring.",
+    },
+     {
+      icon: <Scan className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Radiology & Imaging",
+      description: "Advanced Imaging Services For Precise Diagnosis.",
     },
     {
-      icon: <Store className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Pharmaceutical Services",
-      description: "Fully Stocked Pharmacy Providing Prescribed Medications And Expert Pharmaceutical Advice.",
+      icon: <Siren className="h-6 w-6 text-[#1E73BE]" />,
+      title: "Emergency and Critical Care",
+      description: "Immediate, Life-Saving Care For Critical Conditions.",
     },
     {
-      icon: <Accessibility className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Rehabilitation",
-      description: "Comprehensive Rehabilitation Programs Designed To Help Patients Regain Independence And Functionality.",
+      icon: <Pill className="h-6 w-6 text-[#1E73BE]" />,
+      title: "General Medicine",
+      description: "Comprehensive Care For Overall Adult Health.",
     },
     {
-      icon: <Headset className="h-6 w-6 text-[#1E73BE]" />,
-      title: "24/7 Support",
-      description: "Round-The-Clock Medical Assistance And Support For All Your Healthcare Needs.",
-    },
-    {
-      icon: <Stethoscope className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Health Check-ups",
-      description: "Comprehensive Health Screenings And Preventive Care Services For Early Detection And Intervention.",
+      icon: <Ear className="h-6 w-6 text-[#1E73BE]" />,
+      title: "ENT (Ear, Nose & Throat)",
+      description: "Specialized Care For Ear, Nose, And Throat Disorders.",
     },
   ];
 
