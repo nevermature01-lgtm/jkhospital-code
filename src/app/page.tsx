@@ -450,6 +450,13 @@ const Testimonials = () => {
       quote:
         "A truly safe and supportive environment. The holistic approach at MindCare has not only helped my mental health but my overall well-being. Highly recommended.",
     },
+    {
+      id: "testimonial-4",
+      name: "Mike T.",
+      city: "Boston",
+      quote:
+        "I was hesitant to start therapy, but the team at MindCare made me feel comfortable from day one. It's been a life-changing experience.",
+    },
   ];
 
   const testimonialImages = PlaceHolderImages.filter(img => img.id.startsWith('testimonial-'));
@@ -464,40 +471,54 @@ const Testimonials = () => {
           What Our Patients Say
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => {
-            const image = testimonialImages.find(img => img.id === testimonial.id);
-            return (
-              <Card key={testimonial.id} className="rounded-[25px] p-8 text-left shadow-lg bg-white flex flex-col">
-                <Quote className="h-8 w-8 text-[#9ADBCF] mb-4" />
-                <p className="text-[#555] leading-relaxed mb-6 flex-grow">
-                  {testimonial.quote}
-                </p>
-                <div className="flex items-center">
-                  {image && (
-                    <Image
-                      src={image.imageUrl}
-                      alt={`Portrait of ${testimonial.name}`}
-                      width={50}
-                      height={50}
-                      className="rounded-full object-cover"
-                      data-ai-hint={image.imageHint}
-                    />
-                  )}
-                  <div className="ml-4">
-                    <p className="font-bold text-[#1F3C3C]">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500">{testimonial.city}</p>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-mx-4">
+            {testimonials.map((testimonial) => {
+              const image = testimonialImages.find(img => img.id === testimonial.id);
+              return (
+                <CarouselItem key={testimonial.id} className="px-4 sm:basis-1/2 lg:basis-1/3">
+                  <div className="h-full">
+                    <Card className="rounded-[25px] p-8 text-left shadow-lg bg-white flex flex-col h-full">
+                      <Quote className="h-8 w-8 text-[#9ADBCF] mb-4" />
+                      <p className="text-[#555] leading-relaxed mb-6 flex-grow">
+                        {testimonial.quote}
+                      </p>
+                      <div className="flex items-center mt-auto">
+                        {image && (
+                          <Image
+                            src={image.imageUrl}
+                            alt={`Portrait of ${testimonial.name}`}
+                            width={50}
+                            height={50}
+                            className="rounded-full object-cover"
+                            data-ai-hint={image.imageHint}
+                          />
+                        )}
+                        <div className="ml-4">
+                          <p className="font-bold text-[#1F3C3C]">{testimonial.name}</p>
+                          <p className="text-sm text-gray-500">{testimonial.city}</p>
+                        </div>
+                        <div className="ml-auto flex items-center">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                          ))}
+                        </div>
+                      </div>
+                    </Card>
                   </div>
-                  <div className="ml-auto flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                </div>
-              </Card>
-            );
-          })}
-        </div>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
       </div>
     </section>
   );
