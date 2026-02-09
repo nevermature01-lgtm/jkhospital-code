@@ -347,10 +347,10 @@ const Testimonials = () => {
     },
     {
       id: "testimonial-2",
-      name: "John D.",
-      city: "Chicago",
+      name: "Anuj Shakya",
+      city: "Etawah",
       quote:
-        "The professionalism and genuine care I received were outstanding. My sessions have helped me navigate a difficult period in my life with confidence. I can't thank them enough.",
+        "A very positive experience. The doctor’s guidance and the hospital’s services were excellent.",
     },
     {
       id: "testimonial-3",
