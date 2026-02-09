@@ -27,7 +27,7 @@ export const Navbar = () => (
             <Link href="/services" className="hover:text-gray-200">
               Services
             </Link>
-            <Link href="#" className="hover:text-gray-200">
+            <Link href="/departments" className="hover:text-gray-200">
               Departments
             </Link>
             <Link href="#" className="hover:text-gray-200">
@@ -72,7 +72,7 @@ export const Navbar = () => (
                     <Link href="/services" className="hover:text-[#2fa693] py-2">
                       Services
                     </Link>
-                    <Link href="#" className="hover:text-[#2fa693] py-2">
+                    <Link href="/departments" className="hover:text-[#2fa693] py-2">
                       Departments
                     </Link>
                     <Link href="#" className="hover:text-[#2fa693] py-2">

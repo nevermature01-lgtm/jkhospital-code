@@ -37,12 +37,12 @@ export const Footer = () => (
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Our Departments</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-300 hover:text-white">General Surgery</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Gynaecology</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Urology & Kidney Care</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Dentistry & Oral Care</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Orthopedics</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Radiology & Imaging</a></li>
+              <li><Link href="/departments" className="text-gray-300 hover:text-white">General Surgery</Link></li>
+              <li><Link href="/departments" className="text-gray-300 hover:text-white">Gynaecology</Link></li>
+              <li><Link href="/departments" className="text-gray-300 hover:text-white">Urology & Kidney Care</Link></li>
+              <li><Link href="/departments" className="text-gray-300 hover:text-white">Dentistry & Oral Care</Link></li>
+              <li><Link href="/departments" className="text-gray-300 hover:text-white">Orthopedics</Link></li>
+              <li><Link href="/departments" className="text-gray-300 hover:text-white">Radiology & Imaging</Link></li>
             </ul>
           </div>
   
@@ -53,7 +53,7 @@ export const Footer = () => (
               <li><Link href="/" className="text-gray-300 hover:text-white">Home</Link></li>
               <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
               <li><Link href="/services" className="text-gray-300 hover:text-white">Services</Link></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Departments</a></li>
+              <li><Link href="/departments" className="text-gray-300 hover:text-white">Departments</Link></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Nursing College</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Blood Bank</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
