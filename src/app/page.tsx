@@ -194,29 +194,31 @@ const OurSpecialists = () => {
         <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
         <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Specialists</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {specialists.map((specialist) => {
             const image = specialistImages.find(img => img.id === specialist.id);
             return (
-              <Card key={specialist.id} className="rounded-[25px] p-6 pt-10 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                <div className="relative inline-block mb-5">
+              <Card key={specialist.id} className="rounded-[25px] p-6 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
+                <div className="relative mb-5 w-[140px] h-[190px] flex-shrink-0">
                   {image && (
-                     <div className="absolute inset-0 bg-[#2FAE9B] rounded-full -m-1"></div>
-                  )}
-                  {image && (
-                     <Image
-                        src={image.imageUrl}
-                        alt={`Portrait of ${specialist.name}`}
-                        width={140}
-                        height={140}
-                        className="rounded-full object-cover relative z-10 border-4 border-white"
-                        data-ai-hint={image.imageHint}
-                      />
+                     <>
+                        <div className="absolute inset-0 bg-[#2FAE9B] rounded-t-[120px] rounded-b-[20px] -m-1 shadow-md"></div>
+                         <Image
+                            src={image.imageUrl}
+                            alt={`Portrait of ${specialist.name}`}
+                            width={140}
+                            height={190}
+                            className="relative z-10 w-full h-full object-cover rounded-t-[120px] rounded-b-[20px] border-4 border-white"
+                            data-ai-hint={image.imageHint}
+                          />
+                     </>
                   )}
                 </div>
-                <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">{specialist.name}</h3>
-                <p className="text-[#2FAE9B] text-sm font-medium mb-3">{specialist.title}</p>
-                <p className="text-sm text-[#666] leading-relaxed">{specialist.description}</p>
+                <div className="flex flex-col flex-grow justify-center">
+                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">{specialist.name}</h3>
+                    <p className="text-[#2FAE9B] text-sm font-medium mb-3">{specialist.title}</p>
+                    <p className="text-sm text-[#666] leading-relaxed">{specialist.description}</p>
+                </div>
               </Card>
             );
           })}
