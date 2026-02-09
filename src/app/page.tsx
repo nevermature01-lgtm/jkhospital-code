@@ -352,10 +352,10 @@ const Testimonials = () => {
     },
     {
       id: "testimonial-3",
-      name: "Emily R.",
-      city: "San Francisco",
+      name: "Chitransh Gupta",
+      city: "Etawah",
       quote:
-        "A truly safe and supportive environment. The holistic approach at MindCare has not only helped my mental health but my overall well-being. Highly recommended.",
+        "I had a great experience at this hospital. The doctors are knowledgeable, and the nursing staff is very attentive. The hospital maintains good hygiene and the overall process was smooth.",
     },
     {
       id: "testimonial-4",
