@@ -251,7 +251,7 @@ const WhatWeOffer = () => {
         {/* Mobile View */}
         <div className="lg:hidden">
           <div className="text-center mb-12">
-            <div className="inline-block rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
+            <div className="inline-block rounded-[20px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
               <h2 className="text-4xl font-bold text-white">
                 What We Offer
               </h2>
@@ -275,7 +275,7 @@ const WhatWeOffer = () => {
         {/* Desktop View */}
         <div className="hidden lg:flex flex-row items-start gap-16">
           <div className="lg:w-2/5 lg:sticky lg:top-20">
-            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
+            <div className="rounded-[20px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
               <h2 className="text-4xl font-bold text-white">
                 What We Offer
               </h2>
@@ -438,7 +438,7 @@ const OurDepartments = () => {
         {/* Mobile View */}
         <div className="lg:hidden">
           <div className="text-center mb-12">
-            <div className="inline-block rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
+            <div className="inline-block rounded-[20px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
               <h2 className="text-4xl font-bold text-white">
                 Our Departments
               </h2>
@@ -462,7 +462,7 @@ const OurDepartments = () => {
         {/* Desktop View */}
         <div className="hidden lg:flex flex-row-reverse items-start gap-16">
           <div className="lg:w-2/5 lg:sticky lg:top-20">
-            <div className="rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
+            <div className="rounded-[20px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
               <h2 className="text-4xl font-bold text-white">
                 Our Departments
               </h2>
