@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
-import { RequestForm } from "@/components/request-form";
+import { Instagram, Facebook, Twitter, Linkedin, MapPin, Phone, Mail } from "lucide-react";
 
 export const Footer = () => (
     <footer className="bg-[#1F3C3C] text-white pt-20">
@@ -61,13 +60,29 @@ export const Footer = () => (
             </ul>
           </div>
   
-          {/* Column 4: Request a Callback */}
-          <div className="space-y-4 bg-[#2fa693]/20 p-6 rounded-2xl">
-            <h3 className="text-lg font-semibold text-white">Request a Callback</h3>
-            <p className="text-gray-300 text-sm">
-              Enter your details and we'll call you back to schedule an appointment.
-            </p>
-            <RequestForm />
+          {/* Column 4: Contact Info */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-white">Contact Us</h3>
+            <ul className="space-y-3 text-sm text-gray-300">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <span>Mainpuri Road, Near Kotwali, Etawah, Uttar Pradesh-206001</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <div>
+                  <a href="tel:+918006005061" className="hover:text-white">+91-8006005061</a><br/>
+                  <a href="tel:+918006005064" className="hover:text-white">+91-8006005064</a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
+                <div>
+                  <a href="mailto:Care@jkhospital.in" className="hover:text-white">Care@jkhospital.in</a><br/>
+                  <a href="mailto:Nursing@jkhospital.in" className="hover:text-white">Nursing@jkhospital.in</a>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         
@@ -77,6 +92,3 @@ export const Footer = () => (
       </div>
     </footer>
   );
-
-
-    
