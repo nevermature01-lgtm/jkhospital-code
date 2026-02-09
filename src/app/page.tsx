@@ -67,7 +67,7 @@ const TopBar = () => (
 const Navbar = () => (
   <div className="w-full py-4 px-4 sm:px-6 lg:px-8">
     <div className="container max-w-7xl mx-auto">
-      <div className="bg-[#1E73BE] rounded-full flex justify-between items-center p-3 px-6 shadow-md">
+      <div className="bg-[#2FAE9B] rounded-full flex justify-between items-center p-3 px-6 shadow-md">
         <Link
           href="/"
           className="flex items-center"
@@ -97,7 +97,7 @@ const Navbar = () => (
           <button className="bg-white/10 p-2 rounded-full hover:bg-white/20">
             <MessageCircle className="h-5 w-5 text-white" />
           </button>
-          <Button className="hidden sm:flex rounded-full bg-[#2fa693] hover:bg-[#2fa693]/90 shadow-md text-white">
+          <Button className="hidden sm:flex rounded-full bg-white hover:bg-white/90 shadow-md text-[#1F3C3C]">
             Book online <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
@@ -208,32 +208,32 @@ const AboutUs = () => {
 const WhatWeOffer = () => {
   const services = [
     {
-      icon: <Siren className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Siren className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Emergency Care",
       description: "24/7 Emergency Services With Rapid Response Teams Ready To Provide Immediate Medical Attention.",
     },
     {
-      icon: <Microscope className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Microscope className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Laboratory Services",
       description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
     },
     {
-      icon: <Pill className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Pill className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Pharmaceutical Services",
       description: "Fully Stocked Pharmacy Providing Prescribed Medications And Expert Pharmaceutical Advice.",
     },
     {
-      icon: <PersonStanding className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <PersonStanding className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Rehabilitation",
       description: "Comprehensive Rehabilitation Programs Designed To Help Patients Regain Independence And Functionality.",
     },
     {
-      icon: <Phone className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Phone className="h-6 w-6 text-[#2FAE9B]" />,
       title: "24/7 Support",
       description: "Round-The-Clock Medical Assistance And Support For All Your Healthcare Needs.",
     },
     {
-      icon: <Stethoscope className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Stethoscope className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Health Check-ups",
       description: "Comprehensive Health Screenings And Preventive Care Services For Early Detection And Intervention.",
     },
@@ -350,52 +350,52 @@ const OurSpecialists = () => {
 const OurDepartments = () => {
   const services = [
     {
-      icon: <Stethoscope className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Stethoscope className="h-6 w-6 text-[#2FAE9B]" />,
       title: "General & Laparoscopic Surgery",
       description: "Advanced Minimally Invasive Surgeries With Faster Recovery.",
     },
     {
-      icon: <Baby className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Baby className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Department of Gynaecology",
       description: "Specialized Care For Women’s Reproductive Health And Wellness.",
     },
     {
-      icon: <Droplet className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Droplet className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Urology & Kidney Care",
       description: "Expert Care For Urinary Tract And Kidney Health.",
     },
     {
-      icon: <Smile className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Smile className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Dentistry & Oral Care",
       description: "Comprehensive Dental Care Services, From Preventive Treatments To Advanced Procedures.",
     },
     {
-      icon: <PersonStanding className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <PersonStanding className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Orthopedics & Joint Care",
       description: "Comprehensive Care For Bones, Joints, And Mobility.",
     },
     {
-      icon: <Microscope className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Microscope className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Pathology",
       description: "Accurate Lab Testing For Diagnosis And Health Monitoring.",
     },
      {
-      icon: <Scan className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Scan className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Radiology & Imaging",
       description: "Advanced Imaging Services For Precise Diagnosis.",
     },
     {
-      icon: <Siren className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Siren className="h-6 w-6 text-[#2FAE9B]" />,
       title: "Emergency and Critical Care",
       description: "Immediate, Life-Saving Care For Critical Conditions.",
     },
     {
-      icon: <Pill className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Pill className="h-6 w-6 text-[#2FAE9B]" />,
       title: "General Medicine",
       description: "Comprehensive Care For Overall Adult Health.",
     },
     {
-      icon: <Ear className="h-6 w-6 text-[#1E73BE]" />,
+      icon: <Ear className="h-6 w-6 text-[#2FAE9B]" />,
       title: "ENT (Ear, Nose & Throat)",
       description: "Specialized Care For Ear, Nose, And Throat Disorders.",
     },
