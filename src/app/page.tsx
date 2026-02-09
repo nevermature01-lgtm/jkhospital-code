@@ -8,6 +8,12 @@ import {
   Menu,
   Mail,
   Phone,
+  Hospital,
+  Microscope,
+  Store,
+  Accessibility,
+  Headset,
+  Stethoscope,
 } from "lucide-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
@@ -186,65 +192,60 @@ const AboutUs = () => {
   );
 };
 
-const MethodsWeUse = () => {
-  const methods = [
+const WhatWeOffer = () => {
+  const services = [
     {
-      num: "01",
-      title: "Cognitive Behavioral Therapy",
-      description:
-        "This method helps individuals identify and change negative thought patterns and behaviors, replacing them with more positive and realistic ones. It is effective for treating depression, anxiety disorders, and other psychological issues.",
+      icon: <Hospital className="h-8 w-8 text-[#1E73BE]" />,
+      title: "Emergency Care",
+      description: "24/7 Emergency Services With Rapid Response Teams Ready To Provide Immediate Medical Attention.",
     },
     {
-      num: "02",
-      title: "Gestalt Therapy",
-      description:
-        "Focuses on awareness of present emotions and needs, helping individuals understand their true desires and feelings. This therapy promotes personal growth and improves interpersonal relationships.",
+      icon: <Microscope className="h-8 w-8 text-[#1E73BE]" />,
+      title: "Laboratory Services",
+      description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
     },
     {
-      num: "03",
-      title: "Psychoanalytic Therapy",
-      description:
-        "Explores internal conflicts and past traumas through interpretation of behavior, dreams, and free associations. This method helps understand the deep-rooted causes of psychological problems and find ways to resolve them.",
+      icon: <Store className="h-8 w-8 text-[#1E73BE]" />,
+      title: "Pharmaceutical Services",
+      description: "Fully Stocked Pharmacy Providing Prescribed Medications And Expert Pharmaceutical Advice.",
+    },
+    {
+      icon: <Accessibility className="h-8 w-8 text-[#1E73BE]" />,
+      title: "Rehabilitation",
+      description: "Comprehensive Rehabilitation Programs Designed To Help Patients Regain Independence And Functionality.",
+    },
+    {
+      icon: <Headset className="h-8 w-8 text-[#1E73BE]" />,
+      title: "24/7 Support",
+      description: "Round-The-Clock Medical Assistance And Support For All Your Healthcare Needs.",
+    },
+    {
+      icon: <Stethoscope className="h-8 w-8 text-[#1E73BE]" />,
+      title: "Health Check-ups",
+      description: "Comprehensive Health Screenings And Preventive Care Services For Early Detection And Intervention.",
     },
   ];
 
   return (
-    <section className="bg-[#F4F4F4] py-20">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="lg:w-5/12 w-full">
-            <div className="h-[450px] rounded-[25px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] shadow-lg flex flex-col justify-end p-8">
-              <h2 className="text-4xl font-bold text-white max-w-[200px]">
-                Methods We Use
-              </h2>
-            </div>
-          </div>
-          <div className="lg:w-7/12 w-full mt-12 lg:mt-0">
-            <div className="relative">
-              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block" />
-              <div className="space-y-12">
-                {methods.map((method, index) => (
-                  <div key={index} className="relative flex items-start gap-6 sm:gap-8">
-                    <div className="relative z-10 flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
-                        <span className="text-lg font-bold text-[#2FAE9B]">
-                          {method.num}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="pt-1">
-                      <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">
-                        {method.title}
-                      </h3>
-                      <p className="text-[#666] text-base leading-relaxed">
-                        {method.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+    <section className="bg-[#F5F5F5] py-20">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-[#1F3C3C] mb-4">What We Offer</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <Card key={index} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border-transparent">
+              <div className="flex items-start gap-5">
+                <div className="flex-shrink-0 bg-[#1E73BE]/10 rounded-xl p-4">
+                  {service.icon}
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-800 mb-2">{service.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
@@ -296,7 +297,7 @@ export default function Home() {
         
         <AboutUs />
 
-        <MethodsWeUse />
+        <WhatWeOffer />
 
       </main>
     </div>
