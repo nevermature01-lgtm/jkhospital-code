@@ -83,9 +83,6 @@ export default function Home() {
               )}
             </div>
           </div>
-          <Button className="absolute bottom-8 right-8 rounded-full bg-[#2fa693] hover:bg-[#2fa693]/90 shadow-md text-white hidden md:flex">
-            Book online <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
         </div>
         
         {/* Placeholder for other sections */}
