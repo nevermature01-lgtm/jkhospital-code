@@ -169,7 +169,7 @@ const departmentsData = [
       "Histopathology",
       "Cytology Tests",
     ],
-    specialists: [{ id: "pathology-lab", name: "Pathology Laboratory", qualifications: "", department: "" }],
+    specialists: [],
   },
   {
     icon: <Scan className="h-8 w-8 text-primary" />,
@@ -308,7 +308,7 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
                                 {department.specialists.map((specialist, index) => {
                                   const doctorImage = PlaceHolderImages.find(img => img.id === specialist.id);
                                   return (
-                                    <div key={index} className="p-4 rounded-lg bg-secondary border flex items-center gap-4">
+                                    <div key={index} className="p-4 rounded-lg bg-primary/10 border border-primary/20 flex items-center gap-4">
                                       {doctorImage && (
                                         <Image
                                             src={doctorImage.imageUrl}
