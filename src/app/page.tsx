@@ -72,18 +72,30 @@ const Navbar = () => (
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
+        <nav className="hidden md:flex items-center gap-4 text-sm font-medium text-white">
+          <Link href="/" className="hover:text-gray-200">
+            Home
+          </Link>
+          <Link href="#" className="hover:text-gray-200">
+            About Us
+          </Link>
           <Link href="#" className="hover:text-gray-200">
             Services
           </Link>
           <Link href="#" className="hover:text-gray-200">
-            Specialists
+            Departments
           </Link>
           <Link href="#" className="hover:text-gray-200">
-            Prices
+            Nursing College
           </Link>
           <Link href="#" className="hover:text-gray-200">
-            Contacts
+            Blood Bank
+          </Link>
+          <Link href="#" className="hover:text-gray-200">
+            Contact
+          </Link>
+          <Link href="#" className="hover:text-gray-200">
+            Gallery
           </Link>
         </nav>
         <div className="hidden md:flex items-center gap-3">
@@ -113,17 +125,29 @@ const Navbar = () => (
                   <Image src="/logo.png" alt="MindCare Logo" width={140} height={32} />
                 </Link>
                 <nav className="flex flex-col gap-4 text-lg font-medium">
+                  <Link href="/" className="hover:text-[#2fa693] py-2">
+                    Home
+                  </Link>
+                  <Link href="#" className="hover:text-[#2fa693] py-2">
+                    About Us
+                  </Link>
                   <Link href="#" className="hover:text-[#2fa693] py-2">
                     Services
                   </Link>
                   <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Specialists
+                    Departments
                   </Link>
                   <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Prices
+                    Nursing College
                   </Link>
                   <Link href="#" className="hover:text-[#2fa693] py-2">
-                    Contacts
+                    Blood Bank
+                  </Link>
+                  <Link href="#" className="hover:text-[#2fa693] py-2">
+                    Contact
+                  </Link>
+                  <Link href="#" className="hover:text-[#2fa693] py-2">
+                    Gallery
                   </Link>
                 </nav>
                 <Button className="rounded-full bg-[#2fa693] hover:bg-[#2fa693]/90 shadow-md text-white mt-4">
@@ -572,12 +596,14 @@ const Footer = () => (
         <div className="space-y-4">
           <h3 className="text-lg font-semibold text-white">Useful Links</h3>
           <ul className="space-y-2 text-sm">
+            <li><a href="/" className="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">About Us</a></li>
             <li><a href="#" className="text-gray-300 hover:text-white">Services</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Specialists</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Prices</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Contacts</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">FAQ</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Book Online</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">Departments</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">Nursing College</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">Blood Bank</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
+            <li><a href="#" className="text-gray-300 hover:text-white">Gallery</a></li>
           </ul>
         </div>
 
