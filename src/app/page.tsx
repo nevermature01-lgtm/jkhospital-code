@@ -99,12 +99,6 @@ const Navbar = () => (
           </Link>
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <button className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-            <Instagram className="h-5 w-5 text-white" />
-          </button>
-          <button className="bg-white/10 p-2 rounded-full hover:bg-white/20">
-            <MessageCircle className="h-5 w-5 text-white" />
-          </button>
           <Button className="hidden sm:flex rounded-full bg-white hover:bg-white/90 shadow-md text-[#1F3C3C]">
             Book online <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
@@ -153,14 +147,6 @@ const Navbar = () => (
                 <Button className="rounded-full bg-[#2fa693] hover:bg-[#2fa693]/90 shadow-md text-white mt-4">
                   Book online <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <div className="flex items-center justify-center gap-4 mt-auto">
-                  <button className="bg-gray-100 p-3 rounded-full hover:bg-gray-200">
-                    <Instagram className="h-6 w-6 text-gray-600" />
-                  </button>
-                  <button className="bg-gray-100 p-3 rounded-full hover:bg-gray-200">
-                    <MessageCircle className="h-6 w-6 text-gray-600" />
-                  </button>
-                </div>
               </div>
             </SheetContent>
           </Sheet>
