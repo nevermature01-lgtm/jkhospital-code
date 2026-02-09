@@ -25,7 +25,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const Navbar = () => (
   <div className="w-full py-4 px-4 sm:px-6 lg:px-8">
     <div className="container max-w-7xl mx-auto">
-      <div className="bg-white rounded-full flex justify-between items-center p-3 px-6 shadow-md">
+      <div className="bg-[#1E73BE] rounded-full flex justify-between items-center p-3 px-6 shadow-md">
         <Link
           href="/"
           className="flex items-center"
@@ -34,26 +34,26 @@ const Navbar = () => (
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-          <Link href="#" className="hover:text-[#2fa693]">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
+          <Link href="#" className="hover:text-gray-200">
             Services
           </Link>
-          <Link href="#" className="hover:text-[#2fa693]">
+          <Link href="#" className="hover:text-gray-200">
             Specialists
           </Link>
-          <Link href="#" className="hover:text-[#2fa693]">
+          <Link href="#" className="hover:text-gray-200">
             Prices
           </Link>
-          <Link href="#" className="hover:text-[#2fa693]">
+          <Link href="#" className="hover:text-gray-200">
             Contacts
           </Link>
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <button className="bg-gray-100 p-2 rounded-full hover:bg-gray-200">
-            <Instagram className="h-5 w-5 text-gray-600" />
+          <button className="bg-white/10 p-2 rounded-full hover:bg-white/20">
+            <Instagram className="h-5 w-5 text-white" />
           </button>
-          <button className="bg-gray-100 p-2 rounded-full hover:bg-gray-200">
-            <MessageCircle className="h-5 w-5 text-gray-600" />
+          <button className="bg-white/10 p-2 rounded-full hover:bg-white/20">
+            <MessageCircle className="h-5 w-5 text-white" />
           </button>
           <Button className="hidden sm:flex rounded-full bg-[#2fa693] hover:bg-[#2fa693]/90 shadow-md text-white">
             Book online <ArrowRight className="ml-2 h-4 w-4" />
@@ -64,7 +64,7 @@ const Navbar = () => (
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:text-white">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open menu</span>
               </Button>
