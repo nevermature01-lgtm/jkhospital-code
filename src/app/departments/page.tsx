@@ -309,7 +309,7 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
                                   const doctorImage = PlaceHolderImages.find(img => img.id === specialist.id);
                                   return (
                                     <div key={index} className="p-4 rounded-lg bg-primary/10 border border-primary/20 flex items-center gap-4">
-                                      {doctorImage && (
+                                      {doctorImage ? (
                                         <Image
                                             src={doctorImage.imageUrl}
                                             alt={`Portrait of ${specialist.name}`}
@@ -318,6 +318,10 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
                                             className="rounded-full object-cover w-16 h-16"
                                             data-ai-hint={doctorImage.imageHint}
                                         />
+                                      ) : (
+                                        <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center">
+                                            <PersonStanding className="w-8 h-8 text-primary" />
+                                        </div>
                                       )}
                                       <div>
                                         <p className="font-bold text-foreground">{specialist.name}</p>
