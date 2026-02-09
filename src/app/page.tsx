@@ -106,7 +106,7 @@ const WhatWeOffer = () => {
     ];
   
     return (
-        <section className="bg-background py-20">
+        <section className="bg-muted py-20">
             <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Mobile View */}
                 <div className="lg:hidden">
@@ -454,8 +454,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
-        <div className="relative rounded-[40px] overflow-hidden">
+      <div className="container max-w-7xl mx-auto sm:px-6 lg:px-8 sm:my-8">
+        <div className="relative sm:rounded-[40px] overflow-hidden">
           <Carousel
             className="w-full"
             plugins={[plugin.current]}
@@ -499,8 +499,8 @@ export default function Home() {
       
       <AboutUsSummary />
       <WhatWeOffer />
-      <OurSpecialists />
       <OurDepartments />
+      <OurSpecialists />
       <Testimonials />
     </>
   );
