@@ -33,6 +33,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card } from "@/components/ui/card";
 import { Navbar } from "@/components/layout/Navbar";
 import { FAQs } from "@/components/faqs";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const AboutUsSummary = () => {
     return (
@@ -366,8 +367,6 @@ const Testimonials = () => {
     },
   ];
 
-  const testimonialImages = PlaceHolderImages.filter(img => img.id.startsWith('testimonial-'));
-
   return (
     <section className="bg-background py-20">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -387,7 +386,6 @@ const Testimonials = () => {
         >
           <CarouselContent className="-mx-4">
             {testimonials.map((testimonial) => {
-              const image = testimonialImages.find(img => img.id === testimonial.id);
               return (
                 <CarouselItem key={testimonial.id} className="px-4 sm:basis-1/2 lg:basis-1/3">
                   <div className="h-full">
@@ -397,16 +395,11 @@ const Testimonials = () => {
                         {testimonial.quote}
                       </p>
                       <div className="flex items-center mt-auto">
-                        {image && (
-                          <Image
-                            src={image.imageUrl}
-                            alt={`Portrait of ${testimonial.name}`}
-                            width={50}
-                            height={50}
-                            className="rounded-full object-cover"
-                            data-ai-hint={image.imageHint}
-                          />
-                        )}
+                        <Avatar>
+                            <AvatarFallback>
+                                {testimonial.name.split(" ").map((chunk) => chunk[0]).join("")}
+                            </AvatarFallback>
+                        </Avatar>
                         <div className="ml-4">
                           <p className="font-bold text-[#1F3C3C]">{testimonial.name}</p>
                           <p className="text-sm text-gray-500">{testimonial.city}</p>
