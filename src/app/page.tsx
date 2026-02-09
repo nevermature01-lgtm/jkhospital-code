@@ -108,24 +108,55 @@ const WhatWeOffer = () => {
     return (
         <section className="bg-background py-20">
             <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-[#1F3C3C]">
-                    What We Offer
-                </h2>
-                <p className="text-lg text-[#555] mt-4 max-w-2xl mx-auto">
-                    We provide a wide range of high-quality medical services to meet all your healthcare needs.
-                </p>
+                {/* Mobile View */}
+                <div className="lg:hidden">
+                    <div className="text-center mb-12">
+                        <div className="inline-block rounded-lg bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md">
+                            <h2 className="text-4xl font-bold text-white text-center">
+                                What We Offer
+                            </h2>
+                        </div>
+                    </div>
+                    <div className="space-y-8">
+                        {services.map((service, index) => (
+                            <div key={index} className="flex items-start gap-6">
+                                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+                                    {service.icon}
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
+                                    <p className="text-[#555] leading-relaxed">{service.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {services.map((service, index) => (
-                    <div key={index} className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#2FAE9B]/10 flex items-center justify-center mb-4">
-                        {React.cloneElement(service.icon, {className: "h-8 w-8 text-[#2FAE9B]"})}
+
+                {/* Desktop View */}
+                <div className="hidden lg:flex flex-row items-start gap-16">
+                    <div className="lg:w-2/5 lg:sticky lg:top-20">
+                        <div className="rounded-lg bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] p-8 shadow-md text-left">
+                            <h2 className="text-4xl font-bold text-white">
+                                What We Offer
+                            </h2>
+                        </div>
                     </div>
-                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
-                    <p className="text-[#555] leading-relaxed">{service.description}</p>
+                    <div className="lg:w-3/5">
+                        <div className="relative space-y-8 pt-4">
+                            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                            {services.map((service, index) => (
+                                <div key={index} className="flex items-start gap-6 relative">
+                                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center z-10">
+                                        {service.icon}
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
+                                        <p className="text-[#555] leading-relaxed">{service.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                ))}
                 </div>
             </div>
         </section>
