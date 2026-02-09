@@ -199,16 +199,16 @@ const OurSpecialists = () => {
             const image = specialistImages.find(img => img.id === specialist.id);
             return (
               <Card key={specialist.id} className="rounded-[25px] p-6 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
-                <div className="relative mb-5 w-[140px] h-[190px] flex-shrink-0">
+                <div className="relative mb-5 w-[160px] h-[120px] flex-shrink-0">
                   {image && (
                      <>
-                        <div className="absolute inset-0 bg-[#2FAE9B] rounded-t-[120px] rounded-b-[20px] -m-1 shadow-md"></div>
+                        <div className="absolute inset-0 bg-[#2FAE9B] rounded-full -m-1 shadow-md"></div>
                          <Image
                             src={image.imageUrl}
                             alt={`Portrait of ${specialist.name}`}
-                            width={140}
-                            height={190}
-                            className="relative z-10 w-full h-full object-cover rounded-t-[120px] rounded-b-[20px] border-4 border-white"
+                            width={160}
+                            height={120}
+                            className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white"
                             data-ai-hint={image.imageHint}
                           />
                      </>
