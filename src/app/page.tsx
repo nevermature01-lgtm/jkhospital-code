@@ -8,11 +8,6 @@ import {
   Menu,
   Mail,
   Phone,
-  Hospital,
-  Microscope,
-  Store,
-  Accessibility,
-  Headset,
   Stethoscope,
   Baby,
   Droplet,
@@ -22,6 +17,7 @@ import {
   Siren,
   Pill,
   Ear,
+  Microscope,
 } from "lucide-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
@@ -200,67 +196,74 @@ const AboutUs = () => {
   );
 };
 
-const WhatWeOffer = () => {
-  const services = [
+const OurSpecialists = () => {
+  const specialists = [
     {
-      icon: <Hospital className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Emergency Care",
-      description: "24/7 Emergency Services With Rapid Response Teams Ready To Provide Immediate Medical Attention.",
+      id: "specialist-1",
+      name: "Dr. Michael Anderson",
+      title: "Chief Doctor",
+      description: "Leader in Psychological Health, Renowned Expert in Psychiatry.",
     },
     {
-      icon: <Microscope className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Laboratory Services",
-      description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
+      id: "specialist-2",
+      name: "Dr. Robert Wilson",
+      title: "Deputy Chief Doctor",
+      description: "Advocate for Mental Wellness, Acclaimed Specialist in Clinical Psychology.",
     },
     {
-      icon: <Store className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Pharmaceutical Services",
-      description: "Fully Stocked Pharmacy Providing Prescribed Medications And Expert Pharmaceutical Advice.",
+      id: "specialist-3",
+      name: "Dr. Emily Davis",
+      title: "Clinical Psychologist",
+      description: "Committed to Emotional Wellbeing, Experienced Professional in Psychological Therapy.",
     },
     {
-      icon: <Accessibility className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Rehabilitation",
-      description: "Comprehensive Rehabilitation Programs Designed To Help Patients Regain Independence And Functionality.",
-    },
-    {
-      icon: <Headset className="h-6 w-6 text-[#1E73BE]" />,
-      title: "24/7 Support",
-      description: "Round-The-Clock Medical Assistance And Support For All Your Healthcare Needs.",
-    },
-    {
-      icon: <Stethoscope className="h-6 w-6 text-[#1E73BE]" />,
-      title: "Health Check-ups",
-      description: "Comprehensive Health Screenings And Preventive Care Services For Early Detection And Intervention.",
+      id: "specialist-4",
+      name: "Dr. Sarah Parker",
+      title: "Psychiatrist",
+      description: "Expert in Mental Health Treatment, Respected Authority in Psychiatry.",
     },
   ];
 
+  const specialistImages = PlaceHolderImages.filter(img => img.id.startsWith('specialist-'));
+
   return (
     <section className="bg-muted py-20">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-stretch gap-16">
-          <div className="lg:w-2/5">
-            <div className="rounded-[25px] h-full min-h-[450px] bg-gradient-to-br from-[#66C5B4] to-[#9ADBCF] flex items-end p-8 shadow-md">
-              <h2 className="text-4xl font-bold text-white">
-                What We Offer
-              </h2>
-            </div>
-          </div>
-          <div className="lg:w-3/5">
-            <div className="relative space-y-8 pt-4">
-              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block"></div>
-              {services.map((service, index) => (
-                <div key={index} className="flex items-start gap-6 relative">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center z-10">
-                    {service.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
-                    <p className="text-[#555] leading-relaxed">{service.description}</p>
-                  </div>
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
+        <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Specialists</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {specialists.map((specialist) => {
+            const image = specialistImages.find(img => img.id === specialist.id);
+            return (
+              <Card key={specialist.id} className="rounded-[25px] p-6 pt-10 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div className="relative inline-block mb-5">
+                  {image && (
+                     <div className="absolute inset-0 bg-[#2FAE9B] rounded-full -m-1"></div>
+                  )}
+                  {image && (
+                     <Image
+                        src={image.imageUrl}
+                        alt={`Portrait of ${specialist.name}`}
+                        width={140}
+                        height={140}
+                        className="rounded-full object-cover relative z-10 border-4 border-white"
+                        data-ai-hint={image.imageHint}
+                      />
+                  )}
                 </div>
-              ))}
-            </div>
-          </div>
+                <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">{specialist.name}</h3>
+                <p className="text-[#2FAE9B] text-sm font-medium mb-3">{specialist.title}</p>
+                <p className="text-sm text-[#666] leading-relaxed">{specialist.description}</p>
+              </Card>
+            );
+          })}
+        </div>
+
+        <div className="mt-12">
+          <Button className="rounded-full bg-[#2FAE9B] hover:bg-[#2FAE9B]/90 shadow-md text-white px-8 py-6 text-base">
+            See All Doctors <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>
@@ -399,7 +402,7 @@ export default function Home() {
         
         <AboutUs />
 
-        <WhatWeOffer />
+        <OurSpecialists />
         
         <OurDepartments />
 
