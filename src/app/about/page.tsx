@@ -67,7 +67,7 @@ const AboutUsContent = () => {
               </div>
               <div className="bg-accent text-accent-foreground p-8 rounded-2xl shadow-lg">
                 <h3 className="text-3xl font-bold mb-4 text-center">
-                    Manipal Values
+                    Our Values
                 </h3>
                 <ul className="space-y-2 text-center leading-relaxed">
                     <li>* Integrity</li>
