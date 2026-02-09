@@ -77,6 +77,66 @@
       "description": "Portrait of Mike T.",
       "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEwMDYyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
+    },
+    {
+      "id": "dept-surgery",
+      "description": "A modern operating room with surgical equipment.",
+      "imageUrl": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc3MDYxMjU5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "operating room"
+    },
+    {
+      "id": "dept-gynaecology",
+      "description": "A compassionate doctor talking to a pregnant woman.",
+      "imageUrl": "https://images.unsplash.com/photo-1584847688440-549d4d9eb7c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkb2N0b3IlMjBwcmVnbmFudHxlbnwwfHx8fDE3NzA2MzAwNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor pregnant"
+    },
+    {
+      "id": "dept-urology",
+      "description": "A diagram of the human urinary system.",
+      "imageUrl": "https://images.unsplash.com/photo-1715527498487-85f97b828616?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1cmluYXJ5JTIwc3lzdGVtfGVufDB8fHx8MTc3MDYzMDA3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "urinary system"
+    },
+    {
+      "id": "dept-dentistry",
+      "description": "A dentist's chair and equipment in a clean, modern clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1609207825181-52d3214556dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZW50aXN0JTIwb2ZmaWNlfGVufDB8fHx8MTc3MDYzMDA3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dentist office"
+    },
+    {
+      "id": "dept-orthopedics",
+      "description": "An x-ray of a human skeleton, focusing on joints.",
+      "imageUrl": "https://images.unsplash.com/photo-1649073586373-b6d49022d567?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx4cmF5JTIwc2tlbGV0b258ZW58MHx8fHwxNzcwNjMwMDcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "xray skeleton"
+    },
+    {
+      "id": "dept-pathology",
+      "description": "A scientist looking through a microscope in a laboratory.",
+      "imageUrl": "https://images.unsplash.com/photo-1614308457932-e16d85c5d053?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWNyb3Njb3BlJTIwbGFib3JhdG9yeXxlbnwwfHx8fDE3NzA2MzAwNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "microscope laboratory"
+    },
+    {
+      "id": "dept-radiology",
+      "description": "A radiologist examining an MRI scan.",
+      "imageUrl": "https://images.unsplash.com/photo-1616012481039-5de1dcb42934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtcmklMjBzY2FufGVufDB8fHx8MTc3MDU2MTg2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mri scan"
+    },
+    {
+      "id": "dept-emergency",
+      "description": "Paramedics rushing a patient on a stretcher into an emergency room.",
+      "imageUrl": "https://images.unsplash.com/photo-1554734867-bf3c00a49371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbWVyZ2VuY3klMjByb29tfGVufDB8fHx8MTc3MDYyOTIyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "emergency room"
+    },
+    {
+      "id": "dept-general-medicine",
+      "description": "A doctor listening to a patient's heart with a stethoscope.",
+      "imageUrl": "https://images.unsplash.com/photo-1682706841478-88eb8995357b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkb2N0b3IlMjBzdGV0aG9zY29wZXxlbnwwfHx8fDE3NzA1NTU3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor stethoscope"
+    },
+    {
+      "id": "dept-ent",
+      "description": "A diagram showing the human ear, nose, and throat.",
+      "imageUrl": "https://images.unsplash.com/photo-1541260894924-7ff059b93d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYXIlMjBub3NlfGVufDB8fHx8MTc3MDYzMDA3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ear nose"
     }
   ]
 }
