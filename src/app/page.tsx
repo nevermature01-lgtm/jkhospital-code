@@ -6,7 +6,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => (
@@ -50,8 +49,6 @@ const Navbar = () => (
 );
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === "hero-image");
-
   return (
     <div className="bg-background min-h-screen text-foreground font-sans">
       <Navbar />
@@ -69,18 +66,6 @@ export default function Home() {
 
             {/* Right Column */}
             <div className="lg:w-1/2 w-full flex justify-center lg:justify-end relative mt-8 lg:mt-0">
-               {heroImage && (
-                <div className="relative h-[450px] w-[350px] sm:h-[550px] sm:w-[450px] lg:-mb-24">
-                  <Image
-                    alt={heroImage.description}
-                    className="object-contain object-bottom"
-                    src={heroImage.imageUrl}
-                    fill
-                    data-ai-hint={heroImage.imageHint}
-                    priority
-                  />
-                </div>
-              )}
             </div>
           </div>
         </div>
