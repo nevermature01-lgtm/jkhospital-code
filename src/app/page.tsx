@@ -167,26 +167,26 @@ const WhatWeOffer = () => {
 const OurSpecialists = () => {
   const specialists = [
     {
-      id: "specialist-1",
-      name: "Dr. Michael Anderson",
-      title: "Chief Doctor",
-      description: "Leader in Psychological Health, Renowned Expert in Psychiatry.",
+      id: "doctor-1",
+      name: "Dr. Manoj Yadav",
+      title: "General & Laparoscopic Surgery and Urology",
+      description: "MBBS, MS, FICS, FAIS, FIAGES, FILHS. A leading surgeon with extensive experience.",
     },
     {
-      id: "specialist-3",
-      name: "Dr. Emily Davis",
-      title: "Clinical Psychologist",
-      description: "Committed to Emotional Wellbeing, Experienced Professional in Psychological Therapy.",
+      id: "doctor-3",
+      name: "Dr. Neha Singh",
+      title: "Gynaecology Department",
+      description: "MBBS, MS (Obstetrics & Gynaecology). Dedicated to women's health and wellness.",
     },
     {
-      id: "specialist-4",
-      name: "Dr. Sarah Parker",
-      title: "Psychiatrist",
-      description: "Expert in Mental Health Treatment, Respected Authority in Psychiatry.",
+      id: "doctor-5",
+      name: "Dr. Shahini Yadav",
+      title: "Dentistry and Oral Care",
+      description: "BDS, FMC. Committed to providing excellent dental care.",
     },
   ];
 
-  const specialistImages = PlaceHolderImages.filter(img => img.id.startsWith('specialist-'));
+  const specialistImages = PlaceHolderImages.filter(img => img.id.startsWith('doctor-'));
 
   return (
     <section className="bg-background py-20">
