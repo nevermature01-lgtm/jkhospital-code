@@ -166,6 +166,9 @@ const AboutUs = () => {
             )}
           </div>
           <div className="lg:w-1/2">
+            <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">
+              Who We Are
+            </p>
             <h2 className="text-4xl font-bold text-[#1F3C3C] mb-4">
               About Our Center <span className="text-[#2FAE9B]">MindCare</span>
             </h2>
