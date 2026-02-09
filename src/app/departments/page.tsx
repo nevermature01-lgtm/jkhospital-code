@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -36,11 +37,13 @@ const departmentsData = [
     ],
     specialists: [
       {
+        id: "doctor-1",
         name: "Dr. Manoj Yadav",
         qualifications: "MBBS, MS, FICS, FAIS, FIAGES, FILHS",
         department: "General & Laparoscopic Surgery and Urology",
       },
       {
+        id: "doctor-2",
         name: "Dr. Kumar Katreya Yadav",
         qualifications: "MBBS, MS",
         department: "General & Laparoscopic Surgery and Urology",
@@ -73,6 +76,7 @@ const departmentsData = [
     ],
     specialists: [
       {
+        id: "doctor-3",
         name: "Dr. Neha Singh",
         qualifications: "MBBS, MS (Obstetrics & Gynaecology)",
         department: "Gynaecology Department",
@@ -96,6 +100,7 @@ const departmentsData = [
     ],
     specialists: [
       {
+        id: "doctor-4",
         name: "Dr. Madhukar Gupta",
         qualifications: "MCH Urology",
         department: "",
@@ -119,6 +124,7 @@ const departmentsData = [
     ],
     specialists: [
       {
+        id: "doctor-5",
         name: "Dr. Shahini Yadav",
         qualifications: "BDS, FMC",
         department: "Dentistry and Oral Care",
@@ -142,6 +148,7 @@ const departmentsData = [
     ],
     specialists: [
       {
+        id: "doctor-6",
         name: "Dr. Pankaj",
         qualifications: "M.B.B.S, D. ORTH, DNB",
         department: "",
@@ -163,7 +170,7 @@ const departmentsData = [
       "Histopathology",
       "Cytology Tests",
     ],
-    specialists: [{ name: "Pathology Laboratory", qualifications: "", department: "" }],
+    specialists: [{ id: "pathology-lab", name: "Pathology Laboratory", qualifications: "", department: "" }],
   },
   {
     icon: <Scan className="h-8 w-8 text-primary" />,
@@ -220,6 +227,7 @@ const departmentsData = [
     ],
     specialists: [
       {
+        id: "doctor-7",
         name: "Dr. ADEEM KHAN",
         qualifications: "MBBS, MD (Medicine), ACMDC, CCMH",
         department: "General Physician",
@@ -246,6 +254,7 @@ const departmentsData = [
     ],
     specialists: [
       {
+        id: "doctor-8",
         name: "Dr. ASHWINI KUMAR YADAV",
         qualifications: "M.B.B.S, MS ENT",
         department: "",
@@ -255,7 +264,7 @@ const departmentsData = [
 ];
 
 
-const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0] & { image: string } }) => {
+const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0] }) => {
     const deptImage = PlaceHolderImages.find(img => img.id === department.image);
 
     return (
@@ -297,13 +306,28 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
                             <div>
                             <h4 className="font-bold text-xl text-foreground mb-4 border-b-2 border-primary pb-2">Our Specialists</h4>
                             <div className="space-y-4">
-                                {department.specialists.map((specialist, index) => (
-                                <div key={index} className="p-4 rounded-lg bg-background border">
-                                    <p className="font-bold text-foreground">{specialist.name}</p>
-                                    {specialist.qualifications && <p className="text-sm text-foreground/70">{specialist.qualifications}</p>}
-                                    {specialist.department && <p className="text-sm text-primary font-medium">{specialist.department}</p>}
-                                </div>
-                                ))}
+                                {department.specialists.map((specialist, index) => {
+                                  const doctorImage = PlaceHolderImages.find(img => img.id === specialist.id);
+                                  return (
+                                    <div key={index} className="p-4 rounded-lg bg-background border flex items-center gap-4">
+                                      {doctorImage && (
+                                        <Image
+                                            src={doctorImage.imageUrl}
+                                            alt={`Portrait of ${specialist.name}`}
+                                            width={60}
+                                            height={60}
+                                            className="rounded-full object-cover w-16 h-16"
+                                            data-ai-hint={doctorImage.imageHint}
+                                        />
+                                      )}
+                                      <div>
+                                        <p className="font-bold text-foreground">{specialist.name}</p>
+                                        {specialist.qualifications && <p className="text-sm text-foreground/70">{specialist.qualifications}</p>}
+                                        {specialist.department && <p className="text-sm text-primary font-medium">{specialist.department}</p>}
+                                      </div>
+                                    </div>
+                                  )
+                                })}
                             </div>
                             </div>
                         )}
