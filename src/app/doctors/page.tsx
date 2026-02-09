@@ -88,16 +88,16 @@ const DoctorsPageContent = () => {
                     const image = doctorImages.find(img => img.id === (doctor.imageId || doctor.id));
                     return (
                     <Card key={doctor.id} className="rounded-[25px] p-6 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
-                        <div className="relative mb-5 w-[160px] h-[120px] flex-shrink-0">
+                        <div className="relative mb-5 w-[170px] h-[120px] flex-shrink-0">
                         {image && (
                             <>
-                                <div className="absolute inset-0 bg-[#2FAE9B] rounded-full -m-1 shadow-md"></div>
+                                <div className="absolute inset-0 bg-[#2FAE9B] rounded-[999px] shadow-lg"></div>
                                 <Image
                                     src={image.imageUrl}
                                     alt={`Portrait of ${doctor.name}`}
-                                    width={160}
+                                    width={170}
                                     height={120}
-                                    className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white"
+                                    className="relative z-10 w-full h-full object-cover rounded-[999px] border-4 border-white"
                                     data-ai-hint={doctor.imageHint}
                                 />
                             </>
