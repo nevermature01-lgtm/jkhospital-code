@@ -10,6 +10,11 @@ import {
   Menu,
   Mail,
   Phone,
+  Siren,
+  Microscope,
+  Pill,
+  PersonStanding,
+  Stethoscope,
 } from "lucide-react";
 import Link from "next/link";
 import * as React from "react";
@@ -204,87 +209,77 @@ const Footer = () => (
     </footer>
   );
 
-  const AboutUsContent = () => {
+const ServicesContent = () => {
+    const services = [
+      {
+        icon: <Siren className="h-6 w-6 text-[#2FAE9B]" />,
+        title: "Emergency Care",
+        description: "24/7 Emergency Services With Rapid Response Teams Ready To Provide Immediate Medical Attention.",
+      },
+      {
+        icon: <Microscope className="h-6 w-6 text-[#2FAE9B]" />,
+        title: "Laboratory Services",
+        description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
+      },
+      {
+        icon: <Pill className="h-6 w-6 text-[#2FAE9B]" />,
+        title: "Pharmaceutical Services",
+        description: "Fully Stocked Pharmacy Providing Prescribed Medications And Expert Pharmaceutical Advice.",
+      },
+      {
+        icon: <PersonStanding className="h-6 w-6 text-[#2FAE9B]" />,
+        title: "Rehabilitation",
+        description: "Comprehensive Rehabilitation Programs Designed To Help Patients Regain Independence And Functionality.",
+      },
+      {
+        icon: <Phone className="h-6 w-6 text-[#2FAE9B]" />,
+        title: "24/7 Support",
+        description: "Round-The-Clock Medical Assistance And Support For All Your Healthcare Needs.",
+      },
+      {
+        icon: <Stethoscope className="h-6 w-6 text-[#2FAE9B]" />,
+        title: "Health Check-ups",
+        description: "Comprehensive Health Screenings And Preventive Care Services For Early Detection And Intervention.",
+      },
+    ];
+  
     return (
-      <section className="bg-background py-20">
-        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <div className="space-y-6">
-              <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider">
-                About Us
-              </p>
-              <h2 className="text-4xl font-bold text-[#1F3C3C]">
-                JK Hospital
-              </h2>
-              <div className="space-y-4 text-[#555] text-base leading-relaxed">
-                <p>
-                  The J.K. College of Nursing has a highly appreciated teaching
-                  facility, who believes that good education is the root of a
-                  highly successful professional career. The college conducts
-                  regular examinations; so that the students have a feedback and
-                  can work harder to get better. The teaching methods adopted
-                  promote multi disciplinary inquiry and practical applications of
-                  problems. Interactive methods of teaching are employed so that
-                  there is a high degree of interaction between the students and
-                  the teacher in the classroom.
+        <section className="bg-muted py-20">
+            <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                <h2 className="text-4xl font-bold text-[#1F3C3C]">
+                    Our Services
+                </h2>
+                <p className="text-lg text-[#555] mt-4 max-w-2xl mx-auto">
+                    We provide a wide range of high-quality medical services to meet all your healthcare needs.
                 </p>
-                <p>
-                  The parent 150 bedded J.K. Hospital has well equipped
-                  multispecialty hospital with advanced clinical facilities so
-                  that the nursing students can learn latest trends and
-                  technology in health care thus enrich their excellence in
-                  nursing profession.
-                </p>
-                <p>
-                  The college is run by the Jabar Singh Kaushalya Devi Charitable
-                  Trust. The entire trust structure consists of people who are
-                  having experience in diverse professional fields such as
-                  medicine, health care, etc; it is this professional excellence
-                  that has made the college and students realize their excellence
-                  in various professional fields.
-                </p>
-              </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {services.map((service, index) => (
+                    <div key={index} className="flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#2FAE9B]/10 flex items-center justify-center mb-4">
+                        {React.cloneElement(service.icon, {className: "h-8 w-8 text-[#2FAE9B]"})}
+                    </div>
+                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-2">{service.title}</h3>
+                    <p className="text-[#555] leading-relaxed">{service.description}</p>
+                    </div>
+                ))}
+                </div>
             </div>
-            <div className="space-y-8 mt-10 lg:mt-0">
-              <div className="bg-[#1F3C3C] text-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-3xl font-bold mb-4 text-center">
-                  Our Vision
-                </h3>
-                <p className="leading-relaxed text-center text-gray-200">
-                  To Be The Premier Healthcare Institution, Recognized For
-                  Clinical Excellence, Technological Innovation, And Unwavering
-                  Commitment To Improving Community Health.
-                </p>
-              </div>
-              <div className="bg-[#2FAE9B] text-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-3xl font-bold mb-4 text-center">
-                  Our Mission
-                </h3>
-                <p className="leading-relaxed text-center">
-                  To Deliver Exceptional Healthcare Services With Compassion And
-                  Expertise, Ensuring Every Patient Receives Personalized
-                  Attention And The Highest Quality Of Care.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     );
-  };
+};
 
 
-export default function AboutPage() {
+export default function ServicesPage() {
     return (
       <div className="bg-background min-h-screen text-foreground font-sans">
         <TopBar />
         <Navbar />
         <main>
-            <AboutUsContent />
+            <ServicesContent />
         </main>
         <Footer />
       </div>
     );
   }
-
-    
