@@ -6,6 +6,8 @@ import {
   Instagram,
   MessageCircle,
   Menu,
+  Mail,
+  Phone,
 } from "lucide-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
@@ -21,6 +23,29 @@ import {
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
+const TopBar = () => (
+  <div className="bg-muted text-muted-foreground text-xs font-medium">
+    <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-10">
+      <div className="flex items-center gap-4">
+        <a href="mailto:info@mindcare.com" className="flex items-center gap-2 hover:text-primary">
+          <Mail className="h-4 w-4" />
+          <span>info@mindcare.com</span>
+        </a>
+      </div>
+      <div className="flex items-center gap-6">
+        <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-primary">
+          <Phone className="h-4 w-4" />
+          <span>+1 234 567 890</span>
+        </a>
+        <a href="tel:+1098765432" className="hidden sm:flex items-center gap-2 hover:text-primary">
+          <Phone className="h-4 w-4" />
+          <span>+1 098 765 432</span>
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
 const Navbar = () => (
   <div className="w-full py-4 px-4 sm:px-6 lg:px-8">
@@ -116,6 +141,7 @@ export default function Home() {
 
   return (
     <div className="bg-background min-h-screen text-foreground font-sans">
+      <TopBar />
       <Navbar />
       <main className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-[40px] overflow-hidden">
