@@ -360,10 +360,10 @@ const Testimonials = () => {
     },
     {
       id: "testimonial-4",
-      name: "Mike T.",
-      city: "Boston",
+      name: "Ritu Yadav",
+      city: "Etawah",
       quote:
-        "I was hesitant to start therapy, but the team at MindCare made me feel comfortable from day one. It's been a life-changing experience.",
+        "The service of hospital is very good .they provide treatment in very affordable prices and the hospital staff is also very humble if you want any treatment pls go here .",
     },
   ];
 
