@@ -2,27 +2,27 @@
   "placeholderImages": [
     {
       "id": "hero-image-1",
-      "description": "A friendly female doctor with a clipboard, smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcwNTQxMTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "female doctor"
+      "description": "A compassionate counseling session in a bright, modern office.",
+      "imageUrl": "https://images.unsplash.com/photo-1549490103-b16951235182?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Vuc2VsaW5nJTIwc2Vzc2lvbnxlbnwwfHx8fDE3NzE0MDQwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "counseling session"
     },
     {
       "id": "hero-image-2",
-      "description": "A modern and clean hospital hallway.",
-      "imageUrl": "https://images.unsplash.com/photo-1519494140681-8b17d830a3e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob3NwaXRhbCUyMGhhbGx3YXl8ZW58MHx8fHwxNzcwNjEyNTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "hospital hallway"
+      "description": "A calm and inviting therapy room with comfortable seating.",
+      "imageUrl": "https://images.unsplash.com/photo-1556020685-ae41abfc9365?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGVyYXB5JTIwcm9vbXxlbnwwfHx8fDE3NzE0MDQxMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "therapy room"
     },
     {
       "id": "hero-image-3",
-      "description": "A surgeon in an operating room.",
-      "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXJnZW9uJTIwb3BlcmF0aW5nfGVufDB8fHx8MTc3MDUyOTI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "surgeon operating"
+      "description": "A person practicing mindfulness outdoors, finding peace.",
+      "imageUrl": "https://images.unsplash.com/photo-1506126613408-4e7e9b7da0f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW5kZnVsbmVzc3xlbnwwfHx8fDE3NzE0MDQxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mindfulness meditation"
     },
     {
       "id": "hero-image-4",
-      "description": "Close-up of a stethoscope on a desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1758691461888-b74515208d7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdGV0aG9zY29wZSUyMGRlc2t8ZW58MHx8fHwxNzcwNTcxOTcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "stethoscope desk"
+      "description": "Two people having a supportive conversation.",
+      "imageUrl": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXBwb3J0aXZlJTIwY29udmVyc2F0aW9ufGVufDB8fHx8MTc3MTQwNDI1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "support talk"
     },
     {
       "id": "about-us-clinic",
