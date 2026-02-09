@@ -66,7 +66,7 @@ export const Footer = () => (
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />
-                <span>Mainpuri Road, Near Kotwali, Etawah, Uttar Pradesh-206001</span>
+                <span>NH92, Vivek Vihar Colony, Datawali, Uttar Pradesh 206002</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 mt-1 text-white/80 flex-shrink-0" />

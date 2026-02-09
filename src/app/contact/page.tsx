@@ -15,21 +15,21 @@ const ContactPage = () => {
     {
       icon: <Mail className="h-8 w-8 text-primary" />,
       title: "Email Us",
-      info: "info@jkhospital.com",
+      info: "Care@jkhospital.in",
       actionText: "Send an Email",
-      href: "mailto:info@jkhospital.com",
+      href: "mailto:Care@jkhospital.in",
     },
     {
       icon: <Phone className="h-8 w-8 text-primary" />,
       title: "Call Us",
-      info: "+1 234 567 890",
+      info: "+91-8006005061",
       actionText: "Call Now",
-      href: "tel:+1234567890",
+      href: "tel:+918006005061",
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,
       title: "Our Location",
-      info: "123 Health St, Wellness City, 45678",
+      info: "NH92, Vivek Vihar Colony, Datawali, Uttar Pradesh 206002",
       actionText: "Get Directions",
       href: "#", // Link to Google Maps or similar
     },
