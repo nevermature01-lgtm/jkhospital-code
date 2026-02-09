@@ -33,7 +33,7 @@ export const Navbar = () => (
             <Link href="/nursing-college" className="hover:text-gray-200">
               Nursing College
             </Link>
-            <Link href="#" className="hover:text-gray-200">
+            <Link href="/blood-bank" className="hover:text-gray-200">
               Blood Bank
             </Link>
             <Link href="#" className="hover:text-gray-200">
@@ -78,7 +78,7 @@ export const Navbar = () => (
                     <Link href="/nursing-college" className="hover:text-[#2fa693] py-2">
                       Nursing College
                     </Link>
-                    <Link href="#" className="hover:text-[#2fa693] py-2">
+                    <Link href="/blood-bank" className="hover:text-[#2fa693] py-2">
                       Blood Bank
                     </Link>
                     <Link href="#" className="hover:text-[#2fa693] py-2">
@@ -100,3 +100,6 @@ export const Navbar = () => (
     </div>
   );
 
+
+
+    
