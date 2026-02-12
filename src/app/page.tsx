@@ -191,7 +191,7 @@ const OurSpecialists = () => {
                           src={image.imageUrl}
                           alt={`Portrait of ${specialist.name}`}
                           fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
                           data-ai-hint={image.imageHint}
                         />
                   )}
