@@ -74,32 +74,31 @@ const DoctorsPageContent = () => {
                 <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
                 <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Doctors</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {doctors.map((doctor) => {
                     const image = doctorImages.find(img => img.id === (doctor.imageId || doctor.id));
                     return (
-                    <Card key={doctor.id} className="rounded-[25px] p-6 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
-                        <div className="relative mb-5 w-32 h-32 flex-shrink-0">
-                            <div className="absolute inset-0 bg-[#2FAE9B] rounded-full shadow-lg"></div>
+                        <Card key={doctor.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-96">
                             {image ? (
                                 <Image
                                     src={image.imageUrl}
                                     alt={`Portrait of ${doctor.name}`}
-                                    width={128}
-                                    height={128}
-                                    className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white"
+                                    fill
+                                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                                     data-ai-hint={doctor.imageHint}
                                 />
                             ) : (
-                                <div className="relative z-10 w-full h-full rounded-full border-4 border-white bg-transparent" />
+                                <div className="w-full h-full bg-muted" />
                             )}
-                        </div>
-                        <div className="flex flex-col flex-grow justify-center">
-                            <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">{doctor.name}</h3>
-                            <p className="text-[#2FAE9B] text-sm font-medium mb-3">{doctor.title}</p>
-                            <p className="text-sm text-[#666] leading-relaxed">{doctor.description}</p>
-                        </div>
-                    </Card>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col justify-end h-full">
+                                <div>
+                                    <h3 className="text-xl font-bold">{doctor.name}</h3>
+                                    <p className="text-base font-medium text-primary-foreground/80 mb-2">{doctor.title}</p>
+                                    <p className="text-sm text-primary-foreground/70">{doctor.description}</p>
+                                </div>
+                            </div>
+                      </Card>
                     );
                 })}
                 </div>

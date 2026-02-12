@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -153,76 +152,73 @@ const WhatWeOffer = () => {
 };
 
 const OurSpecialists = () => {
-  const specialists = [
-    {
-      id: "doctor-1",
-      name: "Dr. Manoj Yadav",
-      title: "General & Laparoscopic Surgery and Urology",
-      description: "MBBS, MS, FICS, FAIS, FIAGES, FILHS. A leading surgeon with extensive experience.",
-    },
-    {
-      id: "doctor-3",
-      name: "Dr. Neha Singh",
-      title: "Gynaecology Department",
-      description: "MBBS, MS (Obstetrics & Gynaecology). Dedicated to women's health and wellness.",
-    },
-    {
-      id: "doctor-5",
-      name: "Dr. Shahini Yadav",
-      title: "Dentistry and Oral Care",
-      description: "BDS, FMC. Committed to providing excellent dental care.",
-    },
-  ];
-
-  const specialistImages = PlaceHolderImages.filter(img => img.id.startsWith('doctor-'));
-
-  return (
-    <section className="bg-background py-20">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
-        <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Specialists</h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-          {specialists.map((specialist) => {
-            const image = specialistImages.find(img => img.id === specialist.id);
-            return (
-              <Card key={specialist.id} className="rounded-[25px] p-6 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
-                <div className="relative mb-5 w-32 h-32 flex-shrink-0">
+    const specialists = [
+      {
+        id: "doctor-1",
+        name: "Dr. Manoj Yadav",
+        title: "General & Laparoscopic Surgery and Urology",
+        description: "MBBS, MS, FICS, FAIS, FIAGES, FILHS. A leading surgeon with extensive experience.",
+      },
+      {
+        id: "doctor-3",
+        name: "Dr. Neha Singh",
+        title: "Gynaecology Department",
+        description: "MBBS, MS (Obstetrics & Gynaecology). Dedicated to women's health and wellness.",
+      },
+      {
+        id: "doctor-5",
+        name: "Dr. Shahini Yadav",
+        title: "Dentistry and Oral Care",
+        description: "BDS, FMC. Committed to providing excellent dental care.",
+      },
+    ];
+  
+    const specialistImages = PlaceHolderImages.filter(img => img.id.startsWith('doctor-'));
+  
+    return (
+      <section className="bg-background py-20">
+        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
+          <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Specialists</h2>
+  
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {specialists.map((specialist) => {
+              const image = specialistImages.find(img => img.id === specialist.id);
+              return (
+                <Card key={specialist.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-96">
                   {image && (
-                     <>
-                        <div className="absolute inset-0 bg-[#2FAE9B] rounded-full shadow-lg"></div>
-                         <Image
-                            src={image.imageUrl}
-                            alt={`Portrait of ${specialist.name}`}
-                            width={128}
-                            height={128}
-                            className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white"
-                            data-ai-hint={image.imageHint}
-                          />
-                     </>
+                       <Image
+                          src={image.imageUrl}
+                          alt={`Portrait of ${specialist.name}`}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          data-ai-hint={image.imageHint}
+                        />
                   )}
-                </div>
-                <div className="flex flex-col flex-grow justify-center">
-                    <h3 className="text-xl font-bold text-[#1F3C3C] mb-1">{specialist.name}</h3>
-                    <p className="text-[#2FAE9B] text-sm font-medium mb-3">{specialist.title}</p>
-                    <p className="text-sm text-[#666] leading-relaxed">{specialist.description}</p>
-                </div>
-              </Card>
-            );
-          })}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col justify-end h-full">
+                      <div>
+                          <h3 className="text-xl font-bold">{specialist.name}</h3>
+                          <p className="text-base font-medium text-primary-foreground/80 mb-2">{specialist.title}</p>
+                          <p className="text-sm text-primary-foreground/70">{specialist.description}</p>
+                      </div>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+  
+          <div className="mt-12">
+              <Button asChild className="rounded-full bg-[#2FAE9B] hover:bg-[#2FAE9B]/90 shadow-md text-white px-8 py-6 text-base">
+                  <Link href="/doctors">
+                      See All Doctors <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+              </Button>
+          </div>
         </div>
-
-        <div className="mt-12">
-            <Button asChild className="rounded-full bg-[#2FAE9B] hover:bg-[#2FAE9B]/90 shadow-md text-white px-8 py-6 text-base">
-                <Link href="/doctors">
-                    See All Doctors <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-            </Button>
-        </div>
-      </div>
-    </section>
-  );
-};
+      </section>
+    );
+  };
 
 const OurDepartments = () => {
   const services = [
