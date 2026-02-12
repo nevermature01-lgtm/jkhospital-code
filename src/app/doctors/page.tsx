@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Navbar } from "@/components/layout/Navbar";
@@ -78,19 +79,19 @@ const DoctorsPageContent = () => {
                     const image = doctorImages.find(img => img.id === (doctor.imageId || doctor.id));
                     return (
                     <Card key={doctor.id} className="rounded-[25px] p-6 shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
-                        <div className="relative mb-5 w-[170px] h-[120px] flex-shrink-0">
-                            <div className="absolute inset-0 bg-[#2FAE9B] rounded-[999px] shadow-lg"></div>
+                        <div className="relative mb-5 w-32 h-32 flex-shrink-0">
+                            <div className="absolute inset-0 bg-[#2FAE9B] rounded-full shadow-lg"></div>
                             {image ? (
                                 <Image
                                     src={image.imageUrl}
                                     alt={`Portrait of ${doctor.name}`}
-                                    width={170}
-                                    height={120}
-                                    className="relative z-10 w-full h-full object-cover rounded-[999px] border-4 border-white"
+                                    width={128}
+                                    height={128}
+                                    className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white"
                                     data-ai-hint={doctor.imageHint}
                                 />
                             ) : (
-                                <div className="relative z-10 w-full h-full rounded-[999px] border-4 border-white bg-transparent" />
+                                <div className="relative z-10 w-full h-full rounded-full border-4 border-white bg-transparent" />
                             )}
                         </div>
                         <div className="flex flex-col flex-grow justify-center">
