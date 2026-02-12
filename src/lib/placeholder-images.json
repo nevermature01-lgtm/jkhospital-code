@@ -36,12 +36,13 @@
       "id": "doctor-3",
       "description": "Portrait of Dr. Neha Singh",
       "imageUrl": "https://images.unsplash.com/photo-1579684385127-6c1d7348e658?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcxODExMTU3fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "female doctor"
+      "imageHint": "female doctor",
+      "objectPosition": "center top"
     },
     {
       "id": "doctor-4",
       "description": "Portrait of Dr. Madhukar Gupta",
-      "imageUrl": "/IMG-20260208-WA0016 (1).jpg",
+      "imageUrl": "/dr-madhukar.jpg",
       "imageHint": "male doctor",
       "objectPosition": "center top"
     },
@@ -49,13 +50,15 @@
       "id": "doctor-5",
       "description": "Portrait of Dr. Shahini Yadav",
       "imageUrl": "https://images.unsplash.com/photo-1622902046580-2b4b7a909616?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmZW1hbGUlMjBkb2N0b3J8ZW58MHx8fHwxNzcxODExMTU3fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "female doctor"
+      "imageHint": "female doctor",
+      "objectPosition": "center top"
     },
     {
       "id": "doctor-6",
       "description": "Portrait of Dr. Pankaj",
       "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "male doctor"
+      "imageHint": "male doctor",
+      "objectPosition": "center top"
     },
     {
       "id": "doctor-7",
@@ -68,7 +71,8 @@
       "id": "doctor-8",
       "description": "Portrait of Dr. ASHWINI KUMAR YADAV",
       "imageUrl": "https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MDU3ODgyM3ww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "male doctor"
+      "imageHint": "male doctor",
+      "objectPosition": "center top"
     }
   ]
 }
