@@ -60,8 +60,9 @@
     {
       "id": "doctor-7",
       "description": "Portrait of Dr. ADEEM KHAN",
-      "imageUrl": "https://images.unsplash.com/photo-1605333095316-63523f669e48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxlJTIwZG9jdG9yfGVufDB8fHx8MTc3MTAwNjI2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "male doctor"
+      "imageUrl": "/dr-adeem.jpg",
+      "imageHint": "male doctor",
+      "objectPosition": "center top"
     },
     {
       "id": "doctor-8",
