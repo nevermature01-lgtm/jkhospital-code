@@ -22,13 +22,15 @@
       "id": "doctor-1",
       "description": "Portrait of Dr. Manoj Yadav",
       "imageUrl": "/dr-manoj.jpg",
-      "imageHint": "male doctor"
+      "imageHint": "male doctor",
+      "objectPosition": "center 20%"
     },
     {
       "id": "doctor-2",
       "description": "Portrait of Dr. Kumar Katreya Yadav",
       "imageUrl": "/dr-katrya.jpg",
-      "imageHint": "male doctor"
+      "imageHint": "male doctor",
+      "objectPosition": "center top"
     },
     {
       "id": "doctor-3",
@@ -40,7 +42,8 @@
       "id": "doctor-4",
       "description": "Portrait of Dr. Madhukar Gupta",
       "imageUrl": "/IMG-20260208-WA0016 (1).jpg",
-      "imageHint": "male doctor"
+      "imageHint": "male doctor",
+      "objectPosition": "center top"
     },
     {
       "id": "doctor-5",

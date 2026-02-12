@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Navbar } from "@/components/layout/Navbar";
@@ -85,6 +84,7 @@ const DoctorsPageContent = () => {
                                     alt={`Portrait of ${doctor.name}`}
                                     fill
                                     className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                    style={{ objectPosition: image.objectPosition || 'center' }}
                                     data-ai-hint={doctor.imageHint}
                                 />
                             ) : (

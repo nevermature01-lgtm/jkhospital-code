@@ -192,6 +192,7 @@ const OurSpecialists = () => {
                           alt={`Portrait of ${specialist.name}`}
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          style={{ objectPosition: image.objectPosition || 'center' }}
                           data-ai-hint={image.imageHint}
                         />
                   )}
