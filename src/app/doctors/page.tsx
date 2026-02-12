@@ -84,7 +84,7 @@ const DoctorsPageContent = () => {
                                     src={image.imageUrl}
                                     alt={`Portrait of ${doctor.name}`}
                                     fill
-                                    className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                                     data-ai-hint={doctor.imageHint}
                                 />
                             ) : (
