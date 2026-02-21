@@ -68,7 +68,7 @@ export const Navbar = () => {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:text-white">
+                <Button size="icon" className="bg-white text-[#2FAE9B] hover:bg-white/90 rounded-full shadow-md">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
