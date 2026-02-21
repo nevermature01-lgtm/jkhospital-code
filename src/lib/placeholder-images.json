@@ -21,14 +21,14 @@
     {
       "id": "doctor-1",
       "description": "Portrait of Dr. Manoj Yadav",
-      "imageUrl": "/dr-manoj.jpg",
+      "imageUrl": "/dr.manoj.jpg",
       "imageHint": "male doctor",
       "objectPosition": "center 20%"
     },
     {
       "id": "doctor-2",
       "description": "Portrait of Dr. Kumar Katreya Yadav",
-      "imageUrl": "/dr-katrya.jpg",
+      "imageUrl": "/dr.katrya.jpg",
       "imageHint": "male doctor",
       "objectPosition": "center top"
     },
@@ -63,7 +63,7 @@
     {
       "id": "doctor-7",
       "description": "Portrait of Dr. ADEEM KHAN",
-      "imageUrl": "/dr-adeem.jpg",
+      "imageUrl": "/dr.adeem.jpg",
       "imageHint": "male doctor",
       "objectPosition": "center top"
     },
