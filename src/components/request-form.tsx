@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { requestCallback } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
@@ -47,36 +46,15 @@ export function RequestForm() {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    startTransition(async () => {
-      const formData = new FormData();
-      formData.append("name", values.name);
-      formData.append("phone", values.phone);
-      formData.append("email", values.email);
-      formData.append("message", values.message);
-
-      const initialState = { message: "", status: "idle" as const };
-      const result = await requestCallback(initialState, formData);
-
-      if (result.status === "success") {
-        toast({
-          title: "Feedback Sent",
-          description: result.message,
-        });
-        form.reset();
-      } else {
-        toast({
-          variant: "destructive",
-          title: "Error",
-          description: result.message,
-        });
-      }
-    });
-  }
-
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form
+        action="https://formsubmit.co/adnankhan75e@gmail.com"
+        method="POST"
+        className="space-y-4"
+      >
+        <input type="hidden" name="_subject" value="New Feedback from Website!" />
+        <input type="hidden" name="_captcha" value="false" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <FormField
             control={form.control}

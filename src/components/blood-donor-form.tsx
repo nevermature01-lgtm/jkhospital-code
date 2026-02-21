@@ -32,7 +32,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { registerBloodDonor } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 
 
@@ -59,37 +58,15 @@ export function BloodDonorForm() {
         },
     });
 
-    async function onSubmit(values: z.infer<typeof formSchema>) {
-        startTransition(async () => {
-          const formData = new FormData();
-          formData.append("name", values.name);
-          formData.append("email", values.email);
-          formData.append("phone", values.phone);
-          formData.append("bloodGroup", values.bloodGroup);
-          formData.append("donationDate", values.donationDate.toISOString());
-
-          const initialState = { message: "", status: "idle" as const };
-          const result = await registerBloodDonor(initialState, formData);
-
-          if (result.status === "success") {
-            toast({
-              title: "Registration Successful",
-              description: result.message,
-            });
-            form.reset();
-          } else {
-            toast({
-              variant: "destructive",
-              title: "Error",
-              description: result.message,
-            });
-          }
-        });
-    }
-
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form
+        action="https://formsubmit.co/adnankhan75e@gmail.com"
+        method="POST"
+        className="space-y-4"
+      >
+        <input type="hidden" name="_subject" value="New Blood Donor Registration!" />
+        <input type="hidden" name="_captcha" value="false" />
         <FormField
           control={form.control}
           name="name"
