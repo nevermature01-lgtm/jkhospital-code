@@ -4,7 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
@@ -74,6 +80,8 @@ export const Navbar = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetTitle className="sr-only">Menu</SheetTitle>
+                <SheetDescription className="sr-only">Mobile Navigation</SheetDescription>
                 <div className="flex h-full flex-col gap-6 p-6">
                   <Link href="/" className="flex items-center mb-4">
                     <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
