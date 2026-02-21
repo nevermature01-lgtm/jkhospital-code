@@ -54,7 +54,7 @@ export function BloodDonorForm() {
         defaultValues: {
           name: "",
           email: "",
-          phone: "",
+          phone: "+91 ",
         },
     });
 
@@ -100,7 +100,7 @@ export function BloodDonorForm() {
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
-                <Input type="tel" placeholder="+1 234 567 890" {...field} className="border-black" />
+                <Input type="tel" placeholder="98765 43210" {...field} className="border-black" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -164,7 +164,7 @@ export function BloodDonorForm() {
                     selected={field.value}
                     onSelect={field.onChange}
                     disabled={(date) =>
-                      date < new Date() || date < new Date("1900-01-01")
+                      date < new Date(new Date().setHours(0, 0, 0, 0))
                     }
                     initialFocus
                   />
