@@ -28,7 +28,7 @@
     {
       "id": "doctor-2",
       "description": "Portrait of Dr. Kumar Katreya Yadav",
-      "imageUrl": "/dr-katreya.jpg",
+      "imageUrl": "/dr.katreya.jpg",
       "imageHint": "male doctor",
       "objectPosition": "center top"
     },
@@ -63,7 +63,7 @@
     {
       "id": "doctor-7",
       "description": "Portrait of Dr. ADEEM KHAN",
-      "imageUrl": "/dr.adeem.jpg",
+      "imageUrl": "/Dr. ADEEM KHAN.jpg",
       "imageHint": "male doctor",
       "objectPosition": "center top"
     },
