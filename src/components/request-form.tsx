@@ -65,7 +65,7 @@ export function RequestForm() {
                   <Input
                     placeholder="Name"
                     {...field}
-                    className="bg-white rounded-lg border-none"
+                    className="bg-white rounded-lg border-black"
                   />
                 </FormControl>
                 <FormMessage />
@@ -82,7 +82,7 @@ export function RequestForm() {
                     type="tel"
                     placeholder="Phone"
                     {...field}
-                    className="bg-white rounded-lg border-none"
+                    className="bg-white rounded-lg border-black"
                   />
                 </FormControl>
                 <FormMessage />
@@ -100,7 +100,7 @@ export function RequestForm() {
                   type="email"
                   placeholder="Email"
                   {...field}
-                  className="bg-white rounded-lg border-none"
+                  className="bg-white rounded-lg border-black"
                 />
               </FormControl>
               <FormMessage />
@@ -116,7 +116,7 @@ export function RequestForm() {
                 <Textarea
                   placeholder="Your Message..."
                   {...field}
-                  className="bg-white rounded-lg border-none"
+                  className="bg-white rounded-lg border-black"
                   rows={4}
                 />
               </FormControl>
