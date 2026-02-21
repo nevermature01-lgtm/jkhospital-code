@@ -44,7 +44,7 @@
       "description": "Portrait of Dr. Madhukar Gupta",
       "imageUrl": "/dr.madhukar.jpg",
       "imageHint": "male doctor",
-      "objectPosition": "center top"
+      "objectPosition": "center 20%"
     },
     {
       "id": "doctor-5",
