@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Navbar } from "@/components/layout/Navbar";
@@ -73,11 +74,11 @@ const DoctorsPageContent = () => {
                 <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
                 <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Doctors</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
                 {doctors.map((doctor) => {
                     const image = doctorImages.find(img => img.id === (doctor.imageId || doctor.id));
                     return (
-                        <Card key={doctor.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-96">
+                        <Card key={doctor.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-80 sm:h-96">
                             {image ? (
                                 <Image
                                     src={image.imageUrl}
@@ -91,11 +92,11 @@ const DoctorsPageContent = () => {
                                 <div className="w-full h-full bg-muted" />
                             )}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col justify-end h-full">
+                            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white flex flex-col justify-end h-full">
                                 <div>
-                                    <h3 className="text-xl font-bold">{doctor.name}</h3>
-                                    <p className="text-base font-medium text-primary-foreground/80 mb-2">{doctor.title}</p>
-                                    <p className="text-sm text-primary-foreground/70">{doctor.description}</p>
+                                    <h3 className="text-lg sm:text-xl font-bold">{doctor.name}</h3>
+                                    <p className="text-sm font-medium text-primary-foreground/80 mb-1">{doctor.title}</p>
+                                    <p className="text-xs sm:text-sm text-primary-foreground/70">{doctor.description}</p>
                                 </div>
                             </div>
                       </Card>
