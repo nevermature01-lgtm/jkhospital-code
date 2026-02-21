@@ -5,6 +5,8 @@ import { z } from "zod";
 const requestCallbackSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   phone: z.string().min(10, { message: "Please enter a valid phone number." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
 const bloodDonorSchema = z.object({
@@ -32,6 +34,8 @@ export async function requestCallback(
     const validatedFields = requestCallbackSchema.safeParse({
       name: formData.get("name"),
       phone: formData.get("phone"),
+      email: formData.get("email"),
+      message: formData.get("message"),
     });
 
     if (!validatedFields.success) {
@@ -45,17 +49,19 @@ export async function requestCallback(
 
     // In a real application, you would handle the form data here, e.g.,
     // send an email, save to a database, or call a CRM API.
-    console.log("Request for callback received:");
+    console.log("Feedback received:");
     console.log("Name:", validatedFields.data.name);
     console.log("Phone:", validatedFields.data.phone);
+    console.log("Email:", validatedFields.data.email);
+    console.log("Message:", validatedFields.data.message);
 
     return {
       message:
-        "Thank you! We've received your request and will call you back shortly.",
+        "Thank you! We've received your feedback and will get back to you if needed.",
       status: "success",
     };
   } catch (error) {
-    console.error("Error processing callback request:", error);
+    console.error("Error processing feedback:", error);
     return {
       message: "An unexpected error occurred. Please try again later.",
       status: "error",

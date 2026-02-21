@@ -14,6 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { requestCallback } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 
@@ -24,16 +25,25 @@ const formSchema = z.object({
   phone: z.string().min(10, {
     message: "Please enter a valid phone number.",
   }),
+  email: z.string().email({
+    message: "Please enter a valid email address.",
+  }),
+  message: z.string().min(10, {
+    message: "Message must be at least 10 characters.",
+  }),
 });
 
 export function RequestForm() {
   const [isPending, startTransition] = React.useTransition();
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       phone: "",
+      email: "",
+      message: "",
     },
   });
 
@@ -42,13 +52,15 @@ export function RequestForm() {
       const formData = new FormData();
       formData.append("name", values.name);
       formData.append("phone", values.phone);
+      formData.append("email", values.email);
+      formData.append("message", values.message);
 
       const initialState = { message: "", status: "idle" as const };
       const result = await requestCallback(initialState, formData);
 
       if (result.status === "success") {
         toast({
-          title: "Request Sent",
+          title: "Feedback Sent",
           description: result.message,
         });
         form.reset();
@@ -65,14 +77,50 @@ export function RequestForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input
+                    placeholder="Name"
+                    {...field}
+                    className="bg-white rounded-lg border-none"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input
+                    type="tel"
+                    placeholder="Phone"
+                    {...field}
+                    className="bg-white rounded-lg border-none"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
         <FormField
           control={form.control}
-          name="name"
+          name="email"
           render={({ field }) => (
             <FormItem>
               <FormControl>
                 <Input
-                  placeholder="Name"
+                  type="email"
+                  placeholder="Email"
                   {...field}
                   className="bg-white rounded-lg border-none"
                 />
@@ -83,15 +131,15 @@ export function RequestForm() {
         />
         <FormField
           control={form.control}
-          name="phone"
+          name="message"
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input
-                  type="tel"
-                  placeholder="Phone"
+                <Textarea
+                  placeholder="Your Message..."
                   {...field}
                   className="bg-white rounded-lg border-none"
+                  rows={4}
                 />
               </FormControl>
               <FormMessage />
@@ -103,7 +151,7 @@ export function RequestForm() {
           className="w-full rounded-lg bg-[#2fa693] hover:bg-[#2fa693]/90 text-white"
           disabled={isPending}
         >
-          {isPending ? "Submitting..." : "Send Request"}
+          {isPending ? "Submitting..." : "Submit Feedback"}
         </Button>
       </form>
     </Form>

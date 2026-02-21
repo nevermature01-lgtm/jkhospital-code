@@ -80,10 +80,10 @@ const ContactPage = () => {
             <div className="items-center">
               <div className="p-8 md:p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-2">
-                  Send us a Message
+                  Leave Your Feedback
                 </h2>
                 <p className="text-foreground/70 mb-6">
-                  Fill out the form and our team will get back to you within 24 hours.
+                  We value your opinion. Fill out the form and our team will get back to you.
                 </p>
                 <RequestForm />
               </div>
