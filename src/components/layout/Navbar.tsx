@@ -25,7 +25,10 @@ export const Navbar = () => {
     )}>
       <div className="container max-w-7xl mx-auto">
         <div className={cn(
-            "bg-[#0AB99D]/25 backdrop-blur-[24px] border border-white/30 rounded-full flex justify-between items-center p-3 px-6 shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
+            "rounded-full flex justify-between items-center p-3 px-6",
+            "bg-gradient-to-br from-[#0AB99D]/30 to-white/15 backdrop-blur-[30px]",
+            "border border-white/35",
+            "shadow-[0_10px_40px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.6)]"
         )}>
           <Link
             href="/"
@@ -80,8 +83,8 @@ export const Navbar = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="bg-white/95 backdrop-blur-xl border-l-white/20">
-                <SheetTitle className="sr-only">Menu</SheetTitle>
-                <SheetDescription className="sr-only">Mobile Navigation</SheetDescription>
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                <SheetDescription className="sr-only">Access hospital departments, services, and contact information.</SheetDescription>
                 <div className="flex h-full flex-col gap-6 p-6">
                   <Link href="/" className="flex items-center mb-4">
                     <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />

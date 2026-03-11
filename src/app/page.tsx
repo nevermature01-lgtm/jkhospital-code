@@ -69,7 +69,7 @@ const WhatWeOffer = () => {
       {
         icon: <Microscope className="h-6 w-6 text-[#2FAE9B]" />,
         title: "Laboratory Services",
-        description: "State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
+        description: "State-Of- some State-Of-The-Art Diagnostic Laboratory Offering Comprehensive Testing With Quick And Accurate Results.",
       },
       {
         icon: <Pill className="h-6 w-6 text-[#2FAE9B]" />,
@@ -455,9 +455,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative bg-primary">
         <Navbar />
-        <div className="sm:container sm:max-w-7xl sm:mx-auto sm:px-6 lg:px-8 sm:my-8">
+        <div className="sm:container sm:max-w-7xl sm:mx-auto sm:px-6 lg:px-8 sm:py-8">
           <div className="relative sm:rounded-[40px] overflow-hidden">
             <Carousel
               className="w-full"
