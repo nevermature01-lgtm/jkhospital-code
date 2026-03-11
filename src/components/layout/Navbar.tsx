@@ -25,7 +25,7 @@ export const Navbar = () => {
     )}>
       <div className="container max-w-7xl mx-auto">
         <div className={cn(
-            "bg-[#0AB99D]/15 backdrop-blur-[14px] border border-white/20 rounded-full flex justify-between items-center p-3 px-6 shadow-[0_8px_32px_rgba(0,0,0,0.08)]"
+            "bg-[#0AB99D]/25 backdrop-blur-[24px] border border-white/30 rounded-full flex justify-between items-center p-3 px-6 shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
         )}>
           <Link
             href="/"
