@@ -1,9 +1,7 @@
 "use client";
 
 import { Droplet, ShieldCheck, Siren, ClipboardCheck, CalendarDays, Clock } from "lucide-react";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { BloodDonorForm } from "@/components/blood-donor-form";
 import { Navbar } from "@/components/layout/Navbar";
 
@@ -46,76 +44,71 @@ const BloodBankPage = () => {
   ]
 
   return (
-    <>
-      <Navbar />
-      <div className="bg-primary/5 min-h-screen">
-          <section className="relative py-24 bg-primary/10">
-              <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                  <div className="flex justify-center mb-4">
-                      <div className="p-4 bg-primary/20 rounded-full">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0L12 2.69z"/><path d="M12 12h.01"/></svg>
-                      </div>
-                  </div>
-                  <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Blood Bank</h1>
-                  <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
-                      A safe, reliable, and life-saving resource for our community.
-                  </p>
-              </div>
-        </section>
-
-        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
-          <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-foreground">Our Blood Bank Services</h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {services.map((service, index) => (
-              <Card key={index} className="shadow-lg overflow-hidden text-center bg-white border-none">
-                <CardHeader className="bg-primary/5 p-6 flex flex-col items-center">
-                  <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full mb-4">
-                      {service.icon}
-                  </div>
-                  <CardTitle className="text-2xl font-bold text-primary">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <p className="text-foreground/80">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-foreground">How to Donate</h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {howToDonateSteps.map((step, index) => (
-              <Card key={index} className="shadow-lg overflow-hidden text-center bg-white border-none">
-                <CardHeader className="bg-primary/5 p-6 flex flex-col items-center">
-                  <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full mb-4">
-                      {step.icon}
-                  </div>
-                  <CardTitle className="text-2xl font-bold text-primary">{step.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <p className="text-foreground/80">{step.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <Card className="shadow-lg overflow-hidden bg-white border-none">
-            <div className="p-8 md:p-12">
-                <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Become a Blood Donor</h2>
-                <div className="max-w-md mx-auto">
-                  <BloodDonorForm />
+    <div className="bg-primary/10 min-h-screen">
+      <div className="bg-primary pb-20">
+        <Navbar />
+        <div className="container max-w-6xl mx-auto px-4 mt-8 text-center text-white">
+            <div className="flex justify-center mb-4">
+                <div className="p-4 bg-white/20 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0L12 2.69z"/><path d="M12 12h.01"/></svg>
                 </div>
             </div>
-          </Card>
-
+            <h1 className="text-5xl font-extrabold tracking-tight mb-4">Our Blood Bank</h1>
+            <p className="text-lg opacity-90 max-w-2xl mx-auto">A safe, reliable, and life-saving resource for our community.</p>
         </div>
       </div>
-    </>
+
+      <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground">Our Blood Bank Services</h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {services.map((service, index) => (
+            <Card key={index} className="shadow-lg overflow-hidden text-center bg-white border-none">
+              <CardHeader className="bg-primary/5 p-6 flex flex-col items-center">
+                <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full mb-4">
+                    {service.icon}
+                </div>
+                <CardTitle className="text-2xl font-bold text-primary">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="p-6">
+                <p className="text-foreground/80">{service.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground">How to Donate</h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {howToDonateSteps.map((step, index) => (
+            <Card key={index} className="shadow-lg overflow-hidden text-center bg-white border-none">
+              <CardHeader className="bg-primary/5 p-6 flex flex-col items-center">
+                <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full mb-4">
+                    {step.icon}
+                </div>
+                <CardTitle className="text-2xl font-bold text-primary">{step.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="p-6">
+                <p className="text-foreground/80">{step.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <Card className="shadow-lg overflow-hidden bg-white border-none">
+          <div className="p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Become a Blood Donor</h2>
+              <div className="max-w-md mx-auto">
+                <BloodDonorForm />
+              </div>
+          </div>
+        </Card>
+      </div>
+    </div>
   );
 };
 

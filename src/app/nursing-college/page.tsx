@@ -46,48 +46,44 @@ const NursingCollegePage = () => {
   ];
 
   return (
-    <>
-      <Navbar />
-      <div className="bg-primary/5 min-h-screen">
-        <section className="relative py-24 bg-primary/10">
-          <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-primary/20 rounded-full">
-                      <GraduationCap className="h-12 w-12 text-primary" />
-                  </div>
-              </div>
-              <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">JK College of Nursing</h1>
-              <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
-                  Fostering the next generation of compassionate and skilled nursing professionals.
-              </p>
-          </div>
-        </section>
-
-        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-8">
-              {content.map((section, index) => (
-              <Card key={index} className="shadow-lg overflow-hidden bg-white border-none">
-                <CardHeader className="bg-primary/5 p-6">
-                  <div className="flex items-center gap-4">
-                      <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                          {section.icon}
-                      </div>
-                      <CardTitle className="text-2xl font-bold text-primary">{section.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <ul className="space-y-3 list-disc list-inside text-foreground/80">
-                    {section.items.map((item, itemIndex) => (
-                      <li key={itemIndex}>{item}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-              ))}
-          </div>
+    <div className="bg-primary/10 min-h-screen">
+      <div className="bg-primary pb-20">
+        <Navbar />
+        <div className="container max-w-6xl mx-auto px-4 mt-8 text-center text-white">
+            <div className="flex justify-center mb-4">
+                <div className="p-4 bg-white/20 rounded-full">
+                    <GraduationCap className="h-12 w-12 text-white" />
+                </div>
+            </div>
+            <h1 className="text-5xl font-extrabold tracking-tight mb-4">JK College of Nursing</h1>
+            <p className="text-lg opacity-90 max-w-2xl mx-auto">Fostering the next generation of compassionate and skilled nursing professionals.</p>
         </div>
       </div>
-    </>
+
+      <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div className="grid md:grid-cols-2 gap-8">
+            {content.map((section, index) => (
+            <Card key={index} className="shadow-lg overflow-hidden bg-white border-none">
+              <CardHeader className="bg-primary/5 p-6">
+                <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
+                        {section.icon}
+                    </div>
+                    <CardTitle className="text-2xl font-bold text-primary">{section.title}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <ul className="space-y-3 list-disc list-inside text-foreground/80">
+                  {section.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+            ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -70,9 +70,9 @@ const DoctorsPageContent = () => {
     const doctorImages = PlaceHolderImages.filter(img => img.id.startsWith('doctor-'));
 
     return (
-        <section className="bg-primary/5 py-20 min-h-screen">
+        <section className="py-20">
             <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
+                <p className="text-primary font-semibold uppercase tracking-wider mb-2">Meet Our</p>
                 <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Doctors</h2>
 
                 <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
@@ -122,9 +122,15 @@ const DoctorsPageContent = () => {
 
 export default function DoctorsPage() {
     return (
-        <>
-            <Navbar />
+        <div className="bg-primary/10 min-h-screen">
+            <div className="bg-primary pb-20">
+                <Navbar />
+                <div className="container max-w-6xl mx-auto px-4 mt-8 text-center text-white">
+                    <h1 className="text-5xl font-extrabold tracking-tight mb-4">Our Medical Team</h1>
+                    <p className="text-lg opacity-90 max-w-2xl mx-auto">Expert specialists dedicated to your health and well-being.</p>
+                </div>
+            </div>
             <DoctorsPageContent />
-        </>
+        </div>
     );
 }

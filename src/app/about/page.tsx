@@ -1,15 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import { Navbar } from "@/components/layout/Navbar";
 
 const AboutUsContent = () => {
     return (
-      <section className="bg-primary/5 py-20">
+      <section className="py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="space-y-6">
-              <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider">
+              <p className="text-primary font-semibold uppercase tracking-wider">
                 About Us
               </p>
               <h2 className="text-4xl font-bold text-[#1F3C3C]">
@@ -55,7 +54,7 @@ const AboutUsContent = () => {
                   Commitment To Improving Community Health.
                 </p>
               </div>
-              <div className="bg-[#2FAE9B] text-white p-8 rounded-2xl shadow-lg">
+              <div className="bg-primary text-primary-foreground p-8 rounded-2xl shadow-lg">
                 <h3 className="text-3xl font-bold mb-4 text-center">
                   Our Mission
                 </h3>
@@ -88,9 +87,15 @@ const AboutUsContent = () => {
 
 export default function AboutPage() {
     return (
-        <>
-            <Navbar />
+        <div className="bg-primary/10 min-h-screen">
+            <div className="bg-primary pb-20">
+                <Navbar />
+                <div className="container max-w-6xl mx-auto px-4 mt-8 text-center text-white">
+                    <h1 className="text-5xl font-extrabold tracking-tight mb-4">About JK Hospital</h1>
+                    <p className="text-lg opacity-90 max-w-2xl mx-auto">Providing exceptional medical care with trust and compassion for over a decade.</p>
+                </div>
+            </div>
             <AboutUsContent />
-        </>
+        </div>
     );
   }

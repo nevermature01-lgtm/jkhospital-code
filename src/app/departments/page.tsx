@@ -301,23 +301,19 @@ const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0
 
 export default function DepartmentsPage() {
   return (
-    <>
-      <Navbar />
-      <div className="bg-primary/5 min-h-screen">
-        <section className="py-16 bg-primary/10">
-          <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Departments</h1>
-              <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
-                  Explore our wide range of specialized departments, each dedicated to providing exceptional patient care with expertise and compassion.
-              </p>
-          </div>
-        </section>
-        <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-6xl">
-          {departmentsData.map((dept) => (
-            <DepartmentCard key={dept.title} department={dept} />
-          ))}
+    <div className="bg-primary/10 min-h-screen">
+      <div className="bg-primary pb-20">
+        <Navbar />
+        <div className="container max-w-6xl mx-auto px-4 mt-8 text-center text-white">
+            <h1 className="text-5xl font-extrabold tracking-tight mb-4">Our Departments</h1>
+            <p className="text-lg opacity-90 max-w-2xl mx-auto">Explore our wide range of specialized departments, dedicated to providing exceptional patient care.</p>
         </div>
       </div>
-    </>
+      <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 max-w-6xl">
+        {departmentsData.map((dept) => (
+          <DepartmentCard key={dept.title} department={dept} />
+        ))}
+      </div>
+    </div>
   );
 }
