@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 
 const AboutUsContent = () => {
     return (
-      <section className="bg-background py-20">
+      <section className="bg-primary/5 py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="space-y-6">

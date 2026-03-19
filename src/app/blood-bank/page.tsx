@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Droplet, ShieldCheck, Siren, ClipboardCheck, CalendarDays, Clock } from "lucide-react";
@@ -49,11 +48,11 @@ const BloodBankPage = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-background">
-          <section className="relative py-24 bg-primary/5">
+      <div className="bg-primary/5 min-h-screen">
+          <section className="relative py-24 bg-primary/10">
               <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                   <div className="flex justify-center mb-4">
-                      <div className="p-4 bg-primary/10 rounded-full">
+                      <div className="p-4 bg-primary/20 rounded-full">
                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0L12 2.69z"/><path d="M12 12h.01"/></svg>
                       </div>
                   </div>
@@ -71,8 +70,8 @@ const BloodBankPage = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {services.map((service, index) => (
-              <Card key={index} className="shadow-lg overflow-hidden text-center">
-                <CardHeader className="bg-muted p-6 flex flex-col items-center">
+              <Card key={index} className="shadow-lg overflow-hidden text-center bg-white border-none">
+                <CardHeader className="bg-primary/5 p-6 flex flex-col items-center">
                   <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full mb-4">
                       {service.icon}
                   </div>
@@ -91,8 +90,8 @@ const BloodBankPage = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {howToDonateSteps.map((step, index) => (
-              <Card key={index} className="shadow-lg overflow-hidden text-center">
-                <CardHeader className="bg-muted p-6 flex flex-col items-center">
+              <Card key={index} className="shadow-lg overflow-hidden text-center bg-white border-none">
+                <CardHeader className="bg-primary/5 p-6 flex flex-col items-center">
                   <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full mb-4">
                       {step.icon}
                   </div>
@@ -105,7 +104,7 @@ const BloodBankPage = () => {
             ))}
           </div>
 
-          <Card className="shadow-lg overflow-hidden">
+          <Card className="shadow-lg overflow-hidden bg-white border-none">
             <div className="p-8 md:p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Become a Blood Donor</h2>
                 <div className="max-w-md mx-auto">

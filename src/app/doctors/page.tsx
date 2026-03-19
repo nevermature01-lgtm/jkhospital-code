@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Navbar } from "@/components/layout/Navbar";
@@ -71,7 +70,7 @@ const DoctorsPageContent = () => {
     const doctorImages = PlaceHolderImages.filter(img => img.id.startsWith('doctor-'));
 
     return (
-        <section className="bg-background py-20">
+        <section className="bg-primary/5 py-20 min-h-screen">
             <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <p className="text-[#2FAE9B] font-semibold uppercase tracking-wider mb-2">Meet Our</p>
                 <h2 className="text-4xl font-bold text-[#1F3C3C] mb-12">Expert Doctors</h2>
@@ -81,7 +80,7 @@ const DoctorsPageContent = () => {
                     const image = doctorImages.find(img => img.id === (doctor.imageId || doctor.id));
                     if (doctor.id === 'doctor-1') {
                         return (
-                            <Card key={doctor.id} className="rounded-[25px] shadow-md p-4 sm:p-6 flex flex-col justify-end text-left h-80 sm:h-96 bg-primary/10">
+                            <Card key={doctor.id} className="rounded-[25px] shadow-md p-4 sm:p-6 flex flex-col justify-end text-left h-80 sm:h-96 bg-primary/20 border-none">
                                 <div>
                                     <h3 className="text-lg sm:text-xl font-bold text-foreground">{doctor.name}</h3>
                                     <p className="text-sm font-medium text-foreground/80 mb-1">{doctor.title}</p>
@@ -91,7 +90,7 @@ const DoctorsPageContent = () => {
                         );
                     }
                     return (
-                        <Card key={doctor.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-80 sm:h-96">
+                        <Card key={doctor.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-80 sm:h-96 border-none">
                             {image ? (
                                 <Image
                                     src={image.imageUrl}

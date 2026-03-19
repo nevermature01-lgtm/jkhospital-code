@@ -245,8 +245,8 @@ const departmentsData = [
 const DepartmentCard = ({ department }: { department: (typeof departmentsData)[0] }) => {
 
     return (
-    <Card className="mb-12 overflow-hidden shadow-lg">
-      <CardHeader className="bg-muted p-6">
+    <Card className="mb-12 overflow-hidden shadow-lg bg-white border-none">
+      <CardHeader className="bg-primary/5 p-6">
         <div className="flex items-center gap-4">
           <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
             {department.icon}
@@ -303,8 +303,8 @@ export default function DepartmentsPage() {
   return (
     <>
       <Navbar />
-      <div className="bg-background">
-        <section className="py-16 bg-primary/5">
+      <div className="bg-primary/5 min-h-screen">
+        <section className="py-16 bg-primary/10">
           <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h1 className="text-5xl font-extrabold text-primary mb-4 tracking-tight">Our Departments</h1>
               <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
