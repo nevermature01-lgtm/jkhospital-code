@@ -184,17 +184,6 @@ const OurSpecialists = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {specialists.map((specialist) => {
               const image = specialistImages.find(img => img.id === specialist.id);
-              if (specialist.id === 'doctor-1') {
-                return (
-                  <Card key={specialist.id} className="rounded-[25px] shadow-md p-6 flex flex-col justify-end text-left h-96 bg-primary/10">
-                      <div>
-                          <h3 className="text-xl font-bold text-foreground">{specialist.name}</h3>
-                          <p className="text-base font-medium text-foreground/80 mb-2">{specialist.title}</p>
-                          <p className="text-sm text-foreground/70">{specialist.description}</p>
-                      </div>
-                  </Card>
-                );
-              }
               return (
                 <Card key={specialist.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-96">
                   {image && (

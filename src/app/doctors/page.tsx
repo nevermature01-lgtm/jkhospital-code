@@ -78,17 +78,6 @@ const DoctorsPageContent = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
                 {doctors.map((doctor) => {
                     const image = doctorImages.find(img => img.id === (doctor.imageId || doctor.id));
-                    if (doctor.id === 'doctor-1') {
-                        return (
-                            <Card key={doctor.id} className="rounded-[25px] shadow-md p-4 sm:p-6 flex flex-col justify-end text-left h-80 sm:h-96 bg-primary/20 border-none">
-                                <div>
-                                    <h3 className="text-lg sm:text-xl font-bold text-foreground">{doctor.name}</h3>
-                                    <p className="text-sm font-medium text-foreground/80 mb-1">{doctor.title}</p>
-                                    <p className="text-xs sm:text-sm text-foreground/70">{doctor.description}</p>
-                                </div>
-                            </Card>
-                        );
-                    }
                     return (
                         <Card key={doctor.id} className="rounded-[25px] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden relative group h-80 sm:h-96 border-none">
                             {image ? (
