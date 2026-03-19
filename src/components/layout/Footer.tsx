@@ -60,7 +60,7 @@ export const Footer = () => (
                <li className="flex items-start gap-3">
                 <Siren className="h-5 w-5 text-white/80 flex-shrink-0" />
                 <div>
-                  <span className="text-gray-400">Emergency: </span><a href="tel:+918006005061" className="hover:text-white">+91-8006005061</a>
+                  <span className="text-gray-400">Emergency: </span><a href="tel:+918006005065" className="hover:text-white">+91-8006005065</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">

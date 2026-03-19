@@ -19,9 +19,9 @@ const ContactPage = () => {
     {
       icon: <Phone className="h-8 w-8 text-primary" />,
       title: "Call Us",
-      info: "+91-8006005061",
+      info: "+91-8006005065",
       actionText: "Call Now",
-      href: "tel:+918006005061",
+      href: "tel:+918006005065",
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,

@@ -13,9 +13,9 @@ export const TopBar = () => (
           <Mail className="h-4 w-4" />
           <span>Nursing: Nursing@jkhospital.in</span>
         </a>
-        <a href="tel:+918006005061" className="flex items-center gap-2 hover:text-white">
+        <a href="tel:+918006005065" className="flex items-center gap-2 hover:text-white">
           <Siren className="h-4 w-4" />
-          <span>Emergency: +91-8006005061</span>
+          <span>Emergency: +91-8006005065</span>
         </a>
         <a href="tel:+918006005064" className="flex items-center gap-2 hover:text-white">
           <Phone className="h-4 w-4" />

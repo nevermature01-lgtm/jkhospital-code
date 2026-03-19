@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "How do I schedule an appointment?",
     answer:
-      "You can schedule an appointment by calling our reception at +91-8006005061, or by using our online appointment booking system on our website.",
+      "You can schedule an appointment by calling our reception at +91-8006005065, or by using our online appointment booking system on our website.",
   },
   {
     question: "What should I bring for an overnight stay?",
