@@ -44,9 +44,6 @@ export const Navbar = () => {
             <Link href="/about" className="hover:text-primary transition-colors">
               About Us
             </Link>
-            <Link href="/services" className="hover:text-primary transition-colors">
-              Services
-            </Link>
             <Link href="/doctors" className="hover:text-primary transition-colors">
               Our Doctors
             </Link>
@@ -95,9 +92,6 @@ export const Navbar = () => {
                     </Link>
                     <Link href="/about" className="hover:text-[#2fa693] py-2 transition-colors">
                       About Us
-                    </Link>
-                    <Link href="/services" className="hover:text-[#2fa693] py-2 transition-colors">
-                      Services
                     </Link>
                     <Link href="/doctors" className="hover:text-[#2fa693] py-2 transition-colors">
                       Our Doctors
