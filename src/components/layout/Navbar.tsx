@@ -26,9 +26,9 @@ export const Navbar = () => {
       <div className="container max-w-7xl mx-auto">
         <div className={cn(
             "rounded-full flex justify-between items-center p-3 px-6",
-            "bg-gradient-to-br from-[#0AB99D]/30 to-white/15 backdrop-blur-[30px]",
-            "border border-white/35",
-            "shadow-[0_10px_40px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.6)]"
+            "bg-gradient-to-br from-[#0AB99D]/25 to-white/25 backdrop-blur-[24px]",
+            "border border-white/30",
+            "shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
         )}>
           <Link
             href="/"
@@ -37,37 +37,37 @@ export const Navbar = () => {
             <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
           </Link>
           
-          <nav className="hidden md:flex items-center gap-4 text-sm font-medium text-white">
-            <Link href="/" className="hover:text-gray-200 transition-colors">
+          <nav className="hidden md:flex items-center gap-4 text-sm font-bold text-[#1F3C3C]">
+            <Link href="/" className="hover:text-primary transition-colors">
               Home
             </Link>
-            <Link href="/about" className="hover:text-gray-200 transition-colors">
+            <Link href="/about" className="hover:text-primary transition-colors">
               About Us
             </Link>
-            <Link href="/services" className="hover:text-gray-200 transition-colors">
+            <Link href="/services" className="hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="/doctors" className="hover:text-gray-200 transition-colors">
+            <Link href="/doctors" className="hover:text-primary transition-colors">
               Our Doctors
             </Link>
-            <Link href="/departments" className="hover:text-gray-200 transition-colors">
+            <Link href="/departments" className="hover:text-primary transition-colors">
               Departments
             </Link>
-            <Link href="/nursing-college" className="hover:text-gray-200 transition-colors">
+            <Link href="/nursing-college" className="hover:text-primary transition-colors">
               Nursing College
             </Link>
-            <Link href="/blood-bank" className="hover:text-gray-200 transition-colors">
+            <Link href="/blood-bank" className="hover:text-primary transition-colors">
               Blood Bank
             </Link>
-            <Link href="/contact" className="hover:text-gray-200 transition-colors">
+            <Link href="/contact" className="hover:text-primary transition-colors">
               Contact
             </Link>
-            <Link href="#" className="hover:text-gray-200 transition-colors">
+            <Link href="#" className="hover:text-primary transition-colors">
               Gallery
             </Link>
           </nav>
           <div className="hidden md:flex items-center gap-3">
-            <Button asChild className="hidden sm:flex rounded-full bg-white/90 hover:bg-white shadow-md text-[#1F3C3C] border-none">
+            <Button asChild className="hidden sm:flex rounded-full bg-[#1F3C3C] hover:bg-[#1F3C3C]/90 shadow-md text-white border-none">
               <Link href="/contact">
                 Contact Us <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
