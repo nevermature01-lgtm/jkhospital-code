@@ -34,7 +34,9 @@ export const Navbar = () => {
             href="/"
             className="flex items-center"
           >
-            <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
+            <div className="bg-white p-2 rounded-lg shadow-sm border border-white/50 flex items-center justify-center">
+              <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
+            </div>
           </Link>
           
           <nav className="hidden md:flex items-center gap-4 text-sm font-bold text-[#1F3C3C]">
@@ -84,7 +86,9 @@ export const Navbar = () => {
                 <SheetDescription className="sr-only">Access hospital departments, services, and contact information.</SheetDescription>
                 <div className="flex h-full flex-col gap-6 p-6">
                   <Link href="/" className="flex items-center mb-4">
-                    <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
+                    <div className="bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center w-fit">
+                      <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
+                    </div>
                   </Link>
                   <nav className="flex flex-col gap-4 text-lg font-medium">
                     <Link href="/" className="hover:text-[#2fa693] py-2 transition-colors">

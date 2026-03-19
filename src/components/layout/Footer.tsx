@@ -11,7 +11,9 @@ export const Footer = () => (
           {/* Column 1: About */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center mb-4">
-              <Image src="/logo.png" alt="JK Hospital Logo" width={160} height={36} />
+              <div className="bg-white p-3 rounded-xl shadow-sm border border-white/20 flex items-center justify-center w-fit">
+                <Image src="/logo.png" alt="JK Hospital Logo" width={160} height={36} />
+              </div>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               J.K. Hospital and College of Nursing, providing excellent education and multispecialty healthcare, run by the Jabar Singh Kaushalya Devi Charitable Trust.
