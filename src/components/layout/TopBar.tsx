@@ -21,10 +21,6 @@ export const TopBar = () => (
           <Phone className="h-4 w-4" />
           <span>Enquiry: +91-8006005064</span>
         </a>
-        <a href="tel:+918006005065" className="flex items-center gap-2 hover:text-white">
-          <Siren className="h-4 w-4" />
-          <span>Ambulance: +91-8006005065</span>
-        </a>
       </div>
     </div>
   );
