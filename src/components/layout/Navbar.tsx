@@ -26,7 +26,7 @@ export const Navbar = () => {
       <div className="container max-w-7xl mx-auto">
         <div className={cn(
             "rounded-full flex justify-between items-center p-3 px-6",
-            "bg-gradient-to-br from-[#0AB99D]/25 to-white/25 backdrop-blur-[24px]",
+            "bg-white/25 backdrop-blur-[24px]",
             "border border-white/30",
             "shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
         )}>
@@ -38,28 +38,28 @@ export const Navbar = () => {
           </Link>
           
           <nav className="hidden md:flex items-center gap-4 text-sm font-bold text-[#1F3C3C]">
-            <Link href="/" className="hover:text-primary transition-colors">
+            <Link href="/" className="hover:text-white transition-colors">
               Home
             </Link>
-            <Link href="/about" className="hover:text-primary transition-colors">
+            <Link href="/about" className="hover:text-white transition-colors">
               About Us
             </Link>
-            <Link href="/doctors" className="hover:text-primary transition-colors">
+            <Link href="/doctors" className="hover:text-white transition-colors">
               Our Doctors
             </Link>
-            <Link href="/departments" className="hover:text-primary transition-colors">
+            <Link href="/departments" className="hover:text-white transition-colors">
               Departments
             </Link>
-            <Link href="/nursing-college" className="hover:text-primary transition-colors">
+            <Link href="/nursing-college" className="hover:text-white transition-colors">
               Nursing College
             </Link>
-            <Link href="/blood-bank" className="hover:text-primary transition-colors">
+            <Link href="/blood-bank" className="hover:text-white transition-colors">
               Blood Bank
             </Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">
+            <Link href="/contact" className="hover:text-white transition-colors">
               Contact
             </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
+            <Link href="#" className="hover:text-white transition-colors">
               Gallery
             </Link>
           </nav>
