@@ -1,4 +1,3 @@
-
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -61,7 +60,7 @@ export function BloodDonorForm() {
   return (
     <Form {...form}>
       <form
-        action="https://formsubmit.co/adnankhan75e@gmail.com"
+        action="https://formsubmit.co/abb@jkhospital.in"
         method="POST"
         className="space-y-4"
       >
