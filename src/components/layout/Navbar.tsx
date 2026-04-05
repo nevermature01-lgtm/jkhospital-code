@@ -20,12 +20,12 @@ export const Navbar = () => {
 
     return (
     <div className={cn(
-        "w-full py-4 px-4 sm:px-6 lg:px-8",
+        "w-full py-2 sm:py-4 px-2 sm:px-6 lg:px-8",
         isHomePage && "absolute sm:static top-0 left-0 right-0 z-20"
     )}>
       <div className="container max-w-7xl mx-auto">
         <div className={cn(
-            "rounded-full flex justify-between items-center p-3 px-6",
+            "rounded-full flex justify-between items-center p-2 px-4 sm:p-3 sm:px-6",
             "bg-white/25 backdrop-blur-[24px]",
             "border border-white/30",
             "shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
@@ -34,8 +34,8 @@ export const Navbar = () => {
             href="/"
             className="flex items-center"
           >
-            <div className="bg-white p-2 rounded-xl shadow-sm border border-white/20 flex items-center justify-center">
-              <Image src="/logo.png" alt="JK Hospital Logo" width={140} height={32} />
+            <div className="bg-white p-1.5 sm:p-2 rounded-xl shadow-sm border border-white/20 flex items-center justify-center">
+              <Image src="/logo.png" alt="JK Hospital Logo" width={120} height={28} className="sm:w-[140px] sm:h-[32px] w-auto h-auto" />
             </div>
           </Link>
           
@@ -76,8 +76,8 @@ export const Navbar = () => {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button size="icon" className="bg-white/90 text-[#2FAE9B] hover:bg-white rounded-full shadow-md">
-                  <Menu className="h-6 w-6" />
+                <Button size="icon" className="bg-white/90 text-[#2FAE9B] hover:bg-white rounded-full shadow-md w-9 h-9">
+                  <Menu className="h-5 w-5" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
