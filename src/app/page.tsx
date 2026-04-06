@@ -437,9 +437,13 @@ const Testimonials = () => {
 };
 
 export default function Home() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: true })
-  );
+  const [autoplayPlugin, setAutoplayPlugin] = React.useState<any[]>([]);
+
+  React.useEffect(() => {
+    // Initialize plugin only on the client
+    setAutoplayPlugin([Autoplay({ delay: 4000, stopOnInteraction: true })]);
+  }, []);
+
   const sliderImages = PlaceHolderImages.filter(img => img.id.startsWith('hero-image-'));
 
   return (
@@ -450,7 +454,7 @@ export default function Home() {
           <div className="relative sm:rounded-[40px] overflow-hidden">
             <Carousel
               className="w-full"
-              plugins={[plugin.current]}
+              plugins={autoplayPlugin}
               opts={{
                 loop: true,
               }}
@@ -463,6 +467,8 @@ export default function Home() {
                         src={image.imageUrl}
                         alt={image.description}
                         fill
+                        priority={image.id === 'hero-image-1'}
+                        sizes="100vw"
                         className="object-cover"
                         data-ai-hint={image.imageHint}
                       />

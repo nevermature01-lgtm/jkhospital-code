@@ -3,8 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, Mail, Siren } from "lucide-react";
+import React, { useEffect, useState } from "react";
 
-export const Footer = () => (
+export const Footer = () => {
+  const [year, setYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
+  return (
     <footer className="bg-[#1F3C3C] text-white pt-20">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -12,7 +20,13 @@ export const Footer = () => (
           <div className="space-y-4">
             <Link href="/" className="flex items-center mb-4">
               <div className="bg-white p-3 rounded-xl shadow-sm border border-white/20 flex items-center justify-center w-fit">
-                <Image src="/logo.png" alt="JK Hospital Logo" width={160} height={36} />
+                <Image 
+                  src="/logo.png" 
+                  alt="JK Hospital Logo" 
+                  width={160} 
+                  height={36} 
+                  style={{ height: "auto" }}
+                />
               </div>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -86,8 +100,9 @@ export const Footer = () => (
         </div>
         
         <div className="mt-16 py-6 border-t border-white/10 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} JK Hospital. All Rights Reserved. </p>
+          <p>&copy; {year || '2025'} JK Hospital. All Rights Reserved. </p>
         </div>
       </div>
     </footer>
   );
+};
